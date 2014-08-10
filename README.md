@@ -1,3 +1,3 @@
 coin reviews:
 
-[[test]]
+[test](/test.md)
