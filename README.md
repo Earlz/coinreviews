@@ -1,3 +1,4 @@
 coin reviews:
 
-[test](/test.md)
+browse the source for all coin reviews
+
