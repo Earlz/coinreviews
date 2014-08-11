@@ -1,0 +1,12 @@
+onyxcoin https://bitcointalk.org/index.php?topic=717337.0
+
+heritage: DDR -> ISIS -> Onyxcoin
+
+This coin I would consider safe to add. It's premine is correct, block rewards are correct, and no block acceptance checks were removed. Also, mining on it started right on time with when it launched. Basically just a simple clone coin with nothing really noteworthy.
+
+
+Problems:
+
+* Minor: Genesis seed is not a news event
+
+

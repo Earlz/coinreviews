@@ -1,0 +1,18 @@
+zipcoin https://bitcointalk.org/index.php?topic=721306.0
+
+Heritage appears to be a more exotic fork off of ppcoin, with some ppcoin watermarks renamed to zipcoin.(such as improperly renaming copyrights)
+Also watermark from a "SUMC" coin is left over. Foundation (ie, percent of block reward sent to an address) code is left in but commented out.
+Also appears to come from an "OPC" and "KEY" coin.
+
+Really stupid code was left in that forces miners to attach 2 outputs(1 to the miner address, and 1 to NULL) to a generation transaction. However, this seems harmless other than adding a tiny bit of bloat and stupidity. 
+
+The Announcement is wrong. PoS is already active and actively being used, as seen here: http://explorer.zip.altpooler.com/tx/3ed835401d0a624f1a9f2465c59d4a8d077f4a1e29f7194a860012cd9658a00e#o1 (that address is the first block mined, so is probably the founder). The code responsible for this is:
+
+-    if (IsProofOfStake() && nHeight < MODIFIER_INTERVAL_SWITCH)
+-        return DoS(100, error("AcceptBlock() : reject proof-of-stake at height %d", nHeight));
+-
+
+
+Also, the block explorer that is currently setup does not appear to be setup for PoS. See these negative fees http://explorer.zip.altpooler.com/block/3b9d2668ae7da1df27ff6496779169ee7c15d7df1b4db71a45867979c9a10ce5
+
+Despite the amount of stupid code and unintentional almost-exploits, I believe the network should be secure and act as expected, other than PoS already being active

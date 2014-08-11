@@ -1,0 +1,64 @@
+eUtopium https://bitcointalk.org/index.php?topic=702380.0
+
+Heritage: appears to be a "DDR" coin and a "drm" coin
+Also forked from a "GB" coin
+Oh, also forked from WEST 
+
+Problems:
+
+* MAJOR - Block reward in ANN is not accurate. It is 4.96 in code, but in ANN it is 10. 
+* MODERATE - Afterwards, block reward drops very sharply and seemingly random
+* MODERATE - Fees are said to be destructive in ANN, but this is not true. They go into PoW/PoS reward as usual.
+* MINOR - Reward code uses floats, causing forks on non-x86
+* MODERATE - Stake modifier checkpoints are disabled. This seems quite dangerous and even if an exploit isn't possible, will probably cause many fork problems
+* MODERATE -The timestamp on the block is not checked to be too early. This could lead to difficulty adjustment exploits to scale down difficulty at a whim with a small-ish amount of hashing power.
+* MINOR - The genesis block seed is not a news event
+
+
+For reference, (seemingly insane) PoW reward code:
+
+int64_t GetProofOfWorkReward(int64_t nFees)
+{
+    int64_t nSubsidy = 0.0000001 * COIN;
+if(pindexBest->nHeight == 2)
+{
+    nSubsidy = 200000 * COIN;
+        
+}else if(pindexBest->nHeight == 3){
+        nSubsidy = 10000 * COIN;  
+} else if(pindexBest->nHeight > 2 && pindexBest->nHeight <= 1000){
+    nSubsidy = 0.0000001 * COIN;
+}else if(pindexBest->nHeight > 1001 && pindexBest->nHeight <= 41321){
+      nSubsidy = 4.96 * COIN;
+   }
+else if(pindexBest->nHeight > 41321 && pindexBest->nHeight <= 202601){
+      nSubsidy = 0.248 * COIN;
+   }
+else if(pindexBest->nHeight > 202601 && pindexBest->nHeight <= 242921){
+      nSubsidy = 0.496 * COIN;
+   }
+else if(pindexBest->nHeight > 242921 && pindexBest->nHeight <= 283241){
+      nSubsidy = 0.75 * COIN;
+   }
+else if(pindexBest->nHeight > 283241 && pindexBest->nHeight <= 323561){
+      nSubsidy = 0.992 * COIN;
+   }
+else if(pindexBest->nHeight > 323561 && pindexBest->nHeight <= 363881){
+      nSubsidy = 1.488 * COIN;
+   }
+else if(pindexBest->nHeight > 363881 && pindexBest->nHeight <= 404201){
+      nSubsidy = 2.23214 * COIN;
+   }
+else if(pindexBest->nHeight > 404201 && pindexBest->nHeight <= 444521){
+      nSubsidy = 3.2242 * COIN;
+   }
+else if(pindexBest->nHeight > 444521 && pindexBest->nHeight <= 484841){
+      nSubsidy = 4.96 * COIN;
+   }
+	
+    if (fDebug && GetBoolArg("-printcreation"))
+        printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
+	
+    return nSubsidy + nFees;
+
+

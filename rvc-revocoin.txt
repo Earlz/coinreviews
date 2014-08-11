@@ -1,0 +1,7 @@
+RVC Revocoin https://bitcointalk.org/index.php?topic=683567.0
+
+Revocoin's code looks quite good. There are no obvious exploits, and it's heritage is not too hidden. It forked at some point from [AGR](https://bitcointalk.org/index.php?topic=679580.0), and at some earlier point forked from a DDR coin (can't find the bitcointalk thread because of ambiguity with DDR RAM). This DDR coin is the same code which went into FIRE and X15Coin, so it's heritage has some fairly established coins. 
+
+I reviewed it against the FIRE and X15Coin and against both it has mostly trivial changes. There was only one discrepancy found. RVC says that it's PoS interest is halved every 2 years, however, this is not what actually happens. It will only halve after 2 years once. After 4 years, it will not halve again. 
+
+Other than this, the coin seems mostly just to be a copy-paste clone with no exploitive code.  

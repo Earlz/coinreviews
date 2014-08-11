@@ -1,0 +1,8 @@
+RAW - Rawcoin https://bitcointalk.org/index.php?topic=708461.0
+
+Everything with RAW seems to be as expected. I compared it to it's supposed direct ancestory, Maiacoin, and a similar coin, Firecoin. The changes appears to have just been parameter tuning, and is basically a run of the mill clone. 
+
+Because this is a PoW/PoS hybrid, the total supply is fairly unpredictable. The ANN says the reward from PoW blocks is ~5.7M. However, if every block was PoW, the PoW coins generated would be 10.2M. If half of blocks are PoW and half PoS, the PoW coins generated would be 5.1M. This is tough to estimate, and the estimate in the ANN is probably good enough.
+
+Potential Problems:
+* pszTimestamp is not a news event. Premining a malicious fork from block 1 before launch is possible

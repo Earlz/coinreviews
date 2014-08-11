@@ -1,0 +1,12 @@
+doscoin https://bitcointalk.org/index.php?topic=720001.0
+
+heritage: from "SUMC"
+appears nearly identical to ZIPC (and/or vice versa)
+
+Really stupid code was left in that forces miners to attach 2 outputs(1 to the miner address, and 1 to NULL) to a generation transaction. However, this seems harmless other than adding a tiny bit of bloat and stupidity. 
+
+Despite the amount of stupid code and unintentional looking almost-exploits, it's probably pretty secure.
+
+Problems:
+* MODERATE - Stake modifier checkpoints are disabled. This seems quite dangerous and even if an exploit isn't possible, will probably cause many fork problems
+* MINOR - genesis block seed is not a news event.

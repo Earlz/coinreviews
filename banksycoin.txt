@@ -1,0 +1,21 @@
+banksycoin
+
+Included in heritage: ITC (Italycoin). the coin was extremely unpopular and it's code no longer available
+Cinnicoin. traceable by bad search/replace. (bitcoin -> bcinnioin). Also has "abcittcoin" as a watermark. unsure of origin. referenced in IRC joining
+Informationcoin. has "InfomationCoin" reference
+Some "ECC" reference ` found spent coin %sECC %s\n`
+compared against cinnamoncoin as reference
+
+I would consider this coin risky to add to an exchange. It's wallet has some outstanding issues related to security of the blockchain, as well as a dangerous amount of power given to the founders through PoS mining
+
+Problems:
+
+* Minor: PoW reward code makes calculations with a floating point value. This could lead to forks when compiling the wallet on non-x86 architectures. See also http://www.appinf.com/download/FPIssues.pdf
+* Minor: The genesis block seed is not a news event. 
+* Moderate: checks for blocktime not being too early are commented out. This I believe could allow a malicious miner to take the difficulty of the coin lower at whim by mining practically into the past.
+* Major: Dangerous premine power combined with PoS. There are a total of 100M coins premined. The reward for a PoW block is 17 coins. It would take around 4000 days of mining before the total mined coins matched the premine.
+* Minor: There is no dust limit. One could flood the network with 1 satoshi transactions
+
+
+
+

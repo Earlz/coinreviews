@@ -1,0 +1,28 @@
+librexcoin https://bitcointalk.org/index.php?topic=703042.0
+
+Librexcoin shows no immediate signs of an obvious heritage. I compared it to firecoin, which appeared to only be a slight mismatch. 
+
+I would consider librexcoin to be possibly secure to add. There is one problem that might be an exploit. I would need a second set of eyes with someone that knows the PoS system more indepth to know if it's exploitable, or just something removed to allow Zerocoin to work. 
+
+Problems: 
+
+* Minor(for security): hidden premine of 58800 coins. 84 blocks mined before relaunch officially announced.
+* Minor: No github 
+* Minor: Genesis seed is not a news event
+
+
+This is the suspicious code removed that I am unsure about:
+main.cpp
+ @@ -2161,12 +2162,6 @@ bool CBlock::AcceptBlock()
+     if (CheckpointsMode == Checkpoints::ADVISORY && !cpSatisfies)
+         strMiscWarning = _("WARNING: syncronized checkpoint violation detected, but skipped!");
+ 
+-    // Enforce rule that the coinbase starts with serialized block height
+-    CScript expect = CScript() << nHeight;
+-    if (vtx[0].vin[0].scriptSig.size() < expect.size() ||
+-        !std::equal(expect.begin(), expect.end(), vtx[0].vin[0].scriptSig.begin()))
+-        return DoS(100, error("AcceptBlock() : block height mismatch in coinbase"));
+-
+     // Write block to history file
+     if (!CheckDiskSpace(::GetSerializeSize(*this, SER_DISK, CLIENT_VERSION)))
+         return error("AcceptBlock() : out of disk space");
