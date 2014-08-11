@@ -2,6 +2,8 @@
 
 Heritage: DRM, DDR, WEST
 
+Looks pretty much like a standard clone coin
+
 Problems:
 
 * MINOR: The "PoW+PoS" max minted in the ANN is misleading, since PoS rewards are actually infinite. This seems like a way to make a 2.5% premine sound smaller. Otherwise, the dev is incompetent enough to think that MAX_MONEY actually controls the maximum amount of coins minted
