@@ -3,6 +3,7 @@ darkfox https://bitcointalk.org/index.php?topic=730801.0
 heritage: Watermarks of a "testcoin", libertycoin and bottlecaps ("ComputeMaxBits"), "TC"
 
 Problems:
+
 * MODERATE: "Total coins : 15,000,000" in the ANN is misleading and incorrect. (misunderstanding of MAX_MONEY)
 ** Actual PoW coins: 675,634 coins + 75,000 coins premine. 
 * MAJOR: Huge premine of 10.2%. (with PoS, large amount of control over the network)
