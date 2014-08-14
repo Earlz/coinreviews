@@ -1,0 +1,25 @@
+blacktoken https://bitcointalk.org/index.php?topic=734339.0
+
+heritage: Stealthcoin
+
+problems:
+
+* MAJOR: Block reward scheme gives founders a practical premine when combined with a ninja launch.
+** At least 1 block was officially premined, 2 minutes before launch. 
+** First 35 blocks were mined within 1 minute from launch to the same address (first 30 blocks contained the biggest rewards)
+** Difficulty adjustment of 30 blocks also makes this seem to be intended
+* MINOR: Genesis seed is not a news event
+
+
+notes:
+
+-//     hash(nStakeModifier + txPrev.block.nTime + txPrev.offset + txPrev.nTime + txPrev.vout.n + nTime) < bnTarget * nCoinDayWeight
++//     hash(nStakeModifier + txPrev.block.nTime + txPrev.offset + txPrev.nTime + txPrev.vout.n + nTime) < bnTarget * nCoinDayWeight * 10
++// (the 10 was added for the short staking times of Stealth (36 hr --> 216 hr full wt))
+
+
++    if ((nTime >= CUTOFF_POW_TIME) && (IsProofOfWork()))
++         return DoS(100, error("CheckBlock() : Proof of work (%f BLKT) at t=%d on or after %d.\n",
++                               ((double) vtx[0].GetValueOut() / (double) COIN),
++                                (int) nTime,
++                                (int) CUTOFF_POW_TIME));
