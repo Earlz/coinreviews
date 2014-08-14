@@ -1,0 +1,11 @@
+solecoin https://bitcointalk.org/index.php?topic=730077.0
+
+Heritage: cloakcoin
+
+Problems:
+
+* MINOR: Genesis seed is not a news event
+* MODERATE: No official launch time. The source seemed to be leaked and that apparently qualifies as the "launch". The source was leaked at around block 50, which was still in the 1 coin reward phase, so the dev gained little advantage by not saying it's officially launched.
+
+Notes:
+
