@@ -1,0 +1,18 @@
+joincoin (J) https://bitcointalk.org/index.php?topic=737405.0
+
+Heritage: A mystery version of bitcoin in between bitcoin 0.9 and 0.8(chainparams.cpp exists, but before the bitcoind/bitcoinrpc.cpp split)
+Huntercoin, Zetacoin, Possibly Trinitycoin? 
+
+Problems:
+
+* MODERATE: Many algorithms are used, and algorithm weighting is not properly configured (what determines that a difficulty of 1 for scrypt is stronger than a difficulty of 2 for sha256)
+** This greatly increases the risk of a 51% attack, since you only have to 51% attack the weakest algorithm.
+** This also means groestly and scrypt mining is practically useless, since they are penalized far more than other algorithms.
+
+
+Notes:
+
+Genesis seed is news event
+Has seed nodes configured, but they are not actually setup/the domain is not registered
+
+
