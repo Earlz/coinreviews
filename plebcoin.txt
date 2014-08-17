@@ -1,0 +1,13 @@
+plebcoin https://bitcointalk.org/index.php?topic=730854.0
+
+heritage: ISIS, some coin ending in "ian"
+
+appears to be a typical clone, developed with slightly more competence than usual
+
+Problems:
+
+* MINOR: 4 normal blocks were mined early, taking their premine from 462586 to 479386, or from 2% to 2.07% (not counting PoS increases of course)
+
+Notes:
+
+Genesis seed is news event
