@@ -7,7 +7,7 @@ Problems:
 * MINOR: 2 months since release and still no checkpoints
 * MINOR: Slightly unfair launch. Windows wallet was posted an hour before source was available
 * MINOR: Genesis seed is not a news event
-* MODERATE: Purposefully different behavior of the blockchain on Windows and Linux (see notes)
+* MODERATE: Purposefully different behavior of the blockchain on Windows and Linux (see notes) (ie, how does this coin even work?!)
 
 Notes:
 
