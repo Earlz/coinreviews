@@ -1,0 +1,14 @@
+xdecoin https://bitcointalk.org/index.php?topic=736702.0
+
+heritage: DDR/ISIS
+
+problems:
+
+MINOR: genesis seed is not a news event:
+
+Blockchain analysis:
+
+
+
+Notes:
+
