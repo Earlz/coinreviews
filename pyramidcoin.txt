@@ -1,0 +1,78 @@
+pyramidcoin https://bitcointalk.org/index.php?topic=626596.0
+
+heritage: somewhere between bitcoin 0.8.6 and 0.9, litecoin
+
+Problems:
+
+* MINOR: 2 months since release and still no checkpoints
+* MINOR: Slightly unfair launch. Windows wallet was posted an hour before source was available
+* MINOR: Genesis seed is not a news event
+* MODERATE: Purposefully different behavior of the blockchain on Windows and Linux (see notes)
+
+Notes:
+
+watermarks: uint64, reqwallet rpc, coincontrol.h, bloomfilters
+
++    // PyramidsCoin: IsDust() detection disabled, allows any valid dust to be relayed.
++    // The fees imposed on each dust txo is considered sufficient spam deterrant. 
++    return false;
+
+
+lol binaryclock hates this coin https://bitcointalk.org/index.php?topic=626596.msg7218600#msg7218600
+
+-    // Special short-term limits to avoid 10,000 BDB lock limit:
+-    if (GetBlockTime() >= 1363867200 && // start enforcing 21 March 2013, noon GMT
+-        GetBlockTime() < 1368576000)  // stop enforcing 15 May 2013 00:00:00
++    // PyramidsCoin: Special short-term limits to avoid 10,000 BDB lock limit:
++    if (GetBlockTime() < 1376568000)  // stop enforcing 15 August 2013 00:00:00
+
+
+what in the fuck is this shit: (in AcceptBlock, a critical function)
+
+-        // Check proof of work
+-        if (nBits != GetNextWorkRequired(pindexPrev, this))
+-            return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
++        #ifdef _WIN32
++            // Check proof of work       
++            if(nHeight >= 34140){
++                unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
++                double n1 = ConvertBitsToDouble(nBits);
++                double n2 = ConvertBitsToDouble(nBitsNext);
++
++                if (nHeight <= 45000) {
++                    if (abs(n1-n2) > n1*0.2) 
++                        return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
++                } else {
++                    if (abs(n1-n2) > n1*0.005) 
++                        return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW2)"));
++                }
++            } else {
++                if (nBits != GetNextWorkRequired(pindexPrev, this))
++                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
++            }
++        #else
++            // Check proof of work
++            if(nHeight >= 34140 && nHeight <= 45000){
++                unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
++                double n1 = ConvertBitsToDouble(nBits);
++                double n2 = ConvertBitsToDouble(nBitsNext);
++                if (abs(n1-n2) > n1*0.2)
++                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
++            } else {
++                if (nBits != GetNextWorkRequired(pindexPrev, this))
++                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
++            }
++        #endif
+
+ 
+This seems rather dangerous with no checkpoints, but it's originally from litecoin
+
+@@ -1747,7 +1764,9 @@ public:
+ 
+     bool CheckIndex() const
+     {
+-        return CheckProofOfWork(GetBlockHash(), nBits);
++        /** Scrypt is used for block proof-of-work, but for purposes of performance the index internally uses sha256.
++         *  This check was considered unneccessary given the other safeguards like the genesis and checkpoints. */
++        return true; // return CheckProofOfWork(GetBlockHash(), nBits);
+     }
