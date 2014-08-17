@@ -1,0 +1,51 @@
+captcoin https://bitcointalk.org/index.php?topic=683776.0
+
+Heritage: Communitycoin(exact fork), novacoin
+
+Problems:
+
+* MINOR: genesis seed is no ta news event
+
+Blockchain:
+
+Notes:
+
++        // Adriano 2014-04-19
++        if(nHeight > 28647){
++            static const CBitcoinAddress lostWallet ("CKGK6MFmBkreG7k5sU8gDEJNVJ57QZtN
++            for (unsigned int i = 0; i < tx.vin.size(); i++){
++                uint256 hashBlock;
++                CTransaction txPrev;
++                if(GetTransaction(tx.vin[i].prevout.hash, txPrev, hashBlock)){  // get
++                    CTxDestination source;
++                    if (ExtractDestination(txPrev.vout[tx.vin[i].prevout.n].scriptPubK
++                        CBitcoinAddress addressSource(source);
++                        if (lostWallet.Get() == addressSource.Get()){
++                            return error("CBlock::AcceptBlock() : Banned Address %s tr
++                        }
++                    }
++                }
++            }
++        }
++    }
+
+watermarks: int64, loop, "ppcoin:"
+
+
+(removed from community)
+-        // 2014-04-19 Adriano https://bitcointalk.org/index.php?action=profile;u=11256
+-        // The following address was lost during distribution with 196780608.602771 co
+-        static const CBitcoinAddress lostWallet ("CKGK6MFmBkreG7k5sU8gDEJNVJ57QZtN3H")
+-        uint256 hashBlock;
+-        CTransaction txPrev;
+ 
+-        if(GetTransaction(txin.prevout.hash, txPrev, hashBlock)){  // get the vin's pr
+-            CTxDestination source;
+-            if (ExtractDestination(txPrev.vout[txin.prevout.n].scriptPubKey, source)){
+-                CBitcoinAddress addressSource(source);
+-                if (lostWallet.Get() == addressSource.Get()){
+-                    error("Banned Address %s tried to send a transaction (rejecting it
+-                    return false;
+-               }
+-            }
+-        }
