@@ -1,0 +1,58 @@
+hertzcoin https://bitcointalk.org/index.php?topic=736313.0
+
+heritage:
+
+problems:
+* MINOR: genesis seed is not a news event
+* CRITICAL: Code that ensures that a PoW block hash matches the target difficulty is surepticiously renamed and changed to a NO-OP.
+** Any valid X13 hash is a valid block. Anyone can mint PoW blocks at will
+* MODERATE: Block timestamps are not checked for time drift
+
+notes:
+
+watermarks: uint64, INFINITE_LOOP
+static const double TAX_PERCENTAGE = 0.00; //no tax
+
+
+     // Check proof of work matches claimed amount
+-    if (fCheckPOW && IsProofOfWork() && !CheckProofOfWork(GetHash(), nBits))
++    if (fCheckPOW && IsProofOfWork() && !CheckProfOfWork(GetHash(), nBits))
+
+
+-    // Check timestamp
+-    if (GetBlockTime() > GetAdjustedTime() + nMaxClockDrift)
+-        return error("CheckBlock() : block timestamp too far in the future"
+
+-    // Check coinbase timestamp
+-    if (GetBlockTime() > (int64)vtx[0].nTime + nMaxClockDrift)
+-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"))
+
+/home/earlz/coindiff/HertzCoin/src/main.cpp:
+ 1978  
+ 1979      // Check proof of work matches claimed amount
+ 1980:     if (fCheckPOW && IsProofOfWork() && !CheckProfOfWork(GetHash(), nBits))
+ 1981          return DoS(50, error("CheckBlock() : proof of work failed"));
+ 1982  
+
+/home/earlz/coindiff/HertzCoin/src/util.h:
+  179  std::string real_strprintf(const std::string &format, int dummy, ...);
+  180  #define strprintf(format, ...) real_strprintf(format, 0, __VA_ARGS__)
+  181: #define CheckProfOfWork(h, n) UpdateAddrInfo(this)
+  182  std::string vstrprintf(const char *format, va_list ap);
+  
+  Reference code that is never called:
+  bool CheckProofOfWork(uint256 hash, unsigned int nBits)
+{
+    CBigNum bnTarget;
+    bnTarget.SetCompact(nBits);
+
+    // Check range
+    if (bnTarget <= 0 || bnTarget > bnProofOfWorkLimit)
+        return error("CheckProofOfWork() : nBits below minimum work");
+
+    // Check proof of work matches claimed amount
+    if (hash > bnTarget.getuint256())
+        return error("CheckProofOfWork() : hash doesn't match nBits");
+
+    return true;
+}
