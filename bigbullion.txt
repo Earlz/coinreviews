@@ -1,0 +1,12 @@
+bigbullion https://bitcointalk.org/index.php?topic=715904.0
+
+heritage: bitcoin 0.8.6
+
+problems:
+
+* MINOR: Genesis seed is not a news event
+
+
+notes:
+
+was a quick review. no blockchain analysis
