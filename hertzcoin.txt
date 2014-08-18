@@ -56,3 +56,30 @@ static const double TAX_PERCENTAGE = 0.00; //no tax
 
     return true;
 }
+
+
+Searching 311 files for "checkproofofwork"
+
+/home/earlz/coindiff/HertzCoin/src/main.cpp:
+ 1043  }
+ 1044  
+ 1045: bool CheckProofOfWork(uint256 hash, unsigned int nBits)
+ 1046  {
+ 1047      CBigNum bnTarget;
+ ....
+ 1050      // Check range
+ 1051      if (bnTarget <= 0 || bnTarget > bnProofOfWorkLimit)
+ 1052:         return error("CheckProofOfWork() : nBits below minimum work");
+ 1053  
+ 1054      // Check proof of work matches claimed amount
+ 1055      if (hash > bnTarget.getuint256())
+ 1056:         return error("CheckProofOfWork() : hash doesn't match nBits");
+ 1057  
+ 1058      return true;
+
+/home/earlz/coindiff/HertzCoin/src/main.h:
+  120  void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash1);
+  121  bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey);
+  122: bool CheckProofOfWork(uint256 hash, unsigned int nBits);
+  123  int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash);
+  124  int64 GetProofOfStakeReward(int64 nCoinAge, unsigned int nBits, unsigned int nTime, int nHeight);
