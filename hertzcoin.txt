@@ -58,6 +58,9 @@ static const double TAX_PERCENTAGE = 0.00; //no tax
 }
 
 
+
+
+
 Searching 311 files for "checkproofofwork"
 
 /home/earlz/coindiff/HertzCoin/src/main.cpp:
@@ -83,3 +86,35 @@ Searching 311 files for "checkproofofwork"
   122: bool CheckProofOfWork(uint256 hash, unsigned int nBits);
   123  int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash);
   124  int64 GetProofOfStakeReward(int64 nCoinAge, unsigned int nBits, unsigned int nTime, int nHeight);
+  
+  
+  
+A sample exploit block:
+
+[earlz@EarlzBeta src]$ ./hertzcoind getblockbynumber 1101
+{
+    "hash" : "265b783dace907be43d64b47d85dc7e6d2f01cf14771bb1ac579582b24de0a57",
+    "confirmations" : 1121,
+    "size" : 264,
+    "height" : 1101,
+    "version" : 4,
+    "merkleroot" : "8f4ac5efb44cfc9325f222f15bfb50b3dda4f49500d1f510f9928c10b236c301",
+    "mint" : 8888.00000000,
+    "time" : 1408057851,
+    "nonce" : 2674529111,
+    "bits" : "1b6bfffe",
+    "difficulty" : 606.80572702,
+    "previousblockhash" : "0000000000676a85677427e80f023738d11b6493262706c8bfb1f9200cdf7ed9",
+    "nextblockhash" : "7d58f75fb575e73fbea06b7d1390ee72301582c8aa221962b0f70203c11643c8",
+    "flags" : "proof-of-work",
+    "proofhash" : "265b783dace907be43d64b47d85dc7e6d2f01cf14771bb1ac579582b24de0a57",
+    "entropybit" : 1,
+    "modifier" : "4e804e9b388e8d6c",
+    "modifierchecksum" : "ab502563",
+    "tx" : [
+        "8f4ac5efb44cfc9325f222f15bfb50b3dda4f49500d1f510f9928c10b236c301"
+    ],
+    "signature" : "304502201720c3b9dd90b1a0d27576eff054e7513d1e1dea039b39a217966ef204685a6e022100d9f3e2db2c1a20d6befadcbc6a696cbfc7b96d7df7f06b92d3f88107025294c1"
+}
+
+Notice how the hash for the block does not even start with a 0, meaning there is no way it matches this difficulty
