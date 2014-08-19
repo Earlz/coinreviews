@@ -9,3 +9,4 @@ coin reviews:
 
 browse the source for all coin reviews
 
+If you're a bit lost with my terminology, you can see the commonproblems.md document for an explanation of some of the more common issues with coins
