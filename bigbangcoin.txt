@@ -1,0 +1,68 @@
+bigbangcoin https://bitcointalk.org/index.php?topic=716901.0
+
+Heritage: 
+
+Problems:
+
+* MINOR: Genesis seed is not a news event
+* MAJOR: Total money supply is wrong. I ran the random reward code through to 7000 blocks multiple times with a random number generator, and the average total supply is about 1.3 million coins, not 7 million as the ANN says
+** This means the premine is actually about 4.8% or so of PoW minted coins, not 0.9% as the ANN says
+
+
+Notes:
+
+Cleaned up reward code:
+// miner's coin base reward
+int64_t GetProofOfWorkReward(int64_t nFees)
+{
+    if (pindexBest->nHeight < 1)
+    {
+        nSubsidy = 63000 * COIN; //0.9% Premine
+    }
+    else if (pindexBest->nHeight < 101)
+    {
+        nSubsidy = 1 * COIN; //1 Coin per block to prevent instamine
+    }
+    else 
+    { 
+        int rand = generateMTRandom(pindexBest->nHeight, 1000);
+        if (pindexBest->nHeight < 7001) 
+        {
+            if(rand >= 990) 
+            {
+                nSubsidy = 10000 * COIN;
+            } 
+            else if (rand >= 940) 
+            {
+                nSubsidy = 500 * COIN;
+            } 
+            else if (rand >= 840) 
+            {
+                nSubsidy = 250 * COIN;
+            } 
+            else if (rand >= 690) 
+            {
+                nSubsidy = 100 * COIN;
+            } 
+            else if (rand >= 490) 
+            {
+            	nSubsidy = 50 * COIN;
+            } 
+            else if (rand <= 489) 
+            {
+            	nSubsidy = 25 * COIN;
+            }
+        }
+    }
+}
+
+
+    // Includes BigBang fix for wrong retargeting difficulty by Mammix2
+
+(premine block matures before anything else?)
+    +    if(pindexBest != NULL && pindexBest->nHeight > 1)
++        nCoinbaseMaturity = 140; //coinbase maturity change to 180 blocks
+
+blockchain not checked
+
+Watermarks: ppcoin -> bigbang, major client version is 2, uint64_t
