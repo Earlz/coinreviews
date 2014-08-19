@@ -1,0 +1,19 @@
+intellicoin https://bitcointalk.org/index.php?topic=720292.0
+
+Heritage: SUMC, a coin with foundation code(% of block goes to second address), OPC
+
+Problems:
+
+* MINOR: Stake modifier checkpointing is disabled
+* MINOR: Genesis seed is not a news event
+
+Notes:
+
+-    if (!CheckStakeModifierCheckpoints(pindexNew->nHeight, pindexNew->nStakeModifierChecksum))
+-        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016"PRIx64, pindexNew->nHeight, nStakeModifier);
+
+Watermarks: ppcoin -> intellicoin, uint64_t
+
++    // Includes intellicoin fix for wrong retargeting difficulty by Mammix2
+
++    result.push_back(Pair("charityvalue", (int64_t)pblock->vtx[0].vout[0].nValue));
