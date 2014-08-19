@@ -1,0 +1,23 @@
+abundance (abc) https://bitcointalk.org/index.php?topic=682939.0
+
+Heritage: DRM
+
+Problems:
+
+* MINOR: Genesis seed is not a news event
+* MINOR: Uses floating point numbers in protocol critical code
+* MODERATE: Rough launch. Mining began unexpectedly a few hours before launch. Dev didn't password protect wallets, and a solominer got early blocks
+** Basically the first 120 blocks were mined by the same address, including the premine block. Since they appear to have control of the premine, they must have been the one to start mining early and foil their own launch
+** They increased their premine by about 230 coins by launching early
+** The premine has also been touched a lot and huge values dropped in random places. 5000 here, 4807 there, etc. This is probably their own internal management though
+
+Notes:
+
+(diffing against FIRE. odd that only 4 digits are different, coincidence? )
+-        block.nTime    = 1403927609;
++        block.nTime    = 1408023609;
+
+
+
+
+Watermarks: uint64_t
