@@ -1,0 +1,16 @@
+nightmare https://bitcointalk.org/index.php?topic=740936.0
+
+Heritage:  shadowcoin
+
+Problems:
+
+* MINOR: Genesis seed is not a news event
+* MINOR: Floating point math used in critical code
+
+Notes:
+
+does not appear to have the infamous 24 character limit on "narrations"
+
+no blockchain analysis done because I couldn't get my program to work with it :( 
+
+Watermarks: bloom filters
