@@ -1,0 +1,43 @@
+Usecoin https://bitcointalk.org/index.php?topic=735355.0
+
+Heritage: SUMC, coin with foundation, OPC
+
+Problems:
+
+* MINOR: Uses floating point in critical code
+* MODERATE: Stake modifier checkpoints disabled
+* MINOR: Genesis seed is not a news event
+* NOTICE: Though it's intended, when combined with PoS, a 50% premine/ICO is somewhat dangerous for 51% attacks. They appear to be distributing all ICO proceeds now though, which will make this a non-concern
+* MODERATE: The first 250 blocks have an absolutely broken difficulty adjustment. This resulted in about 200 blocks (~10000 coins worth) being mined in about 4 minutes. The "fair launch" mechanism was nearly useless 
+
+Notes:
+
+(related to riotcoin, apexcoin, czecoin)
++    // Includes usecoin fix for wrong retargeting difficulty by Mammix2
+
+
++// legacy diff-mode
++unsigned int static GetNextWorkRequired_legacy(const CBlockIndex* pindexLast)
+
+-    if (!CheckStakeModifierCheckpoints(pindexNew->nHeight, pindexNew->nStakeModifierChecksum))
+-        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016"PRIx64, pindexNew->nHeight, nStakeModifier);
+
++    result.push_back(Pair("charityvalue", (int64_t)pblock->vtx[0].vout[0].nValue));
+
+
+ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
+ {
+-    return GetNextTargetRequired_(pindexLast, fProofOfStake);
++    int change;
++    if(fTestNet)
++        change = 20;
++    else
++        change = 250;
++    if(pindexLast->nHeight + 1 > change)
++        return GetNextTargetRequired_(pindexLast, fProofOfStake);
++    else
++        return GetNextWorkRequired_legacy(pindexLast);
+ }
+
+
+Watermarks: uint64_t, ppcoin -> usecoin, charity
