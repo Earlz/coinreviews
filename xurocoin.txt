@@ -20,7 +20,7 @@ Notes:
 
 +# Build STATIC if you are redistributing the wildwestcoind binary
 
-
+blockchain quickly checked, and no undisclosed premining appeared to have happened
 
 Watermarks: uint64_t, 
 "bounty's" in ANN. Possibly another coin dev from here ( https://encrypted.google.com/search?q=%22bounty%27s%22+bitcointalk+site:bitcointalk.org&hl=en )
