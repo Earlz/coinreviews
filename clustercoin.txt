@@ -1,0 +1,15 @@
+Clustercoin https://bitcointalk.org/index.php?topic=737636.0
+
+Heritage: bitcoin master (in between 0.9.2 and 0.10)
+
+Problems:
+
+* MODERATE: Forked from bitcoin master, not a stable release. Although bitcoin is usually good about ensuring master isn't too unstable, it still doesn't have near the testing done on it, and so there is no good base reference point to compare it to without working through all of bitcoin's huge amount of changes since 0.9.2 (and even then, I'm not more qualified than the bitcoin devs to give a good code review)
+
+Notes:
+
+genesis seed is news-ish
+
+They /almost/ forked from bitcoin after headers-only, which would've been really nice (super fast blockchain syncing), albeit very experimental
+
+Watermarks: 
