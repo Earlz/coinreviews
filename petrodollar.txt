@@ -1,0 +1,23 @@
+petrodollar https://bitcointalk.org/index.php?topic=472238.0
+
+Heritage: primarily bitcoin, amkoin(made by same person https://github.com/bryceweiner/amkoin ), franko
+
+Problems:
+
+* MODERATE: Forked in between bitcoin releases, in between 0.8.6 and 0.9.0
+* MINOR: Genesis seed is not  a news event
+* MINOR: Floating point operations used in critical code
+
+Notes:
+
++CBigNum bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20); // yes, totally sloppy.  Fuck off
+
++    // Franko: This fixes an issue where a 51% attack can change difficulty at will.
++    // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
++    int blockstogoback = nInterval-1;
++    if ((pindexLast->nHeight+1) != nInterval)
++        blockstogoback = nInterval;
+
+Despite being an sha256 coin, does not appear to be based directly on bitcoin
+
+Watermarks: 
