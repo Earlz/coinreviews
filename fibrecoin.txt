@@ -1,0 +1,31 @@
+fibrecoin https://bitcointalk.org/index.php?topic=737771.0
+
+Heritage: foundation/charity coin, (probably) usecoin
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+
+Notes:
+
+
+very verbose reward code
++    if (pindexBest->nHeight == 1)
++      {
++        int64_t nSubsidy = 20000 * COIN;
++        if (fDebug && GetBoolArg("-printcreation"))
++        printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
++        return nSubsidy + nFees;
++      }
++   else if (pindexBest->nHeight >= 2 && pindexBest->nHeight <= 200)
++      {
++        int64_t nSubsidy = 0 * COIN;
++        if (fDebug && GetBoolArg("-printcreation"))
++        printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
++        return nSubsidy + nFees;
++      }
++    else
+
+blockchain analyzed and looks good
+
+Watermarks: ppcoin -> fibre
