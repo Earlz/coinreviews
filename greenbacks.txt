@@ -1,0 +1,44 @@
+greenbacks https://bitcointalk.org/index.php?topic=740744.0
+
+Heritage: dream(drm), wildwestcoin
+
+Problems:
+
+* MODERATE: stake modifier checkpoints disabled
+* NOTE: fees were not paid to miners during ICO period
+* MINOR: genesis seed is not a news event
+* MODERATE: max block size is 100Mb, with 30 second block times. 
+** This could allow for DDoS attacks with orphans and could cause big forks if a large block is accepted into the "primary" network, as high latency/low speed connections recieve this block
+** This problem is also compounded by all transactions being free. 
+
+Notes:
+
+Recommended confirmations required: 12 (30 second blocktime)
+
+bool CheckStakeModifierCheckpoints(int nHeight, unsigned int nStakeModifierChec
+ {
+-    MapModifierCheckpoints& checkpoints = (fTestNet ? mapStakeModifierCheckpoin
++    /*MapModifierCheckpoints& checkpoints = (fTestNet ? mapStakeModifierCheckpo
+ 
+     if (checkpoints.count(nHeight))
+-        return nStakeModifierChecksum == checkpoints[nHeight];
++        return nStakeModifierChecksum == checkpoints[nHeight];*/
+     return true;
+ }
+
+       
+-    return nSubsidy + nFees;
++    return nSubsidy;
+
+ 
+-    // Check coinbase timestamp
+-    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))
+-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"))
+
+ 
+-static const unsigned int MAX_BLOCK_SIZE = 1000000;
++static const unsigned int MAX_BLOCK_SIZE = 100 000 000;
+
+
+
+Watermarks: uint64_t
