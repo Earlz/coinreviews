@@ -1,0 +1,76 @@
+rootcoin https://bitcointalk.org/index.php?topic=714793.0
+
+Heritage: very similar to bitstar, MNT
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+* MAJOR: The first 450 PoW blocks had difficulty adjustment purposefully disabled, and as such about 500 blocks were mined 4 minutes after launch
+* MAJOR:  Along with an instamine was some good ol' fashioned premining that started about 10 minutes before launch. At least 2 solominers and a pool
+** 500 blocks being practically premined out of 10,000 PoW blocks is really bad
+* MODERATE: "total coins" is not 3 million. Inappropriate assumption of MAX_MONEY
+
+
+On blockchain:
+
+blocks mined at premine time: 3 (ie, 2 extra blocks were mined)
+blocks mined before launch, but after premine: 4-115 (from 00:00:58 to 01:09:39)
+
+Addresses which hold the illegitimate premine: (notice, the pool with 1.5% fees) (there may be more addresses than this)
+
+RSGFEiPfkjyFRKU31Q6TdYTMSo2gLhd623
+RSmMJGDCXeP2wGCTJn74js1s5VcNqbjpg6
+Recipients
+Address	Amount (Root)
+RSXCxbLxANhPEJsDZ38etJAgGs2dC45W8W	97.51500000
+RB7C7WYdoUP2bXn3GJGWeijsLbVehJiieq	1.48500000
+
+I don't usually dig into author history, but he also launched distrocoin
+Interestingly enough has done a review like this of shibecoin some time back https://bitcointalk.org/index.php?topic=595767.msg6572374#msg6572374
+
+
+Notes:
+
+This means the first 450 blocks are immune to difficulty adjustment, and so will be instamined:
+@@ -1048,14 +1033,18 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
+     const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
+     if (pindexPrevPrev->pprev == NULL)
+         return bnTargetLimit.GetCompact(); // second block
++    if (pindexLast->nHeight < 450)
++        return bnTargetLimit.GetCompact();
+
+
+lol wut (circulation_money is never referenced)
+static const int64 MAX_MONEY = 3000000ULL * COIN;	    // 3 million total ROOT
+static const int64 CIRCULATION_MONEY = MAX_MONEY;
+
+
+
+Sr. Member
+****
+
+Activity: 252
+
+coin-dev & coder | GPG Key ID: 270B4226
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [PRE-ANN] RootCoin [ROOT] - ANON-tx using BitKey™- PoW/PoS + Proof of Investment
+August 23, 2014, 01:09:49 AM
+Reply with quote  #574
+LAUNCHED
+
+we will release a status update and great news in about 2h. 
+stay tuned!
+
+
+ssdpool's block explorer sucks shit. It had might as well not be called a block explorer. and my local block explorer isn't powerful enough yet to trace out these addresses 
+
+990 000 max coins mined from PoW 
+44 550 coins instamined and/or premined
+ 1 600 000 premine (for PoI)
+
+Watermarks: uint64 (with pos)
