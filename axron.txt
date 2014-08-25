@@ -1,0 +1,62 @@
+axron https://bitcointalk.org/index.php?topic=738534.0
+
+Heritage: NM (nightmare)
+
+Problems:
+
+* MINOR: blocktime is actually 80 seconds, not 75 as said in the ANN
+* MINOR: genesis seed is not a news event 
+* NOTE: Total coin supply is actually 13 million(he cuts off PoS at that point), which is unusual. Total PoW supply is 1,800,000, making a 1000 coin premine very tiny
+* MINOR: Mining started about 10 minutes before source release, but because of the fair launch 0 reward blocks, this doesn't really matter
+
+side note: if this guy didn't have a 5 star PoD (and I verified it on cryptoasian), I'd say this was as Carsen coin
+
+Notes:
+
+@@ -23,7 +20,7 @@ static std::map<int, unsigned int> mapStakeModifierCheckpoints =
+ // Hard checkpoints of stake modifiers to ensure they are deterministic (testNet)
+ static std::map<int, unsigned int> mapStakeModifierCheckpointsTestNet =
+     boost::assign::map_list_of
+-        ( 0, 0x0e00670bu )
++        ( 0, 0xe00670b  )
+     ;
+ 
+
+index 99afa10..a59981a 100644
+--- a/allocators.h
++++ b/allocators.h
+@@ -16,8 +16,8 @@
+ #endif
+ #define _WIN32_WINNT 0x0501
+ #define WIN32_LEAN_AND_MEAN 1
+-#ifndef NOMINMAX
+-#define NOMINMAX
++#ifndef NOMIAXRAX
++#define NOMIAXRAX
+ #endif
+ #include <windows.h>
+
++static const int64_t MAX_MONEY = 2000000 * COIN; // Not exact amount created from POW
+
+
+Project Axron
+Newbie
+*
+Online Online
+
+Activity: 28
+
+
+View Profile  Email  Personal Message (Online)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [PRE-ANN] [AXR] Project Axron - NOW LIVE - START MINING!!!
+August 21, 2014, 10:04:15 PM
+Reply with quote  #225
+Source is now online https://github.com/projectaxron/Axron 
+Windows : https://mega.co.nz/#!VMcRnB7B!H3KpBL7s6-YEnQCSFlrDHSi7Gis--D8Q3MGAbFjdlCI
+Report to moderator  
+Twitter @projectaxron - support@axron.pw
+
+Watermarks: uint64_t
