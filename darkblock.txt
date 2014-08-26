@@ -1,0 +1,60 @@
+darkblock https://bitcointalk.org/index.php?topic=752841.0
+
+Heritage: Mast(mastiff?)
+
+Problems:
+
+* MODERATE: Stake modifier checkpoints are disabled
+* MINOR: genesis seed is not a news event
+
+
+Notes:
+
+Blockchain analyzed and no premine took place. Mining began about 20 seconds after launch announcement
+
+incorrect comment from last coin:
++// miner's POW block rewards (Note: 1st block = premine of 1%: 27068 coins out of 2,706,880 maximum coins in PoW period)
+
+-    if (!CheckStakeModifierCheckpoints(pindexNew->nHeight, pindexNew->nStakeModifierChecksum))
+-        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016"PRIx64, pindexNew->nHeight, nStakeModifier);
+
+-        CSyncCheckpoint::strMasterPrivKey = strPrivKey;
++        CSyncCheckpoint::strDbloerPrivKey = strPrivKey;
+
+-        if (!CheckStakeModifierCheckpoints(pindex->nHeight, pindex->nStakeModifierChecksum))
+-            return error("CTxDB::LoadBlockIndex() : Failed stake modifier checkpoint height=%d, modifier=0x%016"PRIx64, pindex->nHeight, pindex->nStakeModifier);
+
+Darkblock
+Newbie
+*
+
+
+Activity: 14
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [ANN] Darkblock - "Barebones coin shaped by the community" [X11] No premine/IPO
+August 23, 2014, 06:18:07 PM
+Reply with quote  #50
+Quote from: Chris001 on August 23, 2014, 04:59:07 PM
+I just spoke with the Darkblock Dev
+
+He is making sure he has pools up for the launch so its a fair launch. Which I think is very good.
+
+Twoturtles said that he might set up a pool for this coin a few pages back. 
+
+He is the Neoscoin dev, so the Darkblock dev is currently in the Neoscoin IRC seeing whats up
+
+
+I still havn't heard back for ocminer, so Im not sure if he is going to set up a pool or not.
+
+The launch time will be sometime between 10am and 1pm PST, so there is time to get all the pools ready.
+
+OP UPDATED! Happy mining!
+
+
+
+Watermarks: uint64_t
