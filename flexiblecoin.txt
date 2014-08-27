@@ -1,0 +1,13 @@
+flexiblecoin https://bitcointalk.org/index.php?topic=756565.0
+
+Heritage: AGS, DDR
+
+Problems:
+
+* MINOR: Total amount of coins is slightly wrong and misleading. Total coins should be PoW coins, and the total amount of coins is actually 113 million, not 130 million as in the ANN
+* MINOR: 35 blocks were premined. Because the rewards are small to begin with though, this does not affect the premine amount hardly any
+* NOTE: At block 35 and 36, the premine was split up
+
+Notes:
+
+Watermarks: uint64_t
