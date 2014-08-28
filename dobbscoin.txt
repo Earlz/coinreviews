@@ -1,23 +1,29 @@
 (BOB) Dobbscoin is the Officially Approved Crypto-Currency of
-The Church of the SubGenius, a TWENTY+ Year old UFO/SEX Cult &
+The Church of the SubGenius, a TWENTY+ Year old UFO/SEX-Cult and
 'parody religion' that targets many better known belief systems. 
 
+-=-=-=-=-=-=-=-=- FLESH THIS OUT -=-=-=-=-=-=-=-=-
+Based on Bitcoin v0.8.6, except it's SCRYPT
+Uses a customized KGW, called The Wormhole.. 
+Basically just a simple clone coin with a way cool subculture meme.
+No premine, no ill intentions. Pure Slack
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Problems: Not enough people can tell True Slack from their own ass hole and will 
+forever continut to piss good coin into a hole, rather than support creative art projects.
+
+Note:
 The Church of the SubGenius teaches a complex belief system that focuses on 
 the clip-art Deity, J. R. "Bob" Dobbs, and shine the light upon The Conspiracy
 (Cliques Of Normals Secretly Planning Insidious Rituals Aimed at Controlling You).
 Of course, ..what 'religion'/Cult would be complete without UFO's, SEX and a grand 
 Armageddon scenario.  http://en.wikipedia.org/wiki/Church_of_the_SubGenius
 
--=-=-=-=-=-=-=-=- FLESH THIS OUT -=-=-=-=-=-=-=-=-
-Based on Bitcoin v0.8.6, except it's SCRYPT
-Uses a customized KGW, called The Wormhole.. 
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
 (BOB) Dobbscoin began as a simple class project, when it's "creator" commissioned 
 the "robot created shitcoin" (coingen.io), as someone had already chosen BitCoin
 for their class project, and everyone class project had to be different.
 
-Soon after it was spit out, other users began pullingit apart and rebuilding it into
+Soon after it was spit out, other users began pulling it apart and rebuilding it into
 what it is today; an honest to goodness, immune to pumping and dumping.. long term,
 good faith crypto currency - like people always pretend that they allegedly want. 
 
