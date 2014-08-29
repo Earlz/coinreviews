@@ -1,0 +1,21 @@
+bitmo https://bitcointalk.org/index.php?topic=745367.0 (source is https://github.com/BitMo/XBM since they don't link to it in the ANN)
+
+Heritage: SUMC, OPC
+
+Problems:
+
+* MINOR: Floating point operations used in critical code
+* MINOR: 200 extra 1 coin blocks are mined. Proclaimed to be "unused" and only for reaching PoS.
+         However, this could've just as easily have been 0.1 coins or lower and accomplished the same goal of moving the PoS chain at minimum difficulty
+* MINOR: Genesis seed is not a news event
+
+
+Notes:
+
+blockchain is fine other than the extra 200 coins minted
+
++
++int64_t devCoin = 0 * COIN;
++int nCoinbaseMaturity = 20; // Make sure we're legit!
+
+Watermarks: uint64_t, ppcoin -> bitmo
