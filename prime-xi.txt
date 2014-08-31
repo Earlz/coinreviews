@@ -1,0 +1,115 @@
+prime-xi https://bitcointalk.org/index.php?topic=701871
+
+Heritage: DRK
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+* MODERATE: There is no "max coins" as said in the ANN. It's infinite (misuse of MAX_MONEY)
+* MINOR: Premine is a bit excessive and not disclosed in an understandable way. blocks 1-6124 premined. Yielding 30615 coins premined. 
+** This is the yield of about 1.5 days of mining. 
+
+
+Recommended minimum confirmations: 14 (6 minutes with 25 second block times)
+
+Notes:
+
+lol it's all 5
+int64 static GetBlockValue(int nBits, int nHeight, int64 nFees)
+{
+    int64 nSubsidy = 5 * COIN;
+
+    if(nHeight == 1)
+    {
+       nSubsidy = 5 * COIN;
+    }
+    else if(nHeight > 1)
+    {
+       nSubsidy = 5 * COIN;
+    }
+
+
+unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
+{
+        int DiffMode = 1;
+        if (fTestNet) {
+                if (pindexLast->nHeight+1 >= 10) { DiffMode = 5; }
+                else if (pindexLast->nHeight+1 >= 5) { DiffMode = 4; }
+        }
+        else {
+                if (pindexLast->nHeight+1 >= 300) { DiffMode = 5; }
+		else if (pindexLast->nHeight+1 >= 250) { DiffMode = 4; }
+                else if (pindexLast->nHeight+1 >= 100) { DiffMode = 3; }
+                else if (pindexLast->nHeight+1 >= 20) { DiffMode = 2; }
+        }
+
+        if (DiffMode == 1) { return GetNextWorkRequired_V1(pindexLast, pblock); }
+        else if (DiffMode == 2) { return GetNextWorkRequired_V2(pindexLast, pblock); }
+        else if (DiffMode == 3) { return DarkGravityWave(pindexLast, pblock); }
+        else if (DiffMode == 4) { return DarkGravityWave2(pindexLast, pblock); }
+        else if (DiffMode == 5) { return DarkGravityWave3(pindexLast, pblock); }
+        return DarkGravityWave3(pindexLast, pblock);
+}
+
+Translation:
+difficulty is standard(bitcoin) until block 10, then it's kimoto gravity well until block 20, then it's darkgravitywave v1 until block 100,
+then it's darkgravity wave v2 utnil block 250, then it's darkgravitywave v3 and remains that way.
+
+
+          return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
+         } else {
+             // Check proof of work (Here for the architecture issues with DGW v1 and v2)
+-            if(nHeight <= 68589){
++            if(nHeight <= 300){
+                 unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
+                 double n1 = ConvertBitsToDouble(nBits);
+                 double n2 = ConvertBitsToDouble(nBitsNext);
+ 
+-                if (abs(n1-n2) > n1*0.5) 
+-                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork) - %f", abs(n1-n2)));
++                if (abs(n1-n2) > n1*0.2)
++                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
+             } else {
+                 if (nBits != GetNextWorkRequired(pindexPrev, this))
+                     return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
+             }
+         }
+
+
+
+
+Percise
+Member
+**
+
+
+Activity: 70
+
+
+View Profile  WWW  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [ANN] [PXI] Prime-XI [X11] [Pow]
+July 22, 2014, 03:46:43 AM
+Reply with quote  #21
+The wallets are ready on the website, www.Prime-Cryptos.com
+
+Happy Mining
+Report to moderator  
+PRIME-XI   WWW.PRIME-XI.COM     PXI
+Prime-XI Bitcointalk Thread - https://bitcointalk.org/index.php?topic=701871.msg7931657#msg7931657
+
+mining began at 07/17/2014 17:34:05
+blocks 1-6124 premined. Yielding 30615 coins premined. 
+
+
+
+have i bitched enough about ssdpool's "block explorer" yet?
+
+Watermarks: rpc includes threadsafe, reqwallet. 
+
++{ //  name                      actor (function)         okSafeMode threadSafe reqWallet
+
+-    void SetKey(const CKey& vchSecret)
++    void SetSecret(const CSecret& vchSecret, bool fCompressed)
