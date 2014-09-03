@@ -1,0 +1,18 @@
+Nimbus https://bitcointalk.org/index.php?topic=622323
+
+Heritage: DRM(dream), AGS
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+* MINOR: total coins in ANN is misleading, it is actually PoW minted coins. Using this, the total PoW coins is slightly incorrect. It is 25001000, not 25010000 as in the ANN.
+
+Notes:
+
+     // Check coinbase timestamp
+-    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))
+-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
++//    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))
++//        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
+
+Watermarks: uint64_t
