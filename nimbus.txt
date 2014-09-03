@@ -8,6 +8,7 @@ Problems:
 * MINOR: total coins in ANN is misleading, it is actually PoW minted coins. Using this, the total PoW coins is slightly incorrect. It is 25001000, not 25010000 as in the ANN.
 
 Notes:
+blockchain analyzed. Mining happened 1 minute after wallets announced. Very fair.
 
      // Check coinbase timestamp
 -    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))
