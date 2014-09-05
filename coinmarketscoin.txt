@@ -1,0 +1,54 @@
+coinmarketscoin https://bitcointalk.org/index.php?topic=765082.0 (https://github.com/jyap808/coinmarketscoin)
+
+Heritage: 
+
+Problems:
+
+Nothing obvious seen
+
+Notes:
+
+"Narration" (comments) is limited to 24 characters through RPC interface
+
+This is a pretty dirty fork. I've not been able to find out what this is based off of, but it has many differences. Thus, this review might be less effective than usual
+
+blockchain looks clean
+
++        const char* pszTimestamp = "September 1st, 2014 - TMZ: Celebrity Nude Photo Leak - The FBI Is on the Case!";
+
+Does this actually work with compressed public keys?
+ // ppcoin: sync-checkpoint master key
+-const std::string CSyncCheckpoint::strMasterPubKey = "049F2C10997604217E7238A4C5CF2843570ADA001D1A247B228A7C5583ACD0F762A3130D0C4331EB262E3D0EB516AE6F7B0B1ADA43275013F8552A83A7C621B1D9";
++const std::string CSyncCheckpoint::strMasterPubKey = "02334512c0d7a9a69289c4b7ad1c76e5330ef9dacd9da912c91a853986bddf0434";
+
++    if (sNarr.length() > 24)
++        throw runtime_error("Narration must be 24 characters or less.");
++    
+
+Appears to purposefully permit an easy way to store data in the blockchain:
+
+         // Standard tx, sender provides pubkey, receiver adds signature
+@@ -1306,6 +1303,11 @@ bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, vector<vector<unsi
+ 
+         // Sender provides N pubkeys, receivers provides M signatures
+         mTemplates.insert(make_pair(TX_MULTISIG, CScript() << OP_SMALLINTEGER << OP_PUBKEYS << OP_SMALLINTEGER << OP_CHECKMULTISIG));
++
++        // Empty, provably prunable, data-carrying output
++        mTemplates.insert(make_pair(TX_NULL_DATA, CScript() << OP_RETURN));
++        mTemplates.insert(make_pair(TX_NULL_DATA, CScript() << OP_RETURN << OP_SMALLDATA));
++        mTemplates.insert(make_pair(TX_NULL_DATA, CScript() << OP_RETURN << OP_SMALLDATA << OP_RETURN << OP_SMALLDATA));
+     }
+ 
+     // Shortcut for pay-to-script-hash, which are more constrained than the other types:
+@@ -1390,6 +1392,12 @@ bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, vector<vector<unsi
+                 else
+                     break;
+             }
++            else if (opcode2 == OP_SMALLDATA)
++            {
++                // small pushdata, <= MAX_OP_RETURN_RELAY bytes
++                if (vch1.size() > MAX_OP_RETURN_RELAY)
++                    break;
++            }
+
+Watermarks: uint64_t
