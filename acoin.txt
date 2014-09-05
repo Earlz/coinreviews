@@ -1,0 +1,17 @@
+acoin https://bitcointalk.org/index.php?topic=761818.0
+
+Heritage: Directly from bitcoin 0.9.2.1
+
+Problems:
+
+Nothing seen. Actually looks pretty good
+
+Notes:
+
+Difficulty adjustment seems a bit unusual, but doesn't appear to be broken at least. 
+It didn't appear to reach proper block times until block 1200, but there was no premine at all 
+
+-        const char* pszTimestamp = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
++        const char* pszTimestamp = "170814-DN Egypt-China and Israel present alternatives to Suez Canal";
+
+Watermarks: 
