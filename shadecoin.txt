@@ -1,0 +1,69 @@
+shadecoin https://bitcointalk.org/index.php?topic=768941.0
+
+Heritage: 
+
+Problems:
+
+* MINOR: 2 extra blocks were premined, this is not a major amount though
+
+
+Notes:
+
+genesis seed is a news evetn
+
+Mining began "normally" at block 4
+
+iShade
+Newbie
+*
+Online Online
+
+Activity: 26
+
+
+View Profile
+
+Ignore
+	
+Re: [ANN] ShadeCoin | Scrypt | PoW/PoS | PoD | Just Launched! |Packed with Features!
+September 05, 2014, 07:02:11 AM
+ #46
+Wallet Password is: e48744f6201798b3d7327836f953d9eb43b23e71
+
+Source is up also!
+
+
+
+-    // Verify hash target and signature of coinstake tx
+-    uint256 hashProofOfStake = 0, targetProofOfStake = 0;
+-    if (IsProofOfStake())
+-    {
+-        if (!CheckProofOfStake(vtx[1], nBits, hashProofOfStake, targetProofOfStake))
+-        {
+-            printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
+-            return false; // do not error here as we expect this during initial block download
+-        }
+-    }
+
+
++    if (pindexNew->IsProofOfStake())
++    {
++        if (!mapProofOfStake.count(hash))
++            return error("AddToBlockIndex() : hashProofOfStake not found in map");
++        pindexNew->hashProofOfStake = mapProofOfStake[hash];
++    }
+
++    // ppcoin: verify hash target and signature of coinstake tx
++    if (pblock->IsProofOfStake())
++    {
++        uint256 hashProofOfStake = 0, targetProofOfStake = 0;
++        if (!CheckProofOfStake(pblock->vtx[1], pblock->nBits, hashProofOfStake, targetProofOfStake))
++        {
++            printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
++            return false; // do not error here as we expect this during initial block download
++        }
++        if (!mapProofOfStake.count(hash)) // add to mapProofOfStake
++            mapProofOfStake.insert(make_pair(hash, hashProofOfStake));
++    }
+
+Watermarks: uint64_t
