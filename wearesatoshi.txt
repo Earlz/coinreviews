@@ -1,0 +1,24 @@
+wearesatoshi https://bitcointalk.org/index.php?topic=724727.0
+
+Note, this covers the new source at https://github.com/WeAreSatoshi/WeAreSatoshi2
+
+Heritage: drm
+
+Problems: 
+
+* MINOR: Uses floating point operations in critical code
+
+Notes:
+
+Because this coin is so old, blockchain analysis wouldn't really yield anything relevant
+
+Genesis seed is not a news event, but this is old and has checkpoints so it's irrelevant
+
+Lots of good checkpoints
+
+this broke the compile on my machine:
+-#include <db_cxx.h>
++#include </opt/local/include/db48/db_cxx.h>
+
+
+Watermarks: uint64 OPENSSL_cleanse()
