@@ -1,0 +1,61 @@
+xcash https://bitcointalk.org/index.php?topic=765360.msg8624319#msg8624319
+
+Heritage: SDcoin, probably SSV(extremely similar source patterns)
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+* NOTE: In the ann thread, the dev mentions that you can mine to stealth addresses. This does not appear to actually be the case. There are still block checks in-place that I believe would prevent that
+** also, the miner itself is still trivial and uses only public keys/addresses, as clearly seen with a block explorer
+
+Notes:
+
+appears to have character limit on transaction comments (or narations)
++        if (sNarr.length() > 24)
++            throw runtime_error("Narration must be 24 characters or less.");
+
+all keys are the same: (this seems to be a new trend? )
+ 
+-static const char* pszMainKey = "04B4E3C86CBB37515D61852F3F08E665324EE2513255EE69E3EB171A4F7A9D23CE56BD23352F6538B2855E0916A09AEBDF4B661CFA919FC726F3BB63EC62619FFB";
++static const char* pszMainKey = "04838caf4309cb31991d395f9eda6f3cd6e5928de41aa6432d04a6140a54a6d36dc8dda8ba39f34874f0b917807b425875d5dac3e63e9c9fc22641e17376868cd8";
+ 
+ // TestNet alerts pubKey
+-static const char* pszTestKey = "049236256689E39E7323C4BC92FBDCA9EC8C2D115B96B2BCC55F87A857E59D48B1C3654F5F6F0257399E69ED1F3D08DCE555DD421EA4570B119C92C038DA083956";
++static const char* pszTestKey = "04838caf4309cb31991d395f9eda6f3cd6e5928de41aa6432d04a6140a54a6d36dc8dda8ba39f34874f0b917807b425875d5dac3e63e9c9fc22641e17376868cd8";
+ 
+-// ppcoin: sync-checkpoint master key
+-const std::string CSyncCheckpoint::strMasterPubKey = "049F2C10997604217E7238A4C5CF2843570ADA001D1A247B228A7C5583ACD0F762A3130D0C4331EB262E3D0EB516AE6F7B0B1ADA43275013F8552A83A7C621B1D9";
++// ppcoin: sync-checkpoint master key                 
++const std::string CSyncCheckpoint::strMasterPubKey = "04838caf4309cb31991d395f9eda6f3cd6e5928de41aa6432d04a6140a54a6d36dc8dda8ba39f34874f0b917807b425875d5dac3e63e9c9fc22641e17376868cd8";
+
+
+johnnyxcash
+Newbie
+*
+
+
+Activity: 22
+
+
+View Profile
+
+Ignore
+	
+Re: [PRE-ANN][XCASH] Launching
+September 02, 2014, 07:49:46 PM
+ #26
+XCash is officially launched.
+
+Windows
+
+https://mega.co.nz/#!5VFDUJiK!U6nn3L-aBNv5TsFlJYow_sCObzdVsPC8kpIFUMnUKl0
+
+Source
+
+https://mega.co.nz/#!IFdTAA4T!wwY4Hgu1jAsdOv7loP735qXH4LYLxpNHdYGjxsuGJTc
+
+
+
+Mining began right at the exact time of the post. No undisclosed premine
+
+Watermarks: uint64_t
