@@ -1,0 +1,14 @@
+socialxbot https://bitcointalk.org/index.php?topic=760803.0
+
+Heritage: SD, shadowcoin
+
+Problems:
+
+* MAJOR: Premine, though properly disclosed, is absolutely ridiculous. 
+** After 1 full month of PoW mining with 10 coin rewards, the premine will still be over 75% of the coin supply
+** When combined with PoS, this could enable double spend and other 51% attacks to be conducted very easily
+* MINOR: Genesis seed is not a news event
+
+Notes:
+
+Watermarks: uint64_t
