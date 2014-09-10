@@ -10,6 +10,9 @@ Problems:
 
 blockchain seems ok. Exact premine amount not verified because it's difficult to track with how they mined it(over about 2000 blocks it appears)
 
+Latest code is broken and prevents new nodes from syncing with old nodes, adding a ton of pain to get this going. 
+https://github.com/Litecoindark/LTCD/commit/411132e589a90d65c8bb7849694c47cbc9b3677b#diff-7ec3c68a81efff79b6ca22ac1f1eabbaL3058
+
 Notes:
 
 Actually has an active testnet. A rare sight heh
