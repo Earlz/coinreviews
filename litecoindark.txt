@@ -1,0 +1,19 @@
+litecoindark https://bitcointalk.org/index.php?topic=760143.0
+
+Heritage: forked somewhere between bitcoin 0.8.6 and 0.9, egulden-coin(https://github.com/egulden-coin/egulden), very similar to pyramidscoin
+
+Problems:
+
+* MINOR: genesis seed is not a news event.
+* MODERATE: Allowing mined coins to be spent after only 5 confirmations is somewhat dangerous. 
+** This means, to conduct a "double spend", you never even need to buy/obtain coins legitimately. This can significantly reduce the cost and time required for an effective attack
+
+blockchain seems ok. Exact premine amount not verified because it's difficult to track with how they mined it(over about 2000 blocks it appears)
+
+Notes:
+
+Actually has an active testnet. A rare sight heh
+
+Oddly enough, does not appear to be forked from litecoin at any point. 
+
+Watermarks: uint64
