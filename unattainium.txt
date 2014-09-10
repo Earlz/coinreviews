@@ -1,0 +1,21 @@
+unattanium https://bitcointalk.org/index.php?topic=685126.0 0.8.6.9 (https://github.com/Unattainium/Unattainium-Fork/tree/271fbf757df12c2fec3a62228269be89cf83bb92)
+
+Heritage: direct bitcoin 0.8.6 fork
+
+Problems:
+
+* MAJOR: 8 second block times is extremely dangerous. 
+** An attack plan, and some details have been researched by someone else here:
+   https://docs.google.com/document/d/1d8dwuGznri35uNHDxhUcRDXD0I8afKN9R3G3oPNhBbo/edit#heading=h.b9wiq3qkf04u
+** I've read through it, and it's at least mostly legitimate. I did not try to replicate this in a controlled scenario though, so I can not give a 100% confirmation.
+* MINOR: Floating point operations in protocol critical code
+* MINOR: Genesis seed is not a news event
+
+Blockchain could not be analyzed, due to no functioning seed nodes
+
+Notes:
+
+Random rewards are easily exploited by multipools. DOGE has proven that a multipool can easily switch to a coin when it is predicted it will have a high reward "random" block
+
+
+Watermarks: uint64
