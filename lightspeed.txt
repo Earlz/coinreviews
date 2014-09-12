@@ -1,0 +1,25 @@
+lightspeed https://bitcointalk.org/index.php?topic=769832.0
+
+Heritage: 
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+* UNKNOWN: The messed up Stake modifiers checkpoint might make stake modifiers effectively disabled
+
+Notes:
+
+Everything has been renamed from lightspeed. ppcoin, novacoin, bitcoin, etc
+
+How is this not completely broken?
+
+ // Hard checkpoints of stake modifiers to ensure they are deterministic
+ static std::map<int, unsigned int> mapStakeModifierCheckpoints =
+     boost::assign::map_list_of
+-        ( 0, 0x0e00670bu )
++        ( 1000000, 0x0e00670bu )
+     ;
+
+
+
+Watermarks: uint64_t
