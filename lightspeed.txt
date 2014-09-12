@@ -9,6 +9,8 @@ Problems:
 
 Notes:
 
+Block chain analyzed and looks good
+
 Everything has been renamed from lightspeed. ppcoin, novacoin, bitcoin, etc
 
 How is this not completely broken?
