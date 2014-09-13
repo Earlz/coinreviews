@@ -1,0 +1,15 @@
+titcoin https://bitcointalk.org/index.php?topic=660482.0
+
+Heritage: direct fork from bitcoin 0.8.6. Looks to be a coingen coin
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+* MINOR: forking with a "time" rather than a block number is not completely safe, because block time can vary by +- 2 hours.
+* MODERATE: Checkpoints are useless and/or how the hell does this coin work. It still has bitcoin checkpoints left in
+* MAJOR: about 13000 blocks were premined. Oddly enough, some were mined in January, and then some in February, and then the rest a few days before release... No idea what was going on there. 
+
+Notes:
+oddly enough, testnet is removed
+
+Watermarks: uint64
