@@ -1,0 +1,13 @@
+dogecoindark https://bitcointalk.org/index.php?topic=770742.0
+
+Heritage: SUMC, OPC, KEY
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+
+Notes:
+
+blockchain analyzed and looks good. no premine
+
+Watermarks: uint64_t, foundation coin, ppcoin -> dogecoindark
