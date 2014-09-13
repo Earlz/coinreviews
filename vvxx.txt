@@ -1,0 +1,175 @@
+vvxx https://bitcointalk.org/index.php?topic=726117.0 takeover at https://bitcointalk.org/index.php?topic=777508.new#new
+
+Heritage: ISIS
+
+Problems:
+
+* MINOR: genesis seed is not a news event
+* CRITICAL: Binary wallet differs significantly from the source code and the two networks are incompatible. The source code itself appears to have only minor exploits
+* CRITICAL: Binary wallets have an active network exploit which allows infinite coin generation with disabled coinbase checks
+* CRITICAL: Binary wallets have an active network exploit which allows transactions to output more coins than they have inputs for
+* CRITICAL: The code is made to lie about how many coins are actually minted:
+-    result.push_back(Pair("mint", ValueFromAmount(blockindex->nMint)));
++    result.push_back(Pair("mint", 100));
+-        out.push_back(Pair("value", ValueFromAmount(txout.nValue)));
++        out.push_back(Pair("value", 100));
+
+Notes:
+The source code wallet gets stuck on the chain at block 28. This is because block 29 has a hidden large reward (RPC itnerface says 100, but it lies)
+When I removed the coinbase check that caused it to be stuck on block 28, suddenly the entire blockchain synced. 
+
+My local block explorer choked trying to parse the block chain.. You can see my exploratory research here:
+
+[earlz@li67-111 src]$ ~/checkblocks.sh
+BlockNum   Time                 Difficulty      TxCount    ValueIn              ValueOut             Reward               Fees                 Version    Type
+500        08/06/2014 18:09:29  234.08622855    1          0                    100                  100                  0                    6          PoW
+
+Unhandled Exception:
+System.ApplicationException: This transaction appears to have negative fees. This could mean the network has an exploit, or that this code can't handle some portion of it
+  at Earlz.Earlzplorer.Summarizer.SummarizeBlocks (Int32 begin, Int32 end) [0x00000] in <filename unknown>:0
+  at Earlz.Earlzplorer.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0
+[ERROR] FATAL UNHANDLED EXCEPTION: System.ApplicationException: This transaction appears to have negative fees. This could mean the network has an exploit, or that this code can't handle some portion of it
+  at Earlz.Earlzplorer.Summarizer.SummarizeBlocks (Int32 begin, Int32 end) [0x00000] in <filename unknown>:0
+  at Earlz.Earlzplorer.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0
+[earlz@li67-111 src]$ ./VvXxd getblockhash 499
+0000000000bd0165ad2a9860ef5dd5ed6414d5e800b5c8f535824a951b321e98
+[earlz@li67-111 src]$ ./VvXxd getblock 0000000000bd0165ad2a9860ef5dd5ed6414d5e800b5c8f535824a951b321e98
+{
+    "hash" : "0000000000bd0165ad2a9860ef5dd5ed6414d5e800b5c8f535824a951b321e98",
+    "confirmations" : 8882,
+    "size" : 969,
+    "height" : 499,
+    "version" : 6,
+    "merkleroot" : "82a06fba94862251d2277ae18a9dbf1205e3279f706abf7b2fa3162e35862cee",
+    "mint" : 100,
+    "time" : 1407348557,
+    "nonce" : 15698386,
+    "bits" : "1c00e64b",
+    "difficulty" : 284.57230091,
+    "blocktrust" : "11c939ee38f",
+    "chaintrust" : "1c132f78528b0",
+    "previousblockhash" : "00000000006f8d3f2305578b842e29513e2145d2a30f06486304cd71e08aad52",
+    "nextblockhash" : "00000000010a1614a7fe982ef8a565d0a70f1766b8e4ddc12be94f93f24017c1",
+    "flags" : "proof-of-work",
+    "proofhash" : "0000000000bd0165ad2a9860ef5dd5ed6414d5e800b5c8f535824a951b321e98",
+    "entropybit" : 0,
+    "modifier" : "e2ce15d31ce4f09e",
+    "modifierchecksum" : "317b8f27",
+    "tx" : [
+        "0c7a566e3d607af535c4d63b51278c4cd9a15119dd91cd5cf60494f274257e11",
+        "8fb4eb06f89821762061a4d78280a9bdb4f0af63570a00a76dac0837fc83a1f0",
+        "56ca21228f619f5ebed6ec4cddad079081c5692b777fcdb682c807642d8960cf",
+        "f2b9ee568e69c361d0afcd4560c5e9019821d315a8388eb9b72914f4af55c89c"
+    ]
+}
+[earlz@li67-111 src]$ ./VvXxd getrawtransaction "0c7a566e3d607af535c4d63b51278c4cd9a15119dd91cd5cf60494f274257e11" 1
+{
+    "hex" : "010000004d6fe253010000000000000000000000000000000000000000000000000000000000000000ffffffff1f02f30104406fe253087fffff9dc70000000d2f6e6f64655374726174756d2f0000000003b8ef0b5402000000232103016dcebf4ce2599202e20e9947cd8547e47347dd6b12a8a4b7fcaaea9fa5dd45ac00000000000000001976a9142e40f06cb499cf73c91e470a01f924f0790424b788ac00000000000000001976a91422851477d63a085dbc2398c8430af1c09e7343f688ac00000000",
+    "txid" : "0c7a566e3d607af535c4d63b51278c4cd9a15119dd91cd5cf60494f274257e11",
+    "version" : 1,
+    "time" : 1407348557,
+    "locktime" : 0,
+    "vin" : [
+        {
+            "coinbase" : "02f30104406fe253087fffff9dc70000000d2f6e6f64655374726174756d2f",
+            "sequence" : 0
+        }
+    ],
+    "vout" : [
+        {
+            "value" : 100,
+            "n" : 0,
+            "scriptPubKey" : {
+                "asm" : "03016dcebf4ce2599202e20e9947cd8547e47347dd6b12a8a4b7fcaaea9fa5dd45 OP_CHECKSIG",
+                "reqSigs" : 1,
+                "type" : "pubkey",
+                "addresses" : [
+                    "VEsnoUgCEzkfuTNHMzURHvHEH9fs5z19fA"
+                ]
+            }
+        },
+        {
+            "value" : 100,
+            "n" : 1,
+            "scriptPubKey" : {
+                "asm" : "OP_DUP OP_HASH160 2e40f06cb499cf73c91e470a01f924f0790424b7 OP_EQUALVERIFY OP_CHECKSIG",
+                "reqSigs" : 1,
+                "type" : "pubkeyhash",
+                "addresses" : [
+                    "VEsnoUgCEzkfuTNHMzURHvHEH9fs5z19fA"
+                ]
+            }
+        },
+        {
+            "value" : 100,
+            "n" : 2,
+            "scriptPubKey" : {
+                "asm" : "OP_DUP OP_HASH160 22851477d63a085dbc2398c8430af1c09e7343f6 OP_EQUALVERIFY OP_CHECKSIG",
+                "reqSigs" : 1,
+                "type" : "pubkeyhash",
+                "addresses" : [
+                    "VDokKgUeFQmvsZJ5yJKgnXYN4rbz3Lm4zf"
+                ]
+            }
+        }
+    ],
+    "blockhash" : "0000000000bd0165ad2a9860ef5dd5ed6414d5e800b5c8f535824a951b321e98",
+    "confirmations" : 9394,
+    "time" : 1407348557,
+    "blocktime" : 1407348557
+}
+[earlz@li67-111 src]$ ./VvXxd getrawtransaction
+error: {"code":-1,"message":"getrawtransaction <txid> [verbose=0]\nIf verbose=0, returns a string that is\nserialized, hex-encoded data for <txid>.\nIf verbose is non-zero, returns an Object\nwith information about <txid>."}
+[earlz@li67-111 src]$ ./VvXxd getrawtransaction "8fb4eb06f89821762061a4d78280a9bdb4f0af63570a00a76dac0837fc83a1f0" 1
+{
+    "hex" : "010000000c6fe253010d59227668819aec21141fab5a7164181163825905c6065421136fb8c16dbc36000000006a47304402202aaad2a21381a514994c547057ce0c3da9f9dc623272e51dd74d4e2864bfdae102204aa94b294b5aa774b57923ec7e65f40450c372e3bfd3d97d49edeab59e43daa101210287463252eccc41986e9495619721ddf17056e74175d595680f09d85226936b98ffffffff02d00c00de010000001976a914e711c77c0992ff4f6240bf4d7ed8a9a254641d3288ac8550ce41000000001976a91434e9b4da1e4008c94a1c204aadea41d89cb7d98b88ac00000000",
+    "txid" : "8fb4eb06f89821762061a4d78280a9bdb4f0af63570a00a76dac0837fc83a1f0",
+    "version" : 1,
+    "time" : 1407348492,
+    "locktime" : 0,
+    "vin" : [
+        {
+            "txid" : "36bc6dc1b86f13215406c605598263111864715aab1f1421ec9a81687622590d",
+            "vout" : 0,
+            "scriptSig" : {
+                "asm" : "304402202aaad2a21381a514994c547057ce0c3da9f9dc623272e51dd74d4e2864bfdae102204aa94b294b5aa774b57923ec7e65f40450c372e3bfd3d97d49edeab59e43daa101 0287463252eccc41986e9495619721ddf17056e74175d595680f09d85226936b98",
+                "hex" : "47304402202aaad2a21381a514994c547057ce0c3da9f9dc623272e51dd74d4e2864bfdae102204aa94b294b5aa774b57923ec7e65f40450c372e3bfd3d97d49edeab59e43daa101210287463252eccc41986e9495619721ddf17056e74175d595680f09d85226936b98"
+            },
+            "sequence" : 4294967295
+        }
+    ],
+    "vout" : [
+        {
+            "value" : 100,
+            "n" : 0,
+            "scriptPubKey" : {
+                "asm" : "OP_DUP OP_HASH160 e711c77c0992ff4f6240bf4d7ed8a9a254641d32 OP_EQUALVERIFY OP_CHECKSIG",
+                "reqSigs" : 1,
+                "type" : "pubkeyhash",
+                "addresses" : [
+                    "VXj1KEk6eYoXJ3hCku56aEVWn3ZKck3SRz"
+                ]
+            }
+        },
+        {
+            "value" : 100,
+            "n" : 1,
+            "scriptPubKey" : {
+                "asm" : "OP_DUP OP_HASH160 34e9b4da1e4008c94a1c204aadea41d89cb7d98b OP_EQUALVERIFY OP_CHECKSIG",
+                "reqSigs" : 1,
+                "type" : "pubkeyhash",
+                "addresses" : [
+                    "VFV12nYuV3kzgmgW9cVouQkuXPJt6U6hVQ"
+                ]
+            }
+        }
+    ],
+    "blockhash" : "0000000000bd0165ad2a9860ef5dd5ed6414d5e800b5c8f535824a951b321e98",
+    "confirmations" : 17095,
+    "time" : 1407348557,
+    "blocktime" : 1407348557
+}
+
+
+
+Watermarks: 
