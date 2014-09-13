@@ -14,6 +14,10 @@ Problems:
 -        out.push_back(Pair("value", ValueFromAmount(txout.nValue)));
 +        out.push_back(Pair("value", 100));
 
+
+coin launch happened on August 6th, but current code on github is from August 7th(although the date it was actually pushed is impossible to determine). I suspect this was the dev trying to cover his tracks.
+This would explain why it seemed to launch fine, but then suddenly everyone using the source has problems
+
 Notes:
 The source code wallet gets stuck on the chain at block 28. This is because block 29 has a hidden large reward (RPC itnerface says 100, but it lies)
 When I removed the coinbase check that caused it to be stuck on block 28, suddenly the entire blockchain synced. 
