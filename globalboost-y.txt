@@ -1,0 +1,16 @@
+globalboost-y https://bitcointalk.org/index.php?topic=584865.0 or https://bitcointalk.org/index.php?topic=696519.0
+
+Heritage: bitcoin 0.8.* (something a tiny bit older than .6). very similar to pyramidcoin
+
+Problems:
+
+* MINOR: no checkpoints, despite significant age
+* MODERATE: new hashing algorithm. I can not find any peer reviews or info about the algorithm being tested thoroughly. 
+** For reference, some details about yescrypt is here https://password-hashing.net/wiki/doku.php/yescrypt
+* MODERATE: About 49 blocks were mined before the official release time
+
+Notes:
+
+First pure PoW coin I've seen with synccheckpoints from peercoin
+
+Watermarks: 
