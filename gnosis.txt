@@ -1,0 +1,23 @@
+gnosis https://bitcointalk.org/index.php?topic=782154.0
+
+Heritage: 
+
+Problems:
+
+* MINOR: genesis seed is probably not a news event
+* MINOR: About 9 extra blocks were premined, resulting in an extra 950 coins or so
+
+Notes:
+
+24 character "narration" limit:
++    
++    if (sNarr.length() > 24)
++        throw runtime_error("Narration must be 24 characters or less.");
++    
+
+wtf..
+        const char* pszTimestamp = "September 03, 2014 - Repent, god hates sinners";
+
+Alert keys probably don't work cause there a compressed public key, same with the sync key
+
+Watermarks: uint64_t
