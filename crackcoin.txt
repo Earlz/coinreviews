@@ -1,0 +1,44 @@
+crackcoin https://bitcointalk.org/index.php?topic=776696.0 or https://bitcointalk.org/index.php?topic=768678.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: Premine is excessive. 10% is for airdrop, and 7% is for promotions/whatever. Initially, they said there would be only a 10% premine
+* MODERATE: ANN is incorrect. There is no max PoW block limit, and rewards continue to be 600 after 10,000 blocks. This also means there is no max PoW coins, it is infinite.
+* NOTE: With the incorrect ANN and unlimited PoW blocks, the excessive premine actually isn't so bad
+
+Notes:
+
+genesis seed is news event
+
+OfficialCrackCoin
+Newbie
+*
+
+
+Activity: 14
+
+For More Crack
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [PRE-ANN] CrackCoin | X11 | PoS + PoW | Launching Sept 8, 2014 8PM EST
+September 09, 2014, 12:15:03 AM
+ #33
+Quote from: yyweilai on September 09, 2014, 12:12:36 AM
+Launch failure!
+
+Github was being difficult, we're trying multiple ways to get this puppy live. We apologize for the delay.
+
+The source code is now live.
+Report to moderator  
+Official Development Team for CrackCoin.
+
+
+blocks up to 1690 premined with 600 coin reward, yielding about 17% premine. This also makes the premine difficult to track
+
+Watermarks: uint64_t
