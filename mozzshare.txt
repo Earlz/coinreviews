@@ -1,0 +1,34 @@
+mozzshare https://bitcointalk.org/index.php?topic=719767.0
+
+Heritage: bitcoin 0.8.5-ish (not 0.8.6 at least)
+
+NOTE: This coin includes radical changes. This is a best effort review and is by no means 100% accurate. This is basically what I could gather from going over the coin for an hour
+
+Problems:
+
+* MODERATE: A lot of advanced floating point operations are used in protocol critical code 
+* MAJOR: 9% premine for a pure PoW coin is extremely excessive
+** wtf, the genesis block has been made spendable!? and with multiple coinbases!? 
+* MODERATE: Looks like around 140 blocks may have premined. It's difficult to track down exact launch time, since they didn't actually announce it on bitcointalk
+
+
+Notes:
+
+blockchain appears sane, despite scary looking difficulty adjustment algorithm
+
+genesis seed is a news event
+
+Appears to be future plans for on-chain escrow somehow: (not implemented)
++    // escrow
++    OP_ESCROW1 = 0xc0,
++    OP_ESCROW2 = 0xc1,
++    OP_COMMIT = 0xc2,
++    OP_ABORT = 0xc3,
+
+this is a bit misleading heh
+                     else if (opcode == OP_SHA256)
+-                        SHA256(&vch[0], vch.size(), &vchHash[0]);
++                        HEFTY1(&vch[0], vch.size(), &vchHash[0]); 
+
+
+Watermarks: uint64 (pos)
