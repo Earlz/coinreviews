@@ -1,0 +1,17 @@
+volatilitycoin https://bitcointalk.org/index.php?topic=776463.0
+
+Heritage: DRM(dreamcoin), AGS
+
+Problems:
+
+* MINOR: floating point operations in protocol critical code
+* MODERATE: genesis seed is not a news event
+* MODERATE: premine is not checkpointed with a hard coded checkpoint
+* MINOR: no clear launch time. appears that mining began early, but because of the 200 zero value blocks it's not so bad judging by the difficulty ramp up
+
+
+Notes:
+
+get the fuck on github. I had to wait 10 minutes before I could download the source
+
+Watermarks: uint64_t
