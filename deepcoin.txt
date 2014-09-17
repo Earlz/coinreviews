@@ -1,0 +1,27 @@
+deepcoin https://bitcointalk.org/index.php?topic=667470.0
+
+Heritage: similar to LTCD, but not directly related at least. Some version of bitcoin in between 0.8.6 and 0.9. Not litecoin
+
+Problems:
+
+* MINOR: floating point operations in floating point code
+
+Notes:
+
+genesis seed is a news event
+
+blockchain looks good
+
+one of the rare PoW coins with sync checkpoints
+
+wtf loops do not belong in the reward code
++    while (nHeight > halvingInterval) {
++        nSubsidy /= 2;
++        halvingInterval += halvingGap;
++        halvingGap += 43200; // Next halving height gap is 43,200 blocks more than the last
++    }
+
+This could probably help to locate what this is forked from.. this is not referenced
+   72: static const int nSoftFork = 1408406400;
+
+Watermarks: uint64
