@@ -1,0 +1,17 @@
+x-children https://bitcointalk.org/index.php?topic=754195.0
+
+Heritage: vertcoin-ish
+
+Problems:
+
+* MODERATE: This is a short-term reward coin, but has no final halvening plan in place. 
+** Difficulty will probably be dangerously low after the 4 weeks of rewards
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+1 block mined early (with 0 reward). chain looks good
+
+vertcoin is something close to this weird litecoin, bitcoin master-0.9 rebasing  with reqWallet RPC calls that's been baffling me
+
+Watermarks: uint64, while(true)
