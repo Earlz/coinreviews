@@ -1,0 +1,28 @@
+midascoin (relaunch) https://github.com/MidasPaymentLTD/midascoin
+
+Heritage: LTC (confirmed by coin author)
+
+NOTE: This coin contains radical features. No review by me is guaranteed to be 100% accurate and catch all possible problems. 
+
+Problems:
+
+* MAJOR: This coin is centralized by design. This means, if you don't trust the coin authors, then you should not trust this coin at all. They have complete control over the blockchain. 
+** This is achieved by requiring an RSA signature on each block accepted into the network. 
+* MODERATE: Signatures sign an SHA1 hash of the block. SHA1 is not recommended for any cryptographic uses due to known theoretical weaknesses.
+** This probably couldn't be attacked even with known collisions because it relies on sha256 as well
+* MINOR: floating point operations used in protocol critical code
+
+Notes:
+
+Blockchain not analyzed. This is based on preliminary code. Commit hash f1a3d1f1e996ce9b4fc753bd814ec5b1ecd1474f
+
+This could've been kept random if script parsing (for the output address) would've been done.
+-                        // Insert change txn at random position:
+-                        vector<CTxOut>::iterator position = wtxNew.vout.begin()+GetRandInt(wtxNew.vout.size()+1);
+-                        wtxNew.vout.insert(position, newTxOut);
++                        // Note: This makes change obvious, which leads to loss of privacy.
++                        // However, it's necessary to make the distinction here, since not making it would mean the change would be taxed too.
++                        // Insert change txn at the end
++                        wtxNew.vout.push_back(newTxOut);
+
+Watermarks: uint64
