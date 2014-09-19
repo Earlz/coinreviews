@@ -1,0 +1,22 @@
+bitmark https://bitcointalk.org/index.php?topic=660544.0
+
+Heritage: somewhere around bitcoin 0.9.2
+
+Problems:
+
+* MODERATE: Is vulnerable to a potential mining-shutdown attack, and will break spectacularly if a hard fork is ever made
+** Fixed in upstream bitcoin: https://github.com/bitcoin/bitcoin/pull/4507
+** Fixed in Fractalcoin (ie, can be merged directly): https://github.com/fractalcoin/fractalcoin/commit/46b5357182618015785309a5c3b3be1219e90aa9
+** Also reported to dogecoin with confirmation https://github.com/dogecoin/dogecoin/issues/566
+
+
+Notes:
+
+genesis seed is a news event
+
+2011-2014 The Bitcoin _Core_ Developers
+
+This coin has awesome code quality, and is done really to the books, it's just that it so happens bitcoin 0.9.2.1 has a small attack vector which impacts altcoins much stronger than bitcoin itself.
+All BIPs are also enabled, which is nice.
+
+Watermarks: uint64_t
