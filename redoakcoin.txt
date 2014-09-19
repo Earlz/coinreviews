@@ -1,12 +1,13 @@
 redoakcoin https://bitcointalk.org/index.php?topic=781905.0
 
-Heritage: AUR(https://github.com/baldurodinsson/auroracoin-project), PRIME
+Heritage: AUR(https://github.com/baldurodinsson/auroracoin-project), PRIME, FTC, DCN
 
 Problems:
 
 * MINOR: Uses floating point operations in protocol critical code
 * MODERATE: I'm pretty sure the difficulty algorithm is broken, or at least doesn't work if the intention is to keep block times consistent
 * MINOR: 15 second blocks are mildly dangerous
+* MODERATE: ANN is wrong "max subsidy" (max amount of coins?) is not 72M, it's infinte
 
 the leveldb build script is hard coded to x86, causing problem scompiling on linux 64bit. 
 
