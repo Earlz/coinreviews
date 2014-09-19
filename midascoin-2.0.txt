@@ -6,13 +6,17 @@ NOTE: This coin contains radical features. No review by me is guaranteed to be 1
 
 Problems:
 
-* MAJOR: This coin is centralized by design. This means, if you don't trust the coin authors, then you should not trust this coin at all. They have complete control over the blockchain. 
+* MAJOR: This coin is centralized by design. This means, if you don't trust the coin authors, then you should not trust this coin. They have complete control over the blockchain, and can attack it at will if desired.
 ** This is achieved by requiring an RSA signature on each block accepted into the network. 
 * MODERATE: Signatures sign an SHA1 hash of the block. SHA1 is not recommended for any cryptographic uses due to known theoretical weaknesses.
 ** This probably couldn't be attacked even with known collisions because it relies on sha256 as well
 * MINOR: floating point operations used in protocol critical code
 
 Notes:
+
+Despite the complete control of the blockchain the founders have, this actually eliminates many common attacks, such as double spends and orphan blocks. 
+The coin authors can do all these attacks, but no one else can. 
+The other big concern is that if the key is ever leaked, a signficant amount of damage could be done and would require a retroactive hard fork to fix. Clients have basic fork detection, but nothing that prevents a huge fork take over.
 
 Blockchain not analyzed. This is based on preliminary code. Commit hash f1a3d1f1e996ce9b4fc753bd814ec5b1ecd1474f
 
