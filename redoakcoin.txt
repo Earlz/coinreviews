@@ -1,0 +1,41 @@
+redoakcoin https://bitcointalk.org/index.php?topic=781905.0
+
+Heritage: AUR(https://github.com/baldurodinsson/auroracoin-project), PRIME
+
+Problems:
+
+* MINOR: Uses floating point operations in protocol critical code
+* MODERATE: I'm pretty sure the difficulty algorithm is broken, or at least doesn't work if the intention is to keep block times consistent
+* MINOR: 15 second blocks are mildly dangerous
+
+the leveldb build script is hard coded to x86, causing problem scompiling on linux 64bit. 
+
+Notes:
+
+Blockchain looks good
+
+""July 3 Moon Fraction is 0.18804759381102 with a distance relative to Earth of 401283.55 km";" is this a news event?
+
+what in the fuck is this difficulty "algorithm"
+
+    // The next block
+    int nHeight = pindexLast->nHeight + 1;
+
+	if (nHeight >= nForkAlpha)
+		nTargetTimespan = (7 * 24 * 60 * 60) / 8; // 7/8 days
+
+    if (nHeight >= nForkBeta)
+		nTargetTimespan = (7 * 24 * 60 * 60) / 32; // 7/32 days
+
+	if (nHeight >= nForkTheta)
+        nTargetTimespan = (7 * 24 * 60 * 60) / 64; // 7/64 days
+
+    if (nHeight >= nForkDelta || fTestNet) {
+        //nTargetTimespan = 1.5 * 24 * 60 * 60; // 1.5 days
+        nTargetTimespan = 60; // 1.5 days
+        nTargetSpacing = 15; // 5 sec block: RollingRoc FloodGates
+	}
+
+
+
+Watermarks: uint64, sync
