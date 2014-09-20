@@ -1,0 +1,32 @@
+roscoin https://bitcointalk.org/index.php?topic=769857.0
+
+Heritage: DOGE(wtf?), ETHAN
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* NOTE: 78 blocks premined, but they are 0 reward
+
+btw, use ros.suprnova.cc as a node for syncing
+
+Notes:
+
+premine is checkpointed. looks good.
+
+const string strMessageMagic = "Roscoin very Signed Message:\n";
+
+accepts all non-standard transactions 
+-    // Rather not work on nonstandard transactions (unless -testnet)
++    /*// Rather not work on nonstandard transactions 
+ 	if (!fTestNet && !tx.IsStandard())
+ 		return error("CTxMemPool::accept() : nonstandard transaction type");
+-
++    } */
+
+
++    if (sNarr.length() > 24)
++        return _("Narration must be 24 characters or less.");
++    
+
+
+Watermarks: uint64_t
