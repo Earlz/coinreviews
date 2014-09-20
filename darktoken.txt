@@ -1,0 +1,19 @@
+darktoken https://bitcointalk.org/index.php?topic=785420.0
+
+Heritage: very similar to FIRE, DOGE(wtf?), icecube (?)
+
+Problems:
+
+* MODERATE: Unable to use sync checkpoints or alert keys, since they are identical to FIRE (unless this is a Carsen coin)
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+About 40 of the fair launch blocks were premined
+
+doge watermark:
++const string strMessageMagic = "darktoken very Signed Message:\n";
+
+same node IP as crackcoin
+
+Watermarks: uint64_t
