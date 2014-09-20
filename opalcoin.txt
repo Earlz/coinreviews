@@ -1,0 +1,14 @@
+opalcoin https://bitcointalk.org/index.php?topic=778720.0 (rebrand of onyx2.0 https://bitcointalk.org/index.php?topic=724186.0)
+
+Heritage: DRM, ISIS
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MINOR: First 43 blocks were premined, but they were fair launch blocks so it doesn't matter much
+* MINOR: Significant amount of blocks, but still no checkpoints in the source code
+
+Notes:
+
+
+Watermarks: uint64_t
