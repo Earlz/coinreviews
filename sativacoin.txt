@@ -1,0 +1,16 @@
+sativacoin https://bitcointalk.org/index.php?topic=791266.0
+
+Heritage: ISIS, DRM
+
+Problems:
+
+* MODERATE: All checkpoints are completely disabled
+* MODERATE: Genesis seed is not a news event
+* MODERATE: Incapable of sending alerts or sync checkpoints, since the keys have not been changed
+* MINOR: first 9 blocks were premined, yielding a 0.125% premine of PoW coins
+
+Notes:
+
+"//120 blocks for coins to mature gnome sayan" I've seen this somewhere... 
+
+Watermarks:uitn64_t
