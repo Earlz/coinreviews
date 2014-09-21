@@ -1,0 +1,23 @@
+hardforkcoin https://bitcointalk.org/index.php?topic=788794.0
+
+Heritage: bitcoin 0.8.6, blakecoin
+
+Problems:
+
+* MINOR: floating point operations in protocol critical code
+* MODERATE: genesis seed is not a news event
+
+stopped reviewing when I noticed that this wasn't actually a new coin. They put a link to the original announcement on the thread in liek 6pt font so no one would notice.. and they've never figured out github apparently so fuck it
+
+Notes:
+
+checkpoint in the far future? 	( 116419, uint256("0x000000006e3c1c93458ae8aa27c59e79391520be690e562836210a6e287989c1"))
+
+wtf is this
++        if (nBestHeight >= EXPHEIGHT) {
++		std::cout << "Wallet has expired. Please update wallet";
++		StartShutdown ();
++		while ( 'm' != 'n' )
++			MilliSleep(99999);
+
+Watermarks: 
