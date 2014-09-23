@@ -1,0 +1,15 @@
+cummingtonight https://bitcointalk.org/index.php?topic=792203.0
+
+Heritage: RDD reddcoin
+As an aside, apparently RDD is the only coin I've seen that is based on litecoin and is PoS
+
+Problems:
+
+* MODERATE: genesis seed is not a news event.
+* MINOR: Premine is slightly wrong. Actual premine is 1.01%, not 1%. Max amount of coins is also wrong. It is 690,000
+* MINOR: First 9 blocks were premined and undisclosed(other than the premine block), yielding 552 extra premine coins, bringing total premine to  1.09%
+
+Notes:
+premine is checkpointed.
+
+Watermarks: uint64 with PoS, reqwallet rpc
