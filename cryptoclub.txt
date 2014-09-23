@@ -5,6 +5,7 @@ Heritage: similar to DRM/FIRE
 Problems:
 
 * MODERATE: genesis seed is not a news event
+* MAJOR: Premine, though disclosed, is very excessive. Although, they do appear to have been keeping to their word for coin swaps and bounties and such
 
 Blockchain not analyzed due to age of coin
 
