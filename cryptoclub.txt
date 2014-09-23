@@ -1,0 +1,13 @@
+cryptoclub https://bitcointalk.org/index.php?topic=667866.0
+
+Heritage: similar to DRM/FIRE
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+
+Blockchain not analyzed due to age of coin
+
+Notes:
+
+Watermarks: uint64_t
