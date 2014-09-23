@@ -1,0 +1,12 @@
+sterlingcoin https://bitcointalk.org/index.php?topic=721936.0
+
+Heritage: similar to typical DRM/FIRE
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MINOR: 1 extra block was premined, yielding 50 extra coins
+
+Notes:
+
+Watermarks: uint64_t
