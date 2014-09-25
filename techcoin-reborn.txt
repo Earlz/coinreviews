@@ -9,8 +9,9 @@ Problems:
 * NOTE: genesis seed is not a news event (because the coin is so old, this doesn't really matter anymore) 
 * EXTREME: The new forked code is not actually protocol compatible with the old network. It was broken at v1.0.2.0 
 ** This could be exploited so that the old network is forked and take over syncs of the new wallet
+** Along with this, if you ever do a full rescan of the blockchain, it will become invalid, leading to no effective way of validating the local blockchain
 
-
+blockchain not analyzed due to the age of the coin
 
 Notes:
 
