@@ -1,0 +1,16 @@
+microcoin 2.0 https://bitcointalk.org/index.php?topic=793538.0
+
+Heritage: BITR, SUMC, OPC
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: time drift is allowed of up to 1 day. This could allow for some timestamp and difficulty manipulation attacks. 
+** For reference, bitcoin only allows 4 hours. 
+* MAJOR: launch was obscured. It wasn't announced as a new coin until half of the PoW blocks had been mined.
+** Because of this, difficulty didn't pickup until block 2715
+* MINOR: ANN spec for PoW coin supply is misleading. "5000 blocks with 1000MRC reward." actually, it's 4900 blocks with 1000 MRC with PoS blocks interspersed
+
+Notes:
+
+Watermarks: uint64_t
