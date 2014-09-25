@@ -1,0 +1,33 @@
+techcoin (reborn) https://bitcointalk.org/index.php?topic=794069.0
+
+Heritage: DRM
+
+Problems:
+
+* MODERATE: very small block mining maturity (5 confirmations needed before a block's mined funds are spendable) 
+** This can possibly make attacks somewhat easier and require never actually owning any coins
+* NOTE: genesis seed is not a news event (because the coin is so old, this doesn't really matter anymore) 
+* EXTREME: The new forked code is not actually protocol compatible with the old network. It was broken at v1.0.2.0 
+** This could be exploited so that the old network is forked and take over syncs of the new wallet
+
+
+
+Notes:
+
+this is bullshit and indicates that the forked wallet is not completely compatible with the old network.
+Gets stuck at block 18
+received block 000004e2fd6e13eec6d7
+ERROR: AcceptBlock() : incorrect proof-of-work
+ERROR: ProcessBlock() : AcceptBlock FAILED
+"Quote from: REubensumo on September 24, 2014, 08:25:02 AM
+My wallet not syncing Please anyone give me Addnodes or Config file.  
+
+
+Using V 1.1.0.0
+
+There is currently an issue syncing from scratch that requires manually downloading and applying the blockchain.  If you are using Windows, the easiest way to do this is to download and run the Easy Instal .msi file.  It will automatically copy the blockchain to the correct location and place the Qt exe on your desktop.
+
+If you are continuing to have problems, please post what OS you are running and the version and I will try to walk you through the procedure."
+
+
+Watermarks: uint64_t
