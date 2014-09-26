@@ -1,0 +1,15 @@
+pyramidcoin takeover https://bitcointalk.org/index.php?topic=795047.0
+
+See the original pyramidcoin review
+
+Heritage: 
+
+Problems:
+
+* MAJOR: ANN details are wrong "Full PoS from block 420000 (interest rate of 7% per annum)". There is no PoS implementaiton
+
+Notes:
+
+Very trivial code changes made otherwise
+
+Watermarks: uint64
