@@ -1,0 +1,18 @@
+ethercoin https://bitcointalk.org/index.php?topic=798031.0
+
+Heritage: blackcoin v1.1.1ish... lots of commits rebased in and jumbled up
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MAJOR: Founders own almost all coins. Because of PoS, they basically have full control of the blockchain. 
+** They could do a double spend or any other 51% attack easily. If you don't trust the founders, then this coin should not be trusted
+
+Used explorer.ethercoin.cc as a seed node. Because no nodes provided in the ANN, no DNS seeds, and IRC seeding doesn't work
+Could not get PoS blocks to sync. It's basically 100% premined by design though
+
+Notes:
+
+IRC seeds was added back in, despite being mostly useless and unreliable
+
+Watermarks: uint64_t
