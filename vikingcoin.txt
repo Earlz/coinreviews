@@ -1,0 +1,28 @@
+vikingcoin https://bitcointalk.org/index.php?topic=649169.0 (https://cryptocointalk.com/topic/11569-vikingcoin-vik-information/?hl=viking)
+
+Heritage: somehwere inbetween bitcoin 0.8.6 and 0.9, Devcoin
+
+Problems:
+
+* MODERATE: Forked from bitcoin master, rather than a stable release
+* MODERATE: Genesis seed is not a news event
+* MAJOR: Is subject to DDoS attacks due to the minimum tx fee being 0 effectively
+* MINOR: uses floating point operations in protocol critical code
+* MODERATE: Was not also announced at bitcointalk, making the release obscured
+
+Looks like 1 block was premined.. Difficult to confirm that though. Due to fair launch blocks, is irrelevant though
+
+Notes:
+
+lawl
++	{ "getlumberjacks",         &getnetworkhashps,       true,      false },
+
+how does this even compile. 
+ /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
+-int64 CTransaction::nMinTxFee = 10000;  // Override with -mintxfee
++int64 CTransaction::nMinTxFee = .000001;  // Override with -mintxfee
+ /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
+-int64 CTransaction::nMinRelayTxFee = 10000;
++int64 CTransaction::nMinRelayTxFee = .000001;
+
+Watermarks: uint64
