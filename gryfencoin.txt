@@ -1,0 +1,18 @@
+gryfencoin https://bitcointalk.org/index.php?topic=699388
+
+Heritage: 
+
+Problems:
+
+* MINOR: floating point operations in protocol critical code
+* MODERATE: time drift allowances are excessive at 1 day (bitcoin is 4 hours, most coins are 15 minutes)
+* MODERATE: genesis seed is not a news event
+* MODERATE: No clear announcement of the wallet was actually made when it became available. You can see even into 24 hours after lauch people asking where the wallet is, because they didn't announce it anywhere but on their website
+** Because of this, impossible to determine what is considered "premined". At least the first 2000 blocks have low difficulty however
+* MODERATE: difficulty adjustment appears broken, constantly adjusting by an order of 100x adjustments
+
+Used goldmin.es as a seed node
+
+Notes:
+
+Watermarks: uint64_t
