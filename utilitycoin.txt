@@ -1,0 +1,14 @@
+utilitycoin https://bitcointalk.org/index.php?topic=797900.0
+
+Heritage: SUMC, OPC, KEY
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: time drift allowances are excessive at 1 day (bitcoin is 4 hours, most coins are 15 minutes)
+
+No premine, blockchain looks good
+
+Notes:
+
+Watermarks: uitn64_t
