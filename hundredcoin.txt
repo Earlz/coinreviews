@@ -8,6 +8,8 @@ Problems:
 * MODERATE: Alert keys are purposefully invalid, network alerts can not be sent
 * MODERATE: genesis seed is not a news event
 * MINOR: magic message string is set to the same as litecoin, possibly causing network traffic that is unwanted and useless
+* MODERATE: First 52 blocks were premined and undisclosed
+* MODERATE: Disclosed Premine is excessive and is qual to around 10 days of the network mining
 
 Notes:
 
