@@ -1,0 +1,17 @@
+hundredcoin https://bitcointalk.org/index.php?topic=802204.0
+
+Heritage: litecoin v0.8.5.1 (possibly a coin generator)
+
+Problems:
+
+* MODERATE: Checkpoints are completely disabled
+* MODERATE: Alert keys are purposefully invalid, network alerts can not be sent
+* MODERATE: genesis seed is not a news event
+* MINOR: magic message string is set to the same as litecoin, possibly causing network traffic that is unwanted and useless
+
+Notes:
+
+Apparently where numbers are needed, random bashing on the keyboard was done
++static const int64 MAX_MONEY = 1553255906290448384;
+
+Watermarks: uint64
