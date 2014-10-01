@@ -1,0 +1,12 @@
+ruble https://bitcointalk.org/index.php?topic=765513.0
+
+Heritage: DRM, AGS
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: First 30 blocks were premined and undisclosed
+
+Notes:
+
+Watermarks: uint64_t
