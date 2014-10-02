@@ -1,0 +1,39 @@
+lemurcoin https://bitcointalk.org/index.php?topic=739681.0
+
+Heritage: darkcoin somewhere around v0.9
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: Launch was somewhat unfair, with Windows wallet released before source code
+* MODERATE: About 150 blocks were premined, yielding a 150 coin undisclosed premined. 
+** Possibly less. Some forum postings appear to indicate wallet was released earlier than announced, and about 50 blocks were mined in the 1st minute after launch
+* MODERATE: "Total coins", and thus premine percentage is misleading. 
+** About 576 coins are mined per day. This means their 1,200+120 coin premine is equivalent to about 2.5 days of the network mining, which is not terrible as far as long term PoW coins go
+
+Notes:
+
+weird... 
+// Copyright (c) 2009-2Copyright012 The Bitcoin developers
+
+
+King Coolian
+Member
+**
+
+
+Activity: 84
+
+
+View Profile  WWW  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: ♔♕♔ [ANN][LMR] LemurCoin ♔♕♔ | Rare & Unique Lemurized Coin | X11 POW|Just 100K
+August 17, 2014, 03:50:52 PM
+Reply with quote  #72
+Windows Wallet is ready for download in OP, as well as lemurcoin.conf file
+
+There is a little delay with github sources, please stay tuned, Mr. Hash is working on it
+
+Watermarks: uint64, pow
