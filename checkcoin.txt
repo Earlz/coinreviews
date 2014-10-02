@@ -1,0 +1,39 @@
+checkcoin https://bitcointalk.org/index.php?topic=715563.0
+
+Heritage: darkcoin commit 8a4a50ca590feac9ca8bdaa65c227614ea542c8f
+
+Problems:
+
+* MINOR: magic message start value was not changed from DRK. This may lead to unwanted network traffic
+
+Notes:
+
+genesis seed is probably a news event (in another language?)
+
+Apparently this block breaks my block explorer ugh (says negative fees, but manual confirmation reveals this to not be true)
+
+[earlz@li67-111 src]$ ./checkcoind getblock 000000000a8baffe44ce720af1941b45812dea30caccee5668126f45872873f5 true
+{
+    "hash" : "000000000a8baffe44ce720af1941b45812dea30caccee5668126f45872873f5",
+    "confirmations" : 16472,
+    "size" : 881,
+    "height" : 2739,
+    "version" : 2,
+    "merkleroot" : "a68f60f247b00dd15543a13114a6a57408f3d5b21e0e7000bced0f69d402fd1c",
+    "tx" : [
+        "afacb4931426fa6bf3365d2a47af3b1ca51d018d6d775eed45494508e50e6ced",
+        "c225cf6a4d526c8787c922a653e9864021a4e81526fcd9b2faa95a20d91558d8",
+        "96a0c4d4787880d8664a2d9be8ac51ed7dc4f7d4e44f67c82009f06680762394",
+        "d266a51ad79be3f541f6b1fa149b10f775fa22109ea493c7709cfa95ea11732c"
+    ],
+    "time" : 1411224450,
+    "nonce" : 338938,
+    "bits" : "1c3d4761",
+    "difficulty" : 4.17756213,
+    "previousblockhash" : "000000002190a3acf28762af02bdc2f9806aae828dfe1e0c75dba89e319e6079",
+    "nextblockhash" : "000000000ca84406737f4fa6d090e4f8b19c9ea1c21604b5128b8f1fd7348dc8"
+}
+
+
+
+Watermarks: uint64, pow
