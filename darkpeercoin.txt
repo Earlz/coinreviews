@@ -1,0 +1,36 @@
+darkpeercoin https://bitcointalk.org/index.php?topic=795749.0
+
+Heritage: SD
+
+Problems:
+
+* MINOR: ANN is slightly wrong. block maturity is 40 blocks, not 50
+* MODERATE: genesis seed is not a news event
+* NOTE: about 50 blocks premined, but they were 0 value to move ICO funds around. Public mining began at block 51
+
+Notes:
+
+Darkpeer
+Newbie
+*
+
+
+Activity: 28
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [PRE ANN] DARKPEER | Discover True Financial Freedom | Mining in 30mins
+October 03, 2014, 02:33:27 AM
+Reply with quote  #314
+source
+
+https://github.com/darkpeer/darkpeercoin
+
+wallet 
+
+https://mega.co.nz/#!2UETgDIS
+
+Watermarks: uint64_t
