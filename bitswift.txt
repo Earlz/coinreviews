@@ -1,0 +1,15 @@
+bitswift https://bitcointalk.org/index.php?topic=807557.0
+
+Heritage: DRM, AGS
+
+Problems:
+
+* MODERATE: Min transaction fee is 0. This could allow for DDoS attacks on the network by flooding it with dust transactions
+
+Pure PoS coin, so blockchain analysis wouldn't reveal anything really
+
+Notes:
+
+genesis seed is probably a news event
+
+Watermarks: uint64_t, pos
