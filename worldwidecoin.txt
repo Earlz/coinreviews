@@ -1,0 +1,33 @@
+worldwidecoin https://bitcointalk.org/index.php?topic=612306.msg6773761#msg6773761
+
+Heritage: FFC v0.9.1 (declared by dev and verified to match), Something a little newer than bitcoin af079f0b21080cb088044ed40d2974120b9f11a9, but definitely after 0.8.6
+
+Problems:
+
+* MODERATE: Forked from a non-release version of Bitcoin. 
+** This means there is no sane and known-stable wallet to compare it to. While bitcoin developers try to keep -master somewhat working, it is of course not QA'd very strongly as a whole
+* MAJOR: Premine is extremely excessive and will be more coins than the network mints by traditional mining for months if not years
+* MINOR: coinbase maturity is somewhat low. This may make 51% exploits slightly easier to pull off by being able to use newly minted coins from mining
+* MODERATE: Launch was not announced on bitcointalk clearly, possibly obscuring it
+* MODERATE: Around 990 blocks were premined and undisclosed. This isn't so bad really though, compared to the huge premine, also the curved ramp-up for rewards makes this not a huge amount
+
+* MODERATE(not security related): COIN macro is not defined as the standard value.This might cause significant infrastructure problems.
+
+Something is wrong with leveldb. I had to copy leveldb from another bitcoin 0.8 based coin to get this to compile.
+
+Notes:
+
+genesis seed is a news event
+
+For the configuration file, this is not correct.
+
+    server=1     <--- if your computer is ON 24/7, this makes you a node on the network
+    gen=1        <--- allows you to mine and receive block rewards
+
+server=1 is only for RPC access. you should not use this unless you are solomining, or require using the API for some other reason(ie, rarely)
+gen=1 should not be used. You should use a dedicated miner for sha256, or at least a GPU.
+
+
+launch announcement was sometime around Sunday, August 31, 2014 at 11:51:00 PM UTC
+
+Watermarks: uint64, pow, chainparams
