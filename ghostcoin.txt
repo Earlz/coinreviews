@@ -1,0 +1,40 @@
+ghostcoin https://bitcointalk.org/index.php?topic=803667.0
+
+Heritage: some bits of nova... but not nova
+
+Problems:
+
+* MODERATE: Future time drift checking is disabled. This could be used by a 51% attack to mint blocks of very low difficulty far into the future. 
+
+Notes:
+
+Mining began right on time and blockchain and difficulty curve looks good.
+
+genesis seed is a news evetn
+
+What is this?
+@@ -1564,6 +1684,13 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
+ 
+             int64_t nTxValueIn = tx.GetValueIn(mapInputs);
+             int64_t nTxValueOut = tx.GetValueOut();
++
++            if (tx.IsCoinStake())
++            {
++                double nNetworkDriftBuffer = nTxValueOut*.02;
++                nTxValueOut = nTxValueOut - nNetworkDriftBuffer;
++                nStakeReward = nTxValueOut - nTxValueIn;
++            }
+
+Some early miner appears to have their clock set about 4 minutes fast
+
+30         10/04/2014 17:05:37  0.001729        1          0                    4000                 4000                 0                    6          PoW
+29         10/04/2014 17:05:36  0.00229855      1          0                    4000                 4000                 0                    6          PoW
+28         10/04/2014 17:01:48  0.00229855      1          0                    4000                 4000                 0                    6          PoW
+27         10/04/2014 17:05:32  0.00203263      1          0                    4000                 4000                 0                    6          PoW
+26         10/04/2014 17:05:31  0.00270221      1          0                    4000                 4000                 0                    6          PoW
+25         10/04/2014 17:01:43  0.00270221      1          0                    4000                 4000                 0                    6          PoW
+24         10/04/2014 17:05:27  0.00361883      1          0                    4000                 4000                 0                    6          PoW
+23         10/04/2014 17:01:34  0.00319305      1          0                    4000                 4000                 0                    6          PoW
+
+
+Watermarks: uint64_t, pos v2, no bloom
