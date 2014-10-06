@@ -1,0 +1,22 @@
+gamerholiccoin https://bitcointalk.org/index.php?topic=796370.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: no clear launch time announcement.. Mining began 20 minutes after the OP on bitcointalk. 
+** If anything, about 60 blocks might have been premined, but it's impossible to actually confirm this
+
+Notes:
+
+Genesis seed is a news event
+
+First 2 blocks mined are minimum difficulty
++    const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
++    if (pindexPrev->pprev == NULL)
++        return bnTargetLimit.GetCompact(); // first block
++    const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
++    if (pindexPrevPrev->pprev == NULL)
++        return bnTargetLimit.GetCompact(); // second block
+
+Watermarks: uint64_t, pos
