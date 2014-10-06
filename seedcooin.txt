@@ -1,0 +1,46 @@
+seedcoin https://bitcointalk.org/index.php?topic=795954.0
+
+Heritage: shadowcoin (declared from github and verified)
+
+Problems:
+
+* MODERATE: checkpoints are disabled
+* MINOR: uses floating point operations in protocol critical code
+
+
+Notes:
+
+Perfect launch, first block appears 4 seconds after wallets posted. Nice difficulty curve as well
+
+genesis seed is a news event
+
+ironically, seedcoin does not have any seed nodes hard coded, despit ehis own words heh
+cryptzo
+Member
+**
+Online Online
+
+Activity: 84
+
+
+View Profile  WWW  Personal Message (Online)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [ANN][SEED] SeedCoin | Buy/Mine SEED & Grow Coinbase | 1000x Growth Period
+October 04, 2014, 08:38:46 PM
+Reply with quote  #206
+Quote from: sumgye on October 04, 2014, 08:33:38 PM
+Ok, windows users: here's the password protected wallet:
+
+https://www.dropbox.com/s/21yccfxu0njdxid/seedcoin-qt.zip?dl=0
+
+Password will be posted at the very top of the OP at launch. 
+
+If you downloaded the address wallet to participate in the ico, be sure to delete everything in %appdata%/seedcoin except for your wallet.dat. DO NOT DELETE wallet.dat. Back it up as well, just for good practice.
+
+Nodes are hardcoded in the wallets so you wont need to add them to seedcoin.conf
+
+I don't have the nodes on the repo though, so I will post them with the wallet password at launch for pool ops.
+
+Watermarks: uint64_t, pos, sdc
