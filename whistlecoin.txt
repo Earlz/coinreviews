@@ -1,0 +1,12 @@
+whistlecoin https://bitcointalk.org/index.php?topic=813878.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: 30 extra blocks were premined and undisclosed
+
+Notes:
+
+Watermarks: uint64_t, pos, drm-similar
