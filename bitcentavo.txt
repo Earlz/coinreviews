@@ -1,0 +1,16 @@
+bitcentavo https://bitcointalk.org/index.php?topic=636934.0
+
+Heritage: bitcoin 0.8.6 
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: Mined blocks mature after only 5 confirmations. This is extremely short and could make some 51% attack scenarios easier and cheaper to execute
+* MINOR: RPC port and P2P port are not changed in the code from bitcoin, causing significant pain in getting the thing to sync, as well as potentially unwanted network traffic
+* MODERATE: launch was obscure and not announced on bitcointalk at the time of launch
+* MODERATE: 28 blocks were premined and undisclosed
+
+Notes:
+uses "mtgox is down" as seed. I'm pretty sure this is a coin generator
+
+Watermarks: uint64, pow
