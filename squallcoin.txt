@@ -1,0 +1,16 @@
+squallcoin https://bitcointalk.org/index.php?topic=763406.0
+
+Heritage: DRM
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+
+use sq.suprnova.cc as a node
+
+Notes:
+
+First block appeared about 1 minute after wallet released. no premine
+good difficulty curve and times
+
+Watermarks: uint64_t, pos, drm
