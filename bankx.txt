@@ -1,0 +1,61 @@
+bankx https://bitcointalk.org/index.php?topic=813191.0
+
+Heritage: bitcoin 0.8.6, ISO(?)
+
+Problems:
+
+* NOTE: I don't have time to sift through hours of video, nor a 50 page business plan, so all spec analysis is off
+* MODERATE: checkpoints are disabled, despite them assuming that they actually work
+* EXTREME: difficulty is dangerously low. A double spend would be trivial
+* EXTREME: difficulty adjustment is different depending on if your coin is compiled for window or not
+* MODERATE: genesis seed is not a news event
+* MAJOR: huge premine... Unknown if this is disclosed because the specs are obscured in some 50 page business plan
+* EXTREME: mining has been "stopped".. This opens it up to the same class of attacks that Midascoin v1.0 endured
+** Solo miners can still mine blocks and could do double spends or attacks on the chain like refuse to allow any transactions to take place
+
+Notes:
+
+
+what the fuck...
+
+@@ -2168,8 +2286,40 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
+         nHeight = pindexPrev->nHeight+1;
+ 
+         // Check proof of work
++       // if (nBits != GetNextWorkRequired(pindexPrev, this))
++       //     return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
++       
++        #ifdef _WIN32
++            // Check proof of work       
++            if(nHeight >= 8850){
++                unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
++                double n1 = ConvertBitsToDouble(nBits);
++                double n2 = ConvertBitsToDouble(nBitsNext);
++
++                if (nHeight <= 45000) {
++                    if (abs(n1-n2) > n1*0.2) 
++                        return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
++                } else {
++                    if (abs(n1-n2) > n1*0.005) 
++                        return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW2)"));
++                }
++            } else {
++                if (nBits != GetNextWorkRequired(pindexPrev, this))
++                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
++            }
++        #else
++            // Check proof of work
++            if(nHeight >= 34140 && nHeight <= 45000){
++                unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
++                double n1 = ConvertBitsToDouble(nBits);
++                double n2 = ConvertBitsToDouble(nBitsNext);
++                if (abs(n1-n2) > n1*0.2)
++                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
++            } else {
+                 if (nBits != GetNextWorkRequired(pindexPrev, this))
+                     return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
++            }
++        #endif
+
+
+Watermarks: uint64, pow, bitcoin
