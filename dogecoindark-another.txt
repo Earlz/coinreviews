@@ -1,0 +1,27 @@
+dogecoindark https://bitcointalk.org/index.php?topic=817937.0
+
+Heritage: AXIS, RC and thus Shibecoin, Not in anyway related to the other dogecoindark(https://bitcointalk.org/index.php?topic=770742.0)
+
+Problems:
+
+* MAJOR: First 450 blocks are purposefully with minimum difficulty, allowing instamining(see also same problem in rootcoin)
+** The first 300 blocks (excluding premine) was mined within 3 minutes from launch
+* MODERATE: Genesis seed is not a news event
+
+
+
+Notes:
+
+what the hell. This is a PoS coin with the PoS bits disabled.. why not just fork from a PoW coin!?
+
+@@ -1032,6 +1065,8 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
+     const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
+     if (pindexPrevPrev->pprev == NULL)
+         return bnTargetLimit.GetCompact(); // second block
++    if (pindexLast->nHeight < 450)
++        return bnTargetLimit.GetCompact();
+
+
+The premine is quite anomolous. They claim to mine up to block 150. They actually premined up to block 163 though. However, first miners report that only 111 blocks were premined. The timestamps of the first 450 blocks are weird too, but this is probably just from the first 450 blocks being minimum difficulty. After block 163, mining started 2 minutes after ANN
+
+Watermarks: uint64, pos
