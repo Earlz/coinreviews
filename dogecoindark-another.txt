@@ -6,6 +6,7 @@ Problems:
 
 * MAJOR: First 450 blocks are purposefully with minimum difficulty, allowing instamining(see also same problem in rootcoin)
 ** The first 300 blocks (excluding premine) was mined within 3 minutes from launch
+** It looks like early (not founders) miners took advantage of this of course.. All blocks after 163 payout to different addresses than the premine ones
 * MODERATE: Genesis seed is not a news event
 
 
@@ -22,6 +23,7 @@ what the hell. This is a PoS coin with the PoS bits disabled.. why not just fork
 +        return bnTargetLimit.GetCompact();
 
 
-The premine is quite anomolous. They claim to mine up to block 150. They actually premined up to block 163 though. However, first miners report that only 111 blocks were premined. The timestamps of the first 450 blocks are weird too, but this is probably just from the first 450 blocks being minimum difficulty. After block 163, mining started 2 minutes after ANN
+The premine is quite anomolous. They claim to mine up to block 150. They actually premined up to block 163 though. However, a first miner reports that only 111 blocks were premined. The timestamps of the first 450 blocks are weird too, but this is probably just from the first 450 blocks being minimum difficulty. After block 163, mining started 2 minutes after ANN
+With deep analysis, it looks unlikely that this is a hidden premine or any malicious play by the developers
 
 Watermarks: uint64, pos
