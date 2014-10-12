@@ -48,3 +48,15 @@ This coin contains a live exploit. This is similar to mysterycoin
 Basically, the network protocol check that ensured the proper amount of coins were mined by each block was removed. This allowed a malicious miner to change the amount of coins mined and freely mint however many coins they wish. 
 
 There is no real reason why I missed this. The diff for this coin had more noise than usual due to difficulty in finding the exact code it forked from. But looking at my logs of what I compared it against and such, the exploit was obviously there. I shouldn't have missed it, but I did. I guess it was just a bad time when I was reviewing it and skimmed over it. I will ensure that I remain vigilent in the future and to give each coin review the proper amount of time and attention to ensure this doesn't happen again. 
+
+FIXED CODE REVIEW
+
+ghostcoin-fixed  https://github.com/GhostCoinOfficial/ghostcoin https://bitcointalk.org/index.php?topic=803667.0
+
+Change summary:
+
+* alert and sync keys changed away from malicious dev
+* Checkpoint added
+* P2P port number changed
+* Stake modifier checkpoint changed (it was probably wrong beforehand)
+* LAST_POW_BLOCK changed so that they do a retroactive fork to PoS
