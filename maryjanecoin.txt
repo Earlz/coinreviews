@@ -1,0 +1,29 @@
+maryjanecoin https://bitcointalk.org/index.php?topic=793704.0
+
+Heritage: RAW(https://bitcointalk.org/index.php?topic=708461.0)
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: Allowed time drift is excessive at 1 day for past or future drift. For reference, bitcoin is 2 hours, and most coins are 15 minutes
+
+PLACEHOLDER: Due to no nodes available, I can not review the blockchain in any way
+
+Notes:
+
+no nodes to be seen ANYWHERE. wtf. Checked in the windows compiled archive, and witnessed the worst windows compile I've yet to witness. Dlls EVERYWHERE.. guess it doesn't matter if it works though
+
+I get errors compiling leveldb because of this erroneous renaming
+index 178a893..ed86f03 100644
+--- a/src/leveldb/doc/bench/db_bench_tree_db.cc
++++ b/src/leveldb/doc/bench/db_bench_tree_db.cc
+@@ -142,7 +142,7 @@ class Benchmark {
+   Histogram hist_;
+   RandomGenerator gen_;
+   Random rand_;
+-  kyotocabinet::LZOCompressor<kyotocabinet::LZO::MARYJ> comp_;
++  kyotocabinet::LZOCompressor<kyotocabinet::LZO::RAW> comp_;
+
+
+
+Watermarks: uint64_t, pos, drm-like, ppcoin renamed, "devcoin"
