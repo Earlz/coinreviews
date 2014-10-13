@@ -6,8 +6,9 @@ Problems:
 
 * MODERATE: genesis seed is not a news event
 * MODERATE: Allowed time drift is excessive at 1 day for past or future drift. For reference, bitcoin is 2 hours, and most coins are 15 minutes
+* MAJOR: 74 blocks were premined and undisclosed. These blocks had full rewards. This equates to a premine of around 1.7% of PoW coins
+* NOTE: PoW coin supply is somewhat wrong. It is actually somewhere around 3 million.. but with the mixin of PoS blocks it's probably around 2.5 million 
 
-PLACEHOLDER: Due to no nodes available, I can not review the blockchain in any way
 
 Notes:
 
@@ -23,6 +24,43 @@ index 178a893..ed86f03 100644
    Random rand_;
 -  kyotocabinet::LZOCompressor<kyotocabinet::LZO::MARYJ> comp_;
 +  kyotocabinet::LZOCompressor<kyotocabinet::LZO::RAW> comp_;
+
+
+MaryJanee
+Newbie
+*
+
+
+Activity: 28
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [ANN] [MARYJ] MaryJane the Chill, Friendly & Secure Coin
+September 28, 2014, 06:04:49 PM
+Reply with quote  #60
+Wallet: http://www.mediafire.com/download/wimlpwtyg0b72b8/maryjanecoin-qt.zip
+Source: https://github.com/MaryJaneCoin/maryjane.git
+
+
+
+addnode=178.33.126.221:19559
+addnode=213.107.69.133:19559
+addnode=72.10.216.54:19559
+addnode=37.59.103.62:19559
+addnode=67.8.159.235:19559
+addnode=65.130.220.216:19559
+addnode=46.165.208.140:19559
+addnode=91.84.79.90:19559
+addnode=206.116.116.186:19559
+addnode=81.97.170.218:19559
+addnode=173.31.55.8:19559
+addnode=174.118.28.29:19559
+addnode=86.181.228.239:19559
+addnode=81.17.27.194:19559
+addnode=75.83.196.109:19559
 
 
 
