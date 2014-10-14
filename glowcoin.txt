@@ -6,11 +6,16 @@ Problems:
 
 * MODERATE: Time drift allowance is excessive at 1 day. For bitcoin it is 2 hours, for most PoS coins it's 15 minutes
 * MINOR: 45 blocks were premined and undisclosed, but this is minor since the rewards were reduced
+* MODERATE: Premine is slightly excessive at 5.4% of the total PoW coin supply 
+
 
 Notes:
 
 genesis seed is news event
 
-premine of 172000
+premine of 172,000
+maximum pow supply: 3,174,450 (possibly 10% less or so with PoS mixin) (simulated)
+premine percent of 5.4% (possibly more with PoS mixin)
+
 
 Watermarks: uint64_t, pos, drm-like, devcoin
