@@ -1,0 +1,16 @@
+glowcoin https://bitcointalk.org/index.php?topic=816294.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: Time drift allowance is excessive at 1 day. For bitcoin it is 2 hours, for most PoS coins it's 15 minutes
+* MINOR: 45 blocks were premined and undisclosed, but this is minor since the rewards were reduced
+
+Notes:
+
+genesis seed is news event
+
+premine of 172000
+
+Watermarks: uint64_t, pos, drm-like, devcoin
