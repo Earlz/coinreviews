@@ -1,0 +1,14 @@
+dopecoin https://bitcointalk.org/index.php?topic=467641.0 https://github.com/dopecoin-dev/DopeCoin
+
+Heritage: lucky, alpha, ltc v0.8.6.2, leaf
+
+Problems:
+
+* MINOR: No recent checkpoints
+* NOTE: genesis seed is not a news event, but due to age and checkpoints, it's not really an issue now
+
+Notes:
+
+blockchain not analyzed due to age of coin (probably rules out a hidden premine and all)
+
+Watermarks: uint64, pow, litecoin
