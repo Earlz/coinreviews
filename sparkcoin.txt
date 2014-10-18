@@ -1,0 +1,46 @@
+sparkcoin https://bitcointalk.org/index.php?topic=826767.0
+
+Heritage: (silk reference, but not related to silkcoin), perfect from shade
+
+Problems:
+
+* MINOR: Stake modifier checkpoints appear to wrongly be using a 64bit number, not a 32 bit number... might lead to a stuck PoS chain
+* MODERATE: Somewhat unfair launch. Reports of source being released after binaries, and the official pool before source was released
+* MINOR: 2 blocks were premined and undisclosed
+
+
+Notes:
+
+For some reason, checkpoints.cpp has a ton of weird reformatting
+
+Unknown why this is like this.. seems like it'll probbaly cause random problems
+
+unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
+{
+    return GetNextTargetRequired_(pindexLast, fProofOfStake);
+    bool IS_POW = (pindexLast->nHeight < 10001) || (pindexLast->nHeight > 50000 && pindexLast->nHeight < 60001);
+
+    if (IS_POW) {
+        return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
+    } else {
+        return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
+    }
+}
+
+fairly recent news event as genesis seed
+
+Seems to be a copypaste error
+
+ static std::map<int, unsigned int> mapStakeModifierCheckpoints =
+     boost::assign::map_list_of
+-        ( 0, 0xfd11f4e7 )
++        ( 0, 0xbfa1d8e4fd11f4e7 )
+     ;
+ 
+ // Hard checkpoints of stake modifiers to ensure they are deterministic (testNet)
+ static std::map<int, unsigned int> mapStakeModifierCheckpointsTestNet =
+     boost::assign::map_list_of
+-        ( 0, 0xfd11f4e7 )
++        ( 0, 0xbfa1d8e4fd11f4e7 )
+
+Watermarks: uint64_t, pos, smsg, drm-like
