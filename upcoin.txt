@@ -1,0 +1,15 @@
+upcoin https://bitcointalk.org/index.php?topic=827547.0
+
+Heritage: NM(nightmare?)
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+does synccheckpoints and alerts work with compressed private keys?
+
+good fair launch with good difficulty curve 
+
+Watermarks: uint64_t, pos, smsg
