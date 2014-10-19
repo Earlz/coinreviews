@@ -1,0 +1,67 @@
+nope https://bitcointalk.org/index.php?topic=827192.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MAJOR: 10% premine is excessive
+* MODERATE: Minimum difficulty is extremely low, causing instamining to happen and first 100 blocks to be mined in 2 minutes, despite relatively low hashrate judging by the timestamps
+* MODERATE: Launch was obscure and not clear. No notification was made that the coin launched at all, making the public code release impossible for me to verify
+
+If not for the first 90 blocks being low-reward, I would accuse the dev of having made the launch obscure to quickly instamine a defacto premine. However, this is not the case and even if it was, the amount of coins gained by this compared to teh 10% premine is tiny
+
+Notes:
+
+Have to remove trailing whitespace from around makefile.unix:184 to get it to compile
+
+a report of block count on bitcointalk is a bit of an anomoly:
+
+
+bttpanda
+Member
+**
+
+
+Activity: 60
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [ANN] NOPE X11 POW/POS NINJA Just Say NOPE!
+October 18, 2014, 07:14:31 AM
+Reply with quote  #7
+
+￼
+{
+"blocks" : 19,
+"currentblocksize" : 1000,
+"currentblocktx" : 0,
+"difficulty" : {
+"proof-of-work" : 0.16902095,
+"proof-of-stake" : 0.00000000,
+"search-interval" : 1
+},
+"blockvalue" : 11100000000,
+"netmhashps" : 16.88231285,
+"netstakeweight" : 0.00000000,
+"errors" : "",
+"pooledtx" : 0,
+"stakeweight" : {
+"minimum" : 0,
+"maximum" : 0,
+"combined" : 0
+},
+"stakeinterest" : 13000000,
+"testnet" : false
+}
+
+
+However, my difficulty at block 19 would be 0.00000006. His difficulty and time of post matches up with
+block 79         10/18/2014 07:13:29  0.16902095
+
+So, either he's lying to say the coin is better, or trying to provide some controversy FUD... Either way. 
+
+Watermarks: uint64_t, pos
