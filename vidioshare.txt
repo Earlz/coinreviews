@@ -1,0 +1,16 @@
+vidioshare https://bitcointalk.org/index.php?topic=779552.0
+
+Heritage: perfectly from shadowcoin commit d14445ebe670b5d29ff7e4895c63be264983e4d7
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MINOR: Premine is not checkpointed, but is probably cemented with a large number of PoW blocks
+* MODERATE: Synccheckpoints and alerts are impossible to use, since the keys were not changed away from shadowcoin
+* CRITICAL: Currently, block rewards are 0 and the chain's difficulty is extremely low(looks like 1 CPU worth). It would be trivial to conduct double spends, complete undoing of hundreds or even thousands of blocks
+* MAJOR: Because of the extremely low difficulty, and no checkpoints (nor synccheckpoints possible), it would be trivial to undo the entire chain at this point with maybe a day of mining with maybe a $300 rented rig (ie, also steal the premine)
+
+Notes:
+difficulty of most blocks are around 0.002
+
+Watermarks: uint64_t, pos, smsg, stealth
