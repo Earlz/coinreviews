@@ -1,0 +1,58 @@
+sembrotoken https://bitcointalk.org/index.php?topic=819427.0
+
+Heritage: very close to AXIS, communitycoin, MINT, MINE, ECC
+
+
+
+Problems:
+
+* MODERATE: There is no minimum transaction amount, possibly allowing for flooding of the blockchain and excessive bloat
+** I haven't looked into it enough to confirm this, but you could possibly flood the blockchain with 0 fee and 0 value transactions
+* MODERATE: Past time drift checking is completely disabled, this can allow for difficulty manipulation and timedrift attacks
+* MODERATE: genesis seed is not a news event
+* 
+
+Notes:
+
+-        // ppcoin: enforce minimum output amount
++       /*
+         if ((!txout.IsEmpty()) && txout.nValue < MIN_TXOUT_AMOUNT)
+            return DoS(100, error("CTransaction::CheckTransaction() : txout.nValue below minimum"));
++		   */
++
++        if (txout.nValue < 0)
++           return DoS(100, error("CTransaction::CheckTransaction() : txout.nValue negative"));
+
+
+     // Check coinbase timestamp
+-    if (GetBlockTime() > (int64)vtx[0].nTime + nMaxClockDrift)
+-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
++    // if (GetBlockTime() > (int64)vtx[0].nTime + nMaxClockDrift)
++    //    return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
+
+
+
++        // Adriano 2014-04-19
++        if(nHeight > 28647){
++            static const CBitcoinAddress lostWallet ("CKGK6MFmBkreG7k5sU8gDEJNVJ57QZtN3H");
++            for (unsigned int i = 0; i < tx.vin.size(); i++){
++                uint256 hashBlock;
++                CTransaction txPrev;
++                if(GetTransaction(tx.vin[i].prevout.hash, txPrev, hashBlock)){  // get the vin's previous transaction
++                    CTxDestination source;
++                    if (ExtractDestination(txPrev.vout[tx.vin[i].prevout.n].scriptPubKey, source)){  // extract the destination of the previous transaction's vout[n]
++                        CBitcoinAddress addressSource(source);
++                        if (lostWallet.Get() == addressSource.Get()){
++                            return error("CBlock::AcceptBlock() : Banned Address %s tried to send a transaction (rejecting it).", addressSource.ToString().c_str());
++                        }
++                    }
++                }
++            }
++        }
++    }
+
+This coins wins the official muttcoin award for being confirmed to have forked from a fork of a fork of a fork of a fork of a fork
+
+Blockchain not yet analyzed due to no nodes
+
+Watermarks: uint64, pos, without bloom
