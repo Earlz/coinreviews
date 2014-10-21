@@ -1,0 +1,58 @@
+scattercoin https://bitcointalk.org/index.php?topic=788444.0
+
+Heritage: closely related to AXIS, perfect clone from XC X11coin or whatever the hell t's named now https://github.com/atcsecure/X11COIN
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: launch looks quite unfair. Many reports of compiler errors, and there was no post made at the time the wallet was released
+** This is roughly confirmed by looking at the difficulty curve. Difficulty(and hashrate, judging by timestamps) doesn't really ramp up until about block 80. There is no way I can prove this was premined however. Also, some miners had wrong clocks and thus have weird timestamps, complicating this 
+
+
+Notes:
+
+ha, death cab for cutie album art
+
+weird
+
+-    loop {
++    LOOP {
+
+A false block count report when mining began:
+wisnon
+Full Member
+***
+
+
+Activity: 224
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: ║ANN║scattercoin║STC║ Anonymous ║ X11 POW + POS║Payments Online
+September 24, 2014, 04:29:17 AM
+Reply with quote  #87
+
+12:28:49
+￼
+{
+"blocks" : 47,
+"currentblocksize" : 1000,
+"currentblocktx" : 0,
+"difficulty" : 2.08337881,
+"errors" : "",
+"generate" : false,
+"genproclimit" : -1,
+"hashespersec" : 0,
+"networkhashps" : 1497580564,
+"pooledtx" : 0,
+"testnet" : false
+}
+
+According to the time and difficulty, this block was actually 
+block 197        09/24/2014 04:28:19  2.08337881
+
+
+Watermarks: uint64, pos, bloom
