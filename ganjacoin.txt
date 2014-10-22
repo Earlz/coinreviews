@@ -1,0 +1,47 @@
+ganjacoin https://bitcointalk.org/index.php?topic=823799.0
+
+Heritage: ISIS
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: Premine/ICO is not checkpointed
+* NOTE: about 100 blocks premined, but they are 0 reward
+
+Notes:
+
+blockchain looks fine, but had a pretty weak launch difficulty curve(or maybe that's cause X14 is slow?)
+
+GanjaCoin
+Newbie
+*
+
+
+Activity: 14
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: LAUNCHED! GanjaCoin [GANJA] ** Webwallets, payment gateway for EU cannabis biz**
+October 20, 2014, 08:09:25 PM
+Reply with quote  #112
+Please provide, for your coins safety, your GANJA address to receive ICO coin also via mail to support@betasharex.com .
+
+
+
+
+
+
+
+WALLETS
+
+Windows: https://mega.co.nz/#!w8BiDTqB!BArCt3t-oEzOj0buj1JTciWJIhvAcijXuiuEbDiEtxc
+
+
+Mac: https://mega.co.nz/#!FhAg0KLL!GtrLfASdJzS8f0glPmkkfJdekyoTs0Yp9kZYzapRwiU
+
+Source: https://github.com/GanjaCoinProject/ganjacoin
+
+Watermarks: uint64_t, pos, drm-like
