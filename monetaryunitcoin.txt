@@ -1,0 +1,17 @@
+monetaryunitcoin https://bitcointalk.org/index.php?topic=778322.0
+
+Heritage: direct fork from quark/coingenerator
+
+Problems:
+
+* MAJOR: The premine, though disclosed is extremely large and will be more than the network itself mints for months if not years
+
+Original thread with launch details was apparently deleted(https://bitcointalk.org/index.php?topic=721398.0) so not really possible to determine any undisclosed premine with certainty. Judging from the difficulty and timestamps though, it looks like only 1 extra block was premined
+
+Notes:
+
+genesis seed is not a news event, but with the age of the coin, this is not a real issue
+
+good checkpointed premine
+
+Watermarks: uint64, pow
