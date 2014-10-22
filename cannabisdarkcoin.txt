@@ -5,7 +5,7 @@ Heritage: similar to shadowcoin, ethan, SUM
 Problems:
 
 * MODERATE: Any transaction is considered standard, this can allow for DDoS attacks on the mempool with expensive to process transactions
-* MODERATE: genesis seed is not a news event
+* MINOR: genesis seed is not a news event, but doesn't matter a lot given the checkpoint at block 86
 * MINOR: 86 extra blocks were premined. They were low reward however, producing only 86 extra coins
 
 Notes:
