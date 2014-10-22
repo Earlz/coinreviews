@@ -1,0 +1,23 @@
+cannabisdarkcoin https://bitcointalk.org/index.php?topic=825005.0
+
+Heritage: similar to shadowcoin, ethan, SUM
+
+Problems:
+
+* MODERATE: Any transaction is considered standard, this can allow for DDoS attacks on the mempool with expensive to process transactions
+* MODERATE: genesis seed is not a news event
+* MINOR: 86 extra blocks were premined. They were low reward however, producing only 86 extra coins
+
+Notes:
+
+good checkpointed ICO
+
+Has that horrible wallet bug where syncing is difficult as hell to get going
+
++    /*// Rather not work on nonstandard transactions 
+ 	if (!fTestNet && !tx.IsStandard())
+ 		return error("CTxMemPool::accept() : nonstandard transaction type");
+-
++    } */
+
+Watermarks: uint64_t, pos, renamed "bit"
