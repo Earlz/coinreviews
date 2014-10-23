@@ -14,6 +14,8 @@ Problems:
 
 Notes:
 
+blockchain looks good
+
 -        // ppcoin: enforce minimum output amount
 +       /*
          if ((!txout.IsEmpty()) && txout.nValue < MIN_TXOUT_AMOUNT)
