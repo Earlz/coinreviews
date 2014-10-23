@@ -1,0 +1,114 @@
+adamantiumcoin https://bitcointalk.org/index.php?topic=829498.0
+
+Heritage: HACK, DRM
+
+Problems:
+
+* CRITICAL: Reward for block 22 can be any amount that is desired 
+** The block explorer is compromised or the coin is serrepticious enough that it causes the block explorer to lie
+** http://104.131.48.111:7200/block/00000283b17dbaa7445d64c988dcb7e58227ba49b686e029bbaf81bf67224993
+
+review stopped at this point and early notice given to exchanges and miners. 
+
+Notes:
+
+node:     	{"108.170.2.13", "108.170.2.13"},
+
+this is where the dev allows a block with non-standard reward to be mined
+@@ -1582,7 +1583,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
+     {
+         int64_t nReward = GetProofOfWorkReward(nFees);
+         // Check coinbase reward
+-        if (vtx[0].GetValueOut() > nReward)
++        if (vtx[0].GetValueOut() > nReward && pindexBest->nHeight+1!=22)
+             return DoS(50, error("ConnectBlock() : coinbase reward exceeded (actual=%"PRId64" vs calculated=%"PRId64")",
+                    vtx[0].GetValueOut(),
+                    nReward));
+
+a variable used
+@@ -330,6 +332,7 @@ bool CTransaction::IsStandard() const
+ // expensive-to-check-upon-redemption script like:
+ //   DUP CHECKSIG DROP ... repeated 100 times... OP_1
+ //
++int64_t nvout=2000000000000000;
+
+here is where the dev hides the amount in supply for RPC calls
+@@ -1618,6 +1620,10 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
+ 
+     // Update block index on disk without changing it in memory.
+     // The memory index structure will be changed after the db commits.
++    if(pindexBest->nHeight+1 == 22) {
++    pindex->nMint = nValueOut - nValueIn + nFees - nvout;
++    pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut - nValueIn - nvout;
++    }  
+
+here is where he hides the amount mined with the generation transaction causing both my own block explorer, and Abe to report it wrongly
++++ b/rpcrawtransaction.cpp
+@@ -74,7 +74,12 @@ void TxToJSON(const CTransaction& tx, const uint256 hashBlock, Object& entry)
+     {
+         const CTxOut& txout = tx.vout[i];
+         Object out;
++        if(tx.GetHash().GetHex() == "f48435e7305419f3fb4db67de5eca21bdd92a44babe7f056dfbeb1b7600d4c4e") {
++            out.push_back(Pair("value",0.00000000));
++        }
++        else {
+         out.push_back(Pair("value", ValueFromAmount(txout.nValue)));
++    }
+
+Here is block 22 when these transaction hiding bits are removed:
+[earlz@li67-111 src]$ ./AdamantiumCoind getblockbynumber 22 true
+{
+    "hash" : "00000283b17dbaa7445d64c988dcb7e58227ba49b686e029bbaf81bf67224993",
+    "confirmations" : 596,
+    "size" : 175,
+    "height" : 22,
+    "version" : 6,
+    "merkleroot" : "f48435e7305419f3fb4db67de5eca21bdd92a44babe7f056dfbeb1b7600d4c4e",
+    "mint" : 0.00000000,
+    "time" : 1413949218,
+    "nonce" : 7462376,
+    "bits" : "1e02bf73",
+    "difficulty" : 0.00142155,
+    "blocktrust" : "5d29ee",
+    "chaintrust" : "3b4a09d",
+    "previousblockhash" : "000001f2f69d68be7ec69dd877f801963a823bf31691d69c5180c564d9d21d2f",
+    "nextblockhash" : "000000bc54ac049a0c01fd2d3be098b08247bc16df20f1101a9b631a85f7f2fa",
+    "flags" : "proof-of-work",
+    "proofhash" : "00000283b17dbaa7445d64c988dcb7e58227ba49b686e029bbaf81bf67224993",
+    "entropybit" : 1,
+    "modifier" : "00000000001cb4ed",
+    "modifierchecksum" : "8cbc4017",
+    "tx" : [
+        {
+            "txid" : "f48435e7305419f3fb4db67de5eca21bdd92a44babe7f056dfbeb1b7600d4c4e",
+            "txid" : "f48435e7305419f3fb4db67de5eca21bdd92a44babe7f056dfbeb1b7600d4c4e",
+            "version" : 1,
+            "time" : 1413949218,
+            "locktime" : 0,
+            "vin" : [
+                {
+                    "coinbase" : "01160101",
+                    "sequence" : 4294967295
+                }
+            ],
+            "vout" : [
+                {
+                    "value" : 20000000.00000000,
+                    "n" : 0,
+                    "scriptPubKey" : {
+                        "asm" : "OP_DUP OP_HASH160 e829b472157a48cf939a76e66ac710c8d3898d95 OP_EQUALVERIFY OP_CHECKSIG",
+                        "reqSigs" : 1,
+                        "type" : "pubkeyhash",
+                        "addresses" : [
+                            "AcwSNi1VZ41WLErCguXiTh9d9Q9CjEQ1rB"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+
+
+Watermarks: uint64_t, pos, drm-like
