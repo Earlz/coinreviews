@@ -1,0 +1,72 @@
+miraclecoin https://bitcointalk.org/index.php?topic=822317.0
+
+Heritage: similar to AXIS, CLOAK(after relaunch)
+
+Problems:
+
+* UNKNOWN: having a minimum stake age of 0 sounds dangerous. It's honestly not something I've ever seen or thought of.. 
+** It may make some types of PoS 51% attacks easier in theory.. 
+* NOTE: genesis seed is not a recent news event (it is a news event, but it's 2 months old). Being a PoS coin though, this actually doesn't matter 
+
+
+Notes:
+
+network looks good and stable
+
+never seen this before heh
+-    double nCorTried = sqrt(nTried) * (100.0 - nUnkBias);
+-    double nCorNew = sqrt(nNew) * nUnkBias;
++    double nCorTried = sqrt(static_cast<double>(nTried)) * (100.0 - nUnkBias);
++    double nCorNew = sqrt(static_cast<double>(nNew)) * nUnkBias;
+
+-    loop
++    INFINITE_LOOP
+
+
+this is unusual
++unsigned int nStakeMinAge = 0;
++unsigned int nStakeMaxAge = 60 * 60 * 24 * 90;	//90d
+
+...wat. Why are the names commented out like that. Sure, it's legal C++ and all.. but why!? 
+int64 CTransaction::GetMinFee(unsigned int /*nBlockSize*/, bool /*fAllowFree*/,
+                              enum GetMinFee_mode mode, unsigned int /*nBytes*/) const
+
+
+looks safe but weird that things are moved around. This is probably from being cloned from CLOAK which modified this stuff
+@@ -2006,10 +1958,6 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot) const
+     if (fCheckPOW && IsProofOfWork() && !CheckProofOfWork(GetHash(), nBits))
+         return DoS(50, error("CheckBlock() : proof of work failed"));
+ 
+-    // Check timestamp
+-    if (GetBlockTime() > GetAdjustedTime() + nMaxClockDrift)
+-        return error("CheckBlock() : block timestamp too far in the future");
+-
+     // First transaction must be coinbase, the rest must not be
+     if (vtx.empty() || !vtx[0].IsCoinBase())
+         return DoS(100, error("CheckBlock() : first tx is not coinbase"));
+@@ -2026,14 +1974,6 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot) const
+     if (IsProofOfStake() && (vtx[0].vout.size() != 1 || !vtx[0].vout[0].IsEmpty()))
+         return error("CheckBlock() : coinbase output not empty for proof-of-stake block");
+ 
+-    // Check coinbase timestamp
+-    if (GetBlockTime() > (int64)vtx[0].nTime + nMaxClockDrift)
+-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
+-
+-    // Check coinstake timestamp
+-    if (IsProofOfStake() && !CheckCoinStakeTimestamp(GetBlockTime(), (int64)vtx[1].nTime))
+-        return DoS(50, error("CheckBlock() : coinstake timestamp violation nTimeBlock=%"PRI64d" nTimeTx=%u", GetBlockTime(), vtx[1].nTime));
+-
+
+...
+-    // Check timestamp against prev
+-    if (GetBlockTime() <= pindexPrev->GetMedianTimePast() || GetBlockTime() + nMaxClockDrift < pindexPrev->GetBlockTime())
+-        return error("AcceptBlock() : block's timestamp is too early");
++    // Check timestamp
++    if (GetBlockTime() > GetAdjustedTime() + GetMaxClockDrift(nHeight))
++        return error("AcceptBlock() : block timestamp too far in the future");
++
++    // Check coinbase timestamp
++    if (GetBlockTime() > (int64)vtx[0].nTime + GetMaxClockDrift(nHeight))
++        return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
+
+Watermarks: uint64, pos
