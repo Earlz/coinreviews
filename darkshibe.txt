@@ -1,0 +1,17 @@
+darkshibe https://bitcointalk.org/index.php?topic=833133.0
+
+Heritage: perfect clone from shadowcash
+
+Problems:
+
+Notes:
+
+good checkpointed premine and even stake modifier stuff properly checkpointed
+good genesis seed is news event from 1 day before launch
+good even copyrights for shadowcoin are maintained and not lazily renamed like usual
+
+Mining began at correct time, 1 extra (0 coin block) mined but that doesn't matter
+
+coin supply is correct and premine percentage
+
+Watermarks: uint64_t, pos, lz4
