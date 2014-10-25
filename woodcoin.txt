@@ -1,0 +1,26 @@
+woodcoin https://bitcointalk.org/index.php?topic=831003.0
+
+This coin is based on a VERY old version of bitcoin/litecoin that is somewhat unfamiliar to me. I must stress that my reviews are never 100% thorough, and I may be wrong about some things or miss something. 
+
+Heritage: ancient "foocoin" wallet template(https://github.com/razorlove-legacy/foocoin) which is from "barcoin" "Cryptocurrency that under no circumstances anyone should ever use, ever. Kthx, die."
+smallchange (https://bitcointalk.org/index.php?topic=182430) "should by no means be used as a real cryptocurrency", litecoin 0.6ish
+
+
+Problems:
+
+* UNKNOWN: This uses the prime256v1 ECDSA encryption algorithm. This is known not to be a [safe curve](http://safecurves.cr.yp.to/), and the general opinion on the internet of this is that it is weak.
+** I'm not a cryptographer, so I'm mostly going by what I see online. All coins use public key hashes (rather than just public keys) to safeguard against an encryption algorithm weakness also.
+** also known as "NIST P-256"
+* MAJOR: 304 blocks were premined and undisclosed
+** Total coins premined: 1115320.21010626. Total coins minted over ~90 days:  6478991.3132145. Making premine about 17% of what the network mints in 90 days
+** For reference, the early blocks have the most value, and block rewards go down with each block
+* MODERATE: Intense floating point operations are used in protocol critical code. This may mean the network could fork off with non-x86 or even unusual models of x86 processors or compilers
+* MINOR: alert key has not been changed from litecoin (or do alerts exist at all ugh), meaning network alerts can not be used
+
+Notes:
+
+As an aside, it's trivial to port a GPU miner to this coin. skein is part of X11 and so already has a GPU port, it just needs minor modifications
+
+Chain will fork at block 15000 to adjust the difficulty algorithm. This is a leftover artifact from Smallchange
+
+Watermarks: uint64, no alert.cpp, ancient
