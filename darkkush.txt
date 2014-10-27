@@ -1,0 +1,28 @@
+darkkush https://bitcointalk.org/index.php?topic=835219.0
+
+Heritage: BC
+
+Problems:
+
+* MODERATE: sync checkpoints can not be used, since the master public key is blank
+* MODERATE: genesis seed is not a news event (although has some newsweek reference?)
+* MINOR: 3 blocks were premined (usually not a big deal, but with the biggest rewards in the first blocks..)
+** Ends up being a premine of around 0.13% 
+** The address that mined those premined blocks continued to mine 3 more blocks, less than 1 minute after launch
+* NOTE: though by design, most coins are distributed to the people who got into the first 500 blocks, which were mined in around 6 hours. 
+
+Notes:
+
+Early block report of 66 blocks appears accurate. Difficulty curve seems good, first 50 blocks were mined in around 1.5 minutes, but that's to be expected 
+
+There have been reports of the devs having instamined the coin and I can not see any conclusive support of this theory.
+I personally know some early miners that have been able to get in on a ninja coin in about 1-2 minutes. The big instaminer 
+began mining about 30 seconds after the ANN was posted. It's arguable that this is "impossible" without prior knowledge,
+but also I've had dreams of setting up a program to automate the entire process for a typical ninja coin like this, which
+could easily do the job in 30 seconds. 
+
+I prefer not to speculate on mining behaviors and things outside of the code and network. So, I'll only say that 
+there is no strong evidence for or against the instamining theory. This might've been the dev's private pool, this might've been a lucky early miner. It is impossible to determine 
+
+
+Watermarks: uint64_t, pos, drm-like
