@@ -1,0 +1,19 @@
+digitalprice https://bitcointalk.org/index.php?topic=789847.0
+
+Heritage: FIT
+"We are used Darkcoin sources for base."
+
+Problems: 
+
+* MODERATE: network fees are 0, allowing flood attacks on the network and allows bloating the blockchain with no cost
+* MODERATE: genesis seed is not a news event
+* MODERATE: slightly unfair launch. The wallets urls and such were not posted in a stand alone reply to teh thread. 
+** This makes it impossible to track down the exact time of launch. The early block counts by early miners appear correct though, with well distributed pool of payout addresses
+
+
+Notes:
+
+reward scheme is confusing... ugh
+
+
+Watermarks: uint64, pow
