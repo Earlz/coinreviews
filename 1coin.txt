@@ -1,0 +1,21 @@
+1coin https://bitcointalk.org/index.php?topic=820302.0
+
+Heritage: darkcoin v0.9ish
+
+Problems:
+
+* MINOR: alert key is invalid and/or impossible. Network alerts can not be sent
+* MINOR: 1 block was premined and undisclosed
+* MINOR: although, difficulty curve looks good, digishield is designed to adjust every block, not every other block. This may cause insane difficulty adjustments with hashrate swings
+
+Notes:
+
+good already has a checkpoint
+
+digishield is configured wrongly and will probably lead to insane difficulty adjustments with hashrate swings
+
+Fun (not critical) bug exposed in my testing. If you start the the wallet the first time with -reindex, your local wallet will be stuck in a permanently broken state, rejecting all blocks
+
+Early miner block reports seem correct, and blockchain looks good. no 
+
+Watermarks: uint64, pow, reqwallet, coincontrol
