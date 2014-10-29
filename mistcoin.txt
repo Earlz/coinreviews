@@ -1,0 +1,24 @@
+mistcoin https://bitcointalk.org/index.php?topic=826604.0
+
+Heritage: "icecube" (iceburg?)
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: alert and sync checkpoint keys have not been changed. Sync checkpoints are considered somewhat essential for PoS security
+* MODERATE: launch was not fair. Coin launched early with no advance notice given, nor post made on the bitcointalk thread to notify thread watchers.
+* MINOR: Impossible to verify when the coin launched, but difficulty and time stamps indicate probably around 30 or 40 low reward blocks were premined
+
+Notes:
+
+bitcoin, novacoin, ppcoin, etc has been renamed to "mistcoin" (upper and lower case).. wtf
+
+doge reference, but clearly not based on doge
+"mistcoin very Signed Message:\n";
+
+-        block.nTime    = 1403927609;
++        block.nTime    = 1411001000;
+
+this block time seems improbable.. 
+
+Watermarks: uint64_t, pos, drm-like
