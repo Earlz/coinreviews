@@ -1,0 +1,19 @@
+blocknet https://bitcointalk.org/index.php?topic=829576.0
+
+Heritage: AGS, DRM, HACK
+
+Problems:
+
+* MINOR: alert key has not been changed. network alerts can not be sent
+* VERY MINOR: proof of work blocks could be minted slightly longer(10 minutes) longer than is actually specified by inclined miners
+* MAJOR: PoW difficulty is extremely low and PoS is currently not majority. Only around 10-20% of blocks minted are with PoS
+** This will resolve itself as funds are more distributed, leading to more PoS blocks and/or when PoW ends
+
+Notes:
+
+
+-    if (IsProofOfWork() && nHeight > LAST_POW_BLOCK)
++    if (IsProofOfWork() && (GetBlockTime() > LAST_POW_TIME))
+         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
+
+Watermarks: uint64_t, pos, drm-like
