@@ -8,6 +8,7 @@ Problems:
 * VERY MINOR: proof of work blocks could be minted slightly longer(10 minutes) longer than is actually specified by inclined miners
 * MAJOR: PoW difficulty is extremely low and PoS is currently not majority. Only around 10-20% of blocks minted are with PoS
 ** This will resolve itself as funds are more distributed, leading to more PoS blocks and/or when PoW ends
+** This coin has an active sync-checkpoint node running, making this also not a critical issue, but it's still rather unsafe
 
 Notes:
 
