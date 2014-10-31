@@ -1,0 +1,20 @@
+iconicx https://bitcointalk.org/index.php?topic=840139.0
+
+Heritage: MAST
+
+Problems:
+
+* MODERATE: Alert and synccheckpoint keys are invalid. Neither of these will be capable of functioning. PoS without sync checkpoints is considered somewhat insecure
+* MINOR: proof of work limit is extremely low, allowing very fast instamining for the first 60 blocks or so. 
+** Launch time is not clear, but given differences in payout addresses and block reports, there is probably no or little premine
+** These were all low reward blocks, so this is a minor issue
+
+Notes:
+
+weird renaming...
+-                printf("IRC name already in use\n");
++                printf("IRC name alreedy in use\n");
+
+good genesis seed is a news event
+
+Watermarks: uint64_t, pos, drm-like
