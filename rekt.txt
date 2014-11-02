@@ -1,0 +1,39 @@
+rekt https://bitcointalk.org/index.php?topic=840489.0
+
+Heritage: Axis-ish, communitycoin, ECC
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: Past time drift checking for block times is disabled. This can allow some timestamp and difficulty manipulation attacks
+* MODERATE: Launch was somewhat unfair. Source was released later than binary wallets
+
+Notes:
+
+Good, has some checkpoints already
+
+-        // ppcoin: enforce minimum output amount
++       /*
+         if ((!txout.IsEmpty()) && txout.nValue < MIN_TXOUT_AMOUNT)
+            return DoS(100, error("CTransaction::CheckTransaction() : txout.nValue below minimum"));
++		   */
++
++        if (txout.nValue < 0)
++           return DoS(100, error("CTransaction::CheckTransaction() : txout.nValue negative"));
+
+ 
+     // Check coinbase timestamp
+-    if (GetBlockTime() > (int64)vtx[0].nTime + nMaxClockDrift)
+-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
++    // if (GetBlockTime() > (int64)vtx[0].nTime + nMaxClockDrift)
++    //    return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
+
+Odd. First miner appears to have been a private pool mining to address RArzZkA4G1u1cJpBkKLzU5sXwy2iCNvSMT.
+This mining pool began mining about 1 minute after ANN. This private pool was extremely powerful, pushing difficulty to about 240 by itself. 
+However, the last found block for the pool was 214, indicating it stopped being used soon after launch. 
+The pool itself made payouts for the first time at block 52 primarily to RDUgnYPDUP4eLJMnmwLo5eimb8w7HQQhPR. 
+There is no proof for or against this being a founder-run pool. It could just as easily be an early miner with an exotic setup
+
+
+
+Watermarks:  uint64, pos
