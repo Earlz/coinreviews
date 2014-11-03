@@ -1,0 +1,23 @@
+INCOMPLETE
+snowballs https://bitcointalk.org/index.php?topic=842827.0
+
+Heritage: very close to vanilla ppcoin, mmxiv
+
+Problems:
+
+* MODEATE: genesis seed is not a news event
+* MODERATE: Blocks 23 to 120 is purposefully set to have minimum difficulty, making instamining these blocks trivial
+
+Notes:
+
++		if (!fProofOfStake && pindexLast->nHeight >= 23 && pindexLast->nHeight < 120)
++        return bnProofOfWorkLimit.GetCompact(); // most of the 1st 120 blocks
+
+this looks like a (not security related) bug:
+-    fs::path pathConfigFile(GetArg("-conf", "ppcoin.conf"));
++    fs::path pathConfigFile(GetArg("-conf", "mmxiv.conf"));
+
+First ever coin I've evaluated with a code base so old that it doesn't include `getrawtransaction`. Because of this, and no usable block explorer, I consider this review incomplete. I could not evaluate the difficulty adjustment curve nor if there was any premine. 
+I expect to update this review either when someone ports getrawtransaction, two independent parties throw up Abe based block explorers, or ports my local block explorer to somehow work without getrawtransaction
+
+Watermarks: uint64, pos 
