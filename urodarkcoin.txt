@@ -1,0 +1,22 @@
+urodarkcoin https://bitcointalk.org/index.php?topic=838281.0
+
+Heritage: similar to novacoin, probably related to https://github.com/cryptogenicbonds/CGB
+
+Problems:
+
+* UNKNOWN: Launch time is a complete mystery. supernova said they were up at 7:19pm, but first block after checkpoint is 7:59pm 
+** If there was a premine, it was probably not anything major with the 1st 100 blocks being low reward
+* MINOR: At least 71 blocks were premined. This yields only 71 coins however with the low reward blocks
+
+Notes:
+
+good, has checkpoint for premine and ICO
+good, has news event as genesis seed
+
+hopefully this is a safe value heh
+     // The following combine threshold is important to security
+     // Should not be adjusted if you don't understand the consequences
+-    int64 nCombineThreshold = GetProofOfWorkReward(GetLastBlockIndex(pindexBest, false)->nBits) / 3;
++    int64 nCombineThreshold = 30;
+
+Watermarks: uint64, pos
