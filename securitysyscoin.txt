@@ -1,0 +1,29 @@
+securitysyscoin https://bitcointalk.org/index.php?topic=802430.0
+
+This coin has a ton of extra features like block reward voting. Though, this functionality appears disabled, I may have missed something. I must stress that my reviews are best effort and with an atypical coin as this, I may miss something
+
+Heritage: bitcoin 0.8.5ish 
+
+Problems:
+
+* MODERATE: genesis seed is not a news event (it's a news event, but 1 month old at ANN time)
+* MODERATE: 1 extra block of 878 coins premined (at the time of ICO)
+** a few minutes before launch, about 20 blocks were premined. All were by solo miners
+
+
+Notes:
+
+...wtf is this. insane difficulty adjustments on purpose? 
++    // securitysys Temporal Retargeting - exits "blackhole" in ~3hrs
++    if (pindexLast->nHeight > nLifeWindow && count < nLifeWindow/4) {
++        int min = nLifeWindow/4 - count;
++        printf("Retarget: **** securitysys Temporal Retargeting **** %d/%d : factor = %d\n",
++               count, (int)nLifeWindow/4, (int)pow(2.0f, min));
++
++        bnNew *= (int)pow(2.0f, min);
++
++        printf("Retarget: heal  = %g %08x %s\n", CalcDifficulty(bnNew.GetCompact()),
++               bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
++    }
+
+Watermarks: uint64, pow, voting
