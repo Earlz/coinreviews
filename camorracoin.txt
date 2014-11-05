@@ -1,0 +1,14 @@
+camorracoin https://bitcointalk.org/index.php?topic=827956.0
+
+Heritage: perfect from shadowcoin
+
+Problems:
+
+* MODERATE: genesis seed is not a news event (appears to maybe be one, but is clearly ambiguous for our purposes)
+* NOTE: launch was possibly a bit obscure, but everything was very clear by the time the fair launch zero-reward blocks ran out
+
+Notes:
+
+good, checkpointed premine
+
+Watermarks: uint64_t, pos, xxhash, smsg
