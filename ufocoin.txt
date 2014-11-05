@@ -1,0 +1,16 @@
+ufocoin https://bitcointalk.org/index.php?topic=844754.0
+
+Heritage: perfect from litecoin v0.8.6.9 (proclaimed)
+
+Problems:
+
+* MINOR: Premine at the time (unless it was an IPO, which I can't find profo of) was a bit excessive, however, it is less than 1% of the coin supply now
+* NOTE: genesis seed is not a news event (but so old and with checkpoints that it doesn't matter)
+
+Notes:
+
+good, plenty of checkpoints
+
+blockchain not analyzed due to the relatively little info that would be gained by such an old coin (also, after 45 minutes it still wasn't done syncing)
+
+Watermarks: uint64, pow, synccheckpoints
