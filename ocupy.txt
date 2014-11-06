@@ -1,0 +1,30 @@
+ocupy https://bitcointalk.org/index.php?topic=848186.86
+
+Heritage: 
+
+Problems:
+
+* MODERATE: Premine, though disclosed, is excessive
+* MODERATE: Time drift allowance is very high for a PoS coin. It is set to 24 hours, where it is 15 mintues for most PoS coins, or 2 hours for bitcoin
+* MODERATE: genesis seed is not a news event
+* MINOR: The first 250 blocks were basically instamined, due to inadequate difficulty adjustment. However, this mining started 2 minutes after the wallet announcement was made, making it unlikely that the founder took advantage of this
+
+Notes:
+
+some weird timestamp anonmolies.. probably an early miner with their clock set wrong
+
+183        11/05/2014 23:27:10  0.0625          1          0                    1000                 1000                 0                    6          PoW
+182        11/05/2014 23:27:16  0.0625          1          0                    1000                 1000                 0                    6          PoW
+181        11/05/2014 23:27:11  0.0625          1          0                    1000                 1000                 0                    6          PoW
+180        11/05/2014 23:27:09  0.0625          1          0                    1000                 1000                 0                    6          PoW
+179        11/05/2014 23:26:34  0.015625        1          0                    1000                 1000                 0                    6          PoW
+178        11/05/2014 23:26:33  0.015625        1          0                    1000                 1000                 0                    6          PoW
+177        11/05/2014 23:26:32  0.015625        1          0                    1000                 1000                 0                    6          PoW
+176        11/05/2014 23:27:15  0.015625        1          0                    1000                 1000                 0                    6          PoW
+175        11/05/2014 23:27:14  0.015625        1          0                    1000                 1000                 0                    6          PoW
+174        11/05/2014 23:27:14  0.015625        1          0                    1000                 1000                 0                    6          PoW
+173        11/05/2014 23:26:26  0.015625        1          0                    1000                 1000                 0                    6          PoW
+172        11/05/2014 23:26:24  0.015625        1          0                    1000                 1000                 0                    6          PoW
+
+
+Watermarks: uint64_t, pos, drm-like
