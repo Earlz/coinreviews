@@ -1,0 +1,35 @@
+ethereumdark https://bitcointalk.org/index.php?topic=848304.0
+
+Heritage: SYNC(https://github.com/MsCollec/sync/commit/150f9518586c6cd82d316e85ae0928abc71189e8), HACK
+
+Problems:
+
+* MAJOR: 1 block premined with high reward, undisclosed, and checkpointed 
+** Reward of the block is 20,000 coins, or ~1.2% of the PoW coin supply
+
+* MINOR: alert keys are not set. Network alerts can not be sent
+* MODERATE: sync checkpoint key is not set. Synccheckpoints can not be used. It is considered somewhat insecure to use PoS without sync checkpoints
+* MODERATE: genesis seed is not a news event
+* MODERATE: Minimum fee is 0. This could allow flooding the network with transactions for free and also allow inflating block sizes
+
+Notes:
+
++    int64_t nSubsidy = 0;
++
++    if (pindexBest->nHeight <= 0)
++        {
++            nSubsidy = 0;
++        }
++    else if (pindexBest->nHeight <= 1)
++        {
++            nSubsidy = 20000 * COIN;
++        }
++    else if (pindexBest->nHeight <= 2000)
+         {
+             nSubsidy = 500 * COIN;
+         }
+
+Max POW supply: 1,551,995
+Premine: 20000 - About 1.2% (probably more like 1.5% with PoS blocks mixed in)
+
+Watermarks: uint64_t, pos, drm-like
