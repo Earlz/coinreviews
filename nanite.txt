@@ -1,0 +1,17 @@
+nanite https://bitcointalk.org/index.php?topic=849856.0
+
+Heritage: very similar to SPARK
+
+Problems:
+
+* MINOR: 1 extra block was premined, yielding an additional 400 coins (extra 0.03%)
+* MINOR: Launch was somewhat unfair/obscured. Reports of windows wallet being released early, along with mining starting about 30 seconds early with initially very low hashrate. This affects at most 20 blocks
+
+Notes:
+
+good genesis seed is a recent news event from the day of ANN
+
+Supply: 1,009,600
+Premine: 10400 or ~1.03%
+
+Watermarks: uint64_t, pos, smsg, drm-like
