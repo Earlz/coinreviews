@@ -1,0 +1,40 @@
+magi https://bitcointalk.org/index.php?topic=735170.0
+
+This coin contains significant new and unique features. I must stress that my reviews are not thorough and I can always miss something
+All reviews are best-effort
+
+Heritage: 
+
+Problems:
+
+* NOTE: 1 extra block was premined worth 5 coins. These were probably destroyed with the coinswap though
+
+Notes:
+
+good, lots of checkpoints
+good, genesis seed appears to be news event
+
+this makes no sense...
+    /*
+    // coins for swapping with prior magicoin
+    Initial discussion: https://bitcointalk.org/index.php?topic=735170.msg8772649#msg8772649
+    10/07/2014 - Final swap plan: 227,140 XMG used for swap, that is only 0.9% of total XMG supply; 
+                 part of remaining unswapped will be used for PoM campaign, others will be destroyed. 
+                 https://bitcointalk.org/index.php?topic=821170.msg9190490#msg9190490;
+    */
+    if(nHeight <= 10 && !fTestNet)
+    {
+        nSubsidy = 112500 * COIN;
+    }
+
+But chain started in September... wat? 
+
+
+holy shit wtf.. 
+
+	else if (nHeight <= BLOCK_REWARD_ADJT_M7M_V2) {
+	    double nDiffcu = ((nHeight <= 2700) ? 2.2 : (2.2+(nHeight-2700)*0.0000274841));
+	    nSubsidy = 294.118 * pow( (5.55243*(exp_n(-0.3*nDiff/0.39) - exp_n(-0.6*nDiff/0.39)))*nDiff, 0.5) / 1.335
+			   * exp_n2(nDiff/0.08, nDiffcu/0.08);
+
+Watermarks: uint64, pos, axis-like, bloom
