@@ -1,0 +1,16 @@
+dopecoinv3 https://bitcointalk.org/index.php?topic=467641.4440 (ish... swap is a bit confusing)
+
+Heritage: ECC
+
+Problems:
+
+MAJOR: Mining launch was VERY obscure. No details given about launch time, algorithm, source link, anything. 
+** About 450 blocks mined with very low difficulty due to this obscurity, and of course impossible to even determine if there is a premine
+
+Notes:
+
+Some changes to PoS kernel.cpp that I'm not 100% sure about. looks ok, but not sure what the end-result functional difference really is
+
+good, genesis seed is news event
+
+Watermarks: uint64, pos, axis-like
