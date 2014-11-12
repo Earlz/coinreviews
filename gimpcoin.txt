@@ -1,0 +1,20 @@
+gimpcoin https://bitcointalk.org/index.php?topic=853195.0
+
+Heritage: CZECoin(https://github.com/Czecoin-project/Czecoin-master)
+
+Problems:
+
+* MINOR: alert keys are not changed from forked coin. Network alerts can not be sent
+* MODERATE: sync checkpoint key is not set. PoS coins are considered somewhat insecure without sync checkpoints
+* MODERATE: genesis seed is not a news event
+* MODERATE: future and past time drift allowance is excessive at 1 day. Bitcoin limits this to 2 hours, and most PoS coins limit it to 15 minutes
+* MODERATE: Launch was somewhat unfair/borked. The github with code was discovered by some people before announcement. This appeared to only last until around blokc 60 though. 30 of these blocks were 0-reward fair launch blocks
+* MINOR: Actual maximum coin supply is not 7 million as in the ANN, but rather 764K. However, the premine percentage is against the actual coin supply, so it's only a textual error. The percentage of supply premined is still correct
+
+Notes:
+
+verified max PoW supply 764,400
+premine of 30,000 (~3.9% of max supply)
+
+
+Watermarks: uint64_t, pos, drm-like, devcoin
