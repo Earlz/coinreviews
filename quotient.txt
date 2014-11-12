@@ -1,0 +1,16 @@
+quotient https://bitcointalk.org/index.php?topic=854299.0
+
+Heritage: probably SDC
+
+Problems:
+
+* NOTE: due to the PoW limit being a bit high (~0>>16, rather than the usual ~0>>20), there was some minor instamining for the first 60 blocks or so. However, mining didn't actually begin for over a minute after ANN, so doubtful that the founder exploited this
+* VERY MINOR: Actual PoW coin supply is at most 1,615,536, probably about 5% or so less when factoring in PoS blocks mixed into it. This makes the premine slightly higher at around 1.0015% 
+
+Notes:
+
+PoW limit is a bit high
+good, genesis seed is a news event
+good, checkpointed premine
+
+Watermarks: uint64_t, pos, sdc-like
