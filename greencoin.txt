@@ -1,0 +1,17 @@
+greencoin https://bitcointalk.org/index.php?topic=636548.0
+NOTE: I'm not very familiar with AuxPoW coins. This review should be taken with a grain of salt, as I'm winging it on my limited understanding
+
+Heritage: LTC direct
+
+Problems: 
+
+* MODERATE: Despite chain's significant age and even with a hardfork, there are still no hardcoded checkpoints
+* NOTE: genesis seed is not a news event, but due to age this probably doesn't matter
+
+Notes:
+
+weird.. 
+     return bnNew.GetCompact();
++    return nProofOfWorkLimit;
+
+Watermarks: uint64, pow, auxpow
