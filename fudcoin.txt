@@ -1,0 +1,48 @@
+fudcoin https://bitcointalk.org/index.php?topic=856352.0
+
+Heritage: sdc
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+funny way of writing this heh
+-static const char* pszMainKey = "031d5def92b2d59943e57aaa8b1adbb110ff215fc4ebdc6fb5c9a797e2b1dea527";
++// fudcoin trap door key
++static const char* pszMainKey = 
++    "0418c54c5c6bc092db0f77fa64732cc9746abeacf898904f421ea564b5e4"
++    "5f05b30d17d288af681a495819537460fc321960efe1cf4580b9a69a6000"
++    "6a0ac9f2c9";
+
+another weird way of writing this, and not really with a purpose since int is almost always 32bit
+ // Hard checkpoints of stake modifiers to ensure they are deterministic
+ static std::map<int, unsigned int> mapStakeModifierCheckpoints =
+     boost::assign::map_list_of
+-        ( 0, 0xe00670b )
++        ( 0, 0x00000000fd11f4e7)
+
+some of this is like a novel lol
++// maximize instamine effect by with long blocks, but not too long
++unsigned int nTargetSpacing     = 240;                // 4 minutes
++unsigned int nStakeMinAge       = 6 * 24 * 60 * 60;   // 6 days
++unsigned int nStakeMaxAge       = 18 * 24 * 60 * 60;  // 18 days
++// lol sunny king must have been smoking crack.
++// here's proof:
+
+I'M A WINNER! (note, this code is never actually executed)
++    if (nHeight <= LAST_FAIR_LAUNCH_BLOCK)  // secret premine
++        nSubsidy = 10000000000 * COIN;      // found it? Go fud yourself.
+
+lol these variable names
++        // do teh maf.
++        nSubsidy = COIN * (int64_t) floor(BAGHOLDER_MULTIPLIER *
++                                            (1.0 / sqrt(nHeight + PROFIT_DETERIORATOR)) -
++                                                                         PROFIT_INCREASIFIER);
+
+ // Some explaining would be appreciated
++// ^ lol
++// I know exactly what this does dude, get a friggin' clue.
+
+Watermarks: uint64_t, pos, smsg
