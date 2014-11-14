@@ -1,0 +1,21 @@
+optimumcoin https://bitcointalk.org/index.php?topic=856814.0
+
+Heritage: 
+
+Problems:
+
+Notes:
+
+not sure if alert/checkpoint keys are actually set to a valid public key...
+
+this probably reveals partially at least what the direct fork of this coin is
+            Send(hSocket, strprintf("JOIN #optimumizer%02d\r", channel_number).c_str());
+
+Minimum difficulty is set extremely low... despite this, fair launch blocks prevented instamining
+CBigNum bnProofOfWorkLimit(~uint256(0) >> 4);
+
+good, genesis seed is a news event
+coin supply is correct
+Premine is about 1.2%, possibly a bit more with PoS blocks factored in
+
+Watermarks: uint64_t, pos, drm-like
