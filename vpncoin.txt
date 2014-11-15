@@ -1,0 +1,32 @@
+vpncoin https://bitcointalk.org/index.php?topic=789961.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: It might be possible to conduct a DoS attack by spamming the network with very low difficulty blocks, and they would not be quickly discarded by nodes. 
+* MINOR: Past drift and future drift is set to extremely low values. This may cause nodes with slightly inaccurate clocks to not sync properly 
+* MODERATE: To easily run this coin daemon, you must run it as root. This is because it uses a P2P port below 1024 by default
+
+Notes:
+
+genesis seed is not a news event, but doesn't matter for a 100% PoS coin
+good, plenty of checkpoints
+
+This is for preventing DoS attacks.. the full difficulty checks are made at a later point.
++/* FIXME
+         CBigNum bnNewBlock;
+         bnNewBlock.SetCompact(pblock->nBits);
+         CBigNum bnRequired;
+@@ -2255,8 +2310,13 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
+                 pfrom->Misbehaving(100);
+             return error("ProcessBlock() : block with too little %s", pblock->IsProofOfStake()? "proof-of-stake" : "proof-of-work");
+         }
++*/
+     }
+
+
++inline int64_t PastDrift(int64_t nTime, int nHeight)   { return IsProtocolV2(nHeight) ? nTime      : nTime - 10 * 60; }
++inline int64_t FutureDrift(int64_t nTime, int nHeight) { return IsProtocolV2(nHeight) ? nTime + 15 : nTime + 10 * 60; }
+
+Watermarks: uint64_t, pos
