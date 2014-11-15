@@ -1,12 +1,14 @@
 vpncoin https://bitcointalk.org/index.php?topic=789961.0
 
-Heritage: 
+Heritage: BC
 
 Problems:
 
 * MODERATE: It might be possible to conduct a DoS attack by spamming the network with very low difficulty blocks, and they would not be quickly discarded by nodes. 
 * MINOR: Past drift and future drift is set to extremely low values. This may cause nodes with slightly inaccurate clocks to not sync properly 
 * MODERATE: To easily run this coin daemon, you must run it as root. This is because it uses a P2P port below 1024 by default
+* MINOR: alert key has not been changed, network alerts can not be used
+* MODERATE: sync checkpoint keys has not been changed. It is considered somewhat insecure to use PoS without synccheckpoints
 
 Notes:
 
