@@ -1,0 +1,15 @@
+money https://bitcointalk.org/index.php?topic=860132.0
+
+Heritage: worldcoin (proclaimed by git and verified)
+
+Problems:
+
+* EXTREME: Premine is extremely excessive and will be more coins than are minted by the network fro many months if not years
+* MINOR: synchceckpoint key has not been set. Since this is a PoW coin, it's safe to consider optional. However, this feature can be not used at all
+* MINOR: alert key has not been set. Network alerts can not be used
+* MODERATE: Due to bad difficulty adjusment configuration, the first 100 blocks were mined fairly quickly (though maybe not instant) because difficulty was stuck at the minimum
+* MODERATE: First 184 blocks were premined and undislcosed(to go along with the actual premine block), though this doesn't matter much compared to the extremely large premine
+
+Notes:
+
+Watermarks: uint64, pow
