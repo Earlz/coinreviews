@@ -1,0 +1,18 @@
+deafdollars https://bitcointalk.org/index.php?topic=859113.0
+
+Heritage: ltc
+
+Problems:
+
+* EXTREME: Premine, though disclosed is extremely excessive and is worth at least 10 months worth of the network mining
+* MINOR: premine is not checkpointed
+* MODERATE: genesis seed is not a news event
+* MODERATE: At least 123 normal blocks were premined and undisclosed. This is insignificant compared to the disclosed premine however
+* MAJOR: Due to very slow difficulty adjustment, the coin was instamined very heavily with over 9000 10-minute blocks being generated in about 36 hours
+* MAJOR: Launch was very obscured. No source code was released for hours if not days after the coin was "launched" (ie, only Windows wallets available)
+
+addnode=kinkypool.com
+
+Notes:
+
+Watermarks: uint64, pow, coin.conf, mt.gox is down
