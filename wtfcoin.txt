@@ -1,0 +1,34 @@
+wtfcoin https://bitcointalk.org/index.php?topic=828967.0
+
+Heritage: DRM
+
+Problems:
+
+* MINOR: alert keys have not been set. Network alerts can not be used
+* MODERATE: future time drift checking is disabled. This may make timestamp difficulty manipulation attacks possible
+* MODERATE: Minimum tx fee is 0. This could allow flooding the p2p network and inflating block sizes
+* MINOR: Judging from launch time, difficulty curve, and time between blocks, it looks like at least 2 blocks were premined. 
+** The address that mined these 2 blocks early, mined the first 20 blocks(until 10/20/2014 12:04:09 UTC), with somewhat low hashrate
+** Exact launch time isn't easy to confirm, so this might be premined, or it might just be the founders mining the coin after launch
+
+Notes:
+
+stake modifier checkpoints are disabled, but there aren't any added anyway
+@@ -383,9 +383,9 @@ unsigned int GetStakeModifierChecksum(const CBlockIndex* pindex)
+ // Check stake modifier hard checkpoints
+ bool CheckStakeModifierCheckpoints(int nHeight, unsigned int nStakeModifierChecksum)
+ {
+-    MapModifierCheckpoints& checkpoints = (fTestNet ? mapStakeModifierCheckpointsTestNet : mapStakeModifierCheckpoints);
++    /*MapModifierCheckpoints& checkpoints = (fTestNet ? mapStakeModifierCheckpointsTestNet : mapStakeModifierCheckpoints);
+ 
+     if (checkpoints.count(nHeight))
+-        return nStakeModifierChecksum == checkpoints[nHeight];
++        return nStakeModifierChecksum == checkpoints[nHeight];*/
+     return true;
+ }
+
+-    // Check coinbase timestamp
+-    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))
+-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
+
+Watermarks: uint64_t, pos, drm-like
