@@ -1,0 +1,18 @@
+glowshares https://bitcointalk.org/index.php?topic=854038.0
+
+Heritage: ARCH
+
+Problems:
+
+* EXTREME: Currently the chain is at block 134 with about 7000 blocks to go before switching to pure PoS. Thus far, there are no PoS blocks minted
+** The PoW difficulty due to this coin's design is extremely low and would be trivial to do a 51% attack on
+** It will be safe as more coins are staked and the ratio of PoS blocks increases
+
+Notes:
+
+good, checkpointed premine
+good, news event as genesis seed
+
+note, there are coins with blockchain voting for reward and interest etc, but this coin is not forked from such a coin
+
+Watermarks: uint64_t, pos
