@@ -1,0 +1,27 @@
+diode https://bitcointalk.org/index.php?topic=865710.0
+
+Heritage: ISIS, DRM, HASH, HACK
+
+Problems:
+
+* MINOR: alert key has not been set. Network alerts can not be sent
+* MODERATE: sync checkpoint key has not been set. The security of a PoS coin is somewhat weaker without sync checkpoints
+* MINOR: Premine block is not checkpointed
+* MINOR: 1 extra block was premined and not disclosed worth 1500 coins
+
+NOTE: according to the blockchain, mining started about 35 seconds early with about 35 blocks mined early
+      However, this is most likely because the first miner had their clock set wrongly. It's too difficult to analyze to call for sure, so I will err on the side that it wasn't premined. This miner had a considerable amount of hashrate. 
+
+Notes:
+
+early miner has their clock set early by about 45 seconds
+40         11/20/2014 05:59:38  0.01438007      1          0                    1500                 1500                 0                    6          PoW    360c21
+39         11/20/2014 05:59:36  0.01438007      1          0                    1500                 1500                 0                    6          PoW    360c21
+38         11/20/2014 06:00:26  0.01271649      1          0                    1500                 1500                 0                    6          PoW    fd71b1
+37         11/20/2014 06:00:25  0.01122043      1          0                    1500                 1500                 0                    6          PoW    fd71b1
+36         11/20/2014 06:00:25  0.01108843      1          0                    1500                 1500                 0                    6          PoW    fd71b1
+35         11/20/2014 05:59:31  0.00980565      1          0                    1500                 1500                 0                    6          PoW    360c21
+34         11/20/2014 05:59:30  0.00865204      1          0                    1500                 1500                 0                    6          PoW    360c21
+33         11/20/2014 05:59:30  0.00763415     
+
+Watermarks: uint64_t, pos, drm-like
