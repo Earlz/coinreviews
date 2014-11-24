@@ -1,0 +1,18 @@
+daytradercoin https://bitcointalk.org/index.php?topic=827984.0
+
+Heritage: SUMC, KEY, OPC
+
+Problems:
+
+* MINOR: despite somewhat signficant blockchain age, there are only a few early checkpoints
+* MINOR: minimum difficulty is somewhat low, and resulted in some instamining. This was helped though with low-reward blocks (but didn't completely stop it)
+* MINOR: genesis seed is not a news event, but due to age this is probably not a big problem
+
+
+Notes:
+
+not sure if sync checkpoint key is actually valid
+
+some crazy difficulty swings early on
+
+Watermarks: uint64_t, pos, drm-like, devcoin
