@@ -1,0 +1,17 @@
+pimpcash https://bitcointalk.org/index.php?topic=871506.0
+
+Heritage: SDC direct(probably)
+
+Problems:
+
+* MODERATE: genesis seed is not a recent news event (it appears to be a made up link?)
+* MAJOR: premine percentage of 3.9% is somewhat excessive 
+* MODERATE: There were 50 blocks premined and undisclosed, of which 20 were high-reward blocks.
+** The amount premined is 40000, or an extra 0.05% of the supply
+
+-addnode=pimp.suprnova.cc
+
+Notes:
+premine and supply verified to be approximately correct
+
+Watermarks: uint64_t, pos, sdc-like
