@@ -1,0 +1,48 @@
+euphoriacoin https://bitcointalk.org/index.php?topic=863799.0
+
+Heritage: SUMC, OPC
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: Future and past timedrift allowance are excessive at 1 day (whereas bitcoin is 2 hours, and most PoS coins are 15 minutes)
+** This could allow for easier attacks concerning timestamps like manipulating difficulty adjustments
+* VERY MINOR: 38 blocks with very low reward were premined. This adds up to nothing though really. 
+* MINOR: Launch was somewhat unfair. Though it's not the coin dev's fault, a pool with early source access began mining before the designated time
+* MINOR: Launch difficulty adjustment didn't adjust very quickly, allowing for some minor instamining (ie, blocks mined in around 10-30 seconds) in the first 150 blocks or so
+
+Notes:
+
+EuphoriaCrypto
+Newbie
+*
+
+
+Activity: 14
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [ANN]Euphoria -- X13 asset backed - Buy legal highs/research chemicals LAUNCH!!
+November 20, 2014, 02:33:06 PM
+Reply with quote  #81
+Quote from: qaz312 on November 20, 2014, 02:27:44 PM
+
+ASK the DEV 
+Why the  CC pool  can get the source code in advance
+
+This coin  must have some   dirty trick
+
+
+
+The pools got the source so the code could be reviewed prior to launch. There have been a few coins lately with nasty code injected allowing millions of coins to be generated via POS. We wanted people to be able to be confident the code was clean.
+
+Unfortunately one of the pools I gave the code to took advantage of that, despite agreeing not to start stratum until end of count down.
+
+Thankfully, we had 100 blocks of 1 reward, of which we mined to 38 to ensure that the network was running smoothly.
+
+Pools got online at between block 106 and 110, so only 6-10 blocks got caught by whoever mined early. In the grand scheme of 12k blocks I think we can live with 6 blocks instamined by whoever it was.
+
+Watermarks: uint64_t, pos, drm-like, devcoin
