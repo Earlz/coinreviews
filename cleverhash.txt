@@ -1,0 +1,14 @@
+cleverhash https://bitcointalk.org/index.php?topic=826541.0
+
+Heritage: ISIS, HASH, HACK
+
+Problems:
+
+* CRITICAL: Difficulty is currently extremely low and double spending would be very easy. 
+** This will be made safer with time as more PoS blocks are minted rather than PoW blocks, and there is possibly some basic protection provided by sync checkpoints
+
+Notes:
+
+genesis seed is not a news event, but doesn't matter for ths
+
+Watermarks: uint64_t, pos, drm-like
