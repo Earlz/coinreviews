@@ -1,0 +1,14 @@
+growcoin https://bitcointalk.org/index.php?topic=852844.0
+
+Heritage: SDC
+
+Problems:
+
+* MODERATE: genesis seed is not a recent news event
+* MINOR: 6 blocks with 12 coin reward was premined and not disclosed
+
+Notes:
+
+mining began about 1 minute after announcement of wallet
+
+Watermarks: uint64_t, pos, lz4, smsg, sdc-like
