@@ -1,0 +1,43 @@
+metalcoin https://bitcointalk.org/index.php?topic=874659.0
+
+Heritage: DRM
+
+Problems:
+
+* MODERATE: Premine is somewhat excessive at this point, but after a week or two of mining it will be a fairly low portion of the total supply
+* MINOR: Alert keys have not been set. Network alerts can not be used
+* MODERATE: synccheckpoint key has not been set. Sync checkpoints can not be used. It is considered somewhat insecure to use PoS without sync checkpoints
+* 
+
+Notes:
+
+good, checkpointed premine
+good, very recent news event (http://www.metalinjection.net/its-just-business/you-can-now-blast-unbearable-death-metal-at-your-uber-cab-driver-and-he-cant-stop-you) 
+
+mining appeared to start about 2 minutes after ANN
+
+does this even work...
+ static std::map<int, unsigned int> mapStakeModifierCheckpoints =
+     boost::assign::map_list_of
+-        ( 0, 0x0e00670bu )
++        ( 0, 0x0e00670b )
++        ( 0, 0xbc4b99b6 )
+
+big hashrate drop soon after launch difficulty ramp up, resulting in a 2 hour block, but difficulty adjusted accordingly
+
+84         11/27/2014 04:34:50  0.96502724      1          0                    0                    0                    0                  
+  6          PoW    33e679                                                                                                                   
+83         11/27/2014 04:34:27  0.8286968       1          0                    0                    0                    0                  
+  6          PoW    33e679                                                                                                                   
+82         11/27/2014 04:34:26  0.71556478      1          0                    0                    0                    0                  
+  6          PoW    33e679                                                                                                                   
+81         11/27/2014 04:34:22  0.63378239      1          0                    0                    0                    0                  
+  6          PoW    33e679                                                                                                                   
+80         11/27/2014 04:34:04  9.59922002      1          0                    0                    0                    0                  
+  6          PoW    33e679                                                                                                                   
+79         11/27/2014 02:04:02  8.51739936      1          0                    0                    0                    0                  
+  6          PoW    389520                                                                                                                   
+78         11/27/2014 02:03:43  7.99012817      1          0                    0                    0                    0                  
+  6          PoW    389520                                                                                                                                                                                     
+
+Watermarks: uint64_t, pos, drm-like
