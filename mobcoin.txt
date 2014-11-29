@@ -1,0 +1,64 @@
+mobcoin https://bitcointalk.org/index.php?topic=873867.0
+
+Heritage: darkblock, librexcoin (perfect)
+
+Problems:
+
+* MINOR: alert key has not been set. Network alerts can not be used
+
+Notes:
+
+good, genesis seed is a fairly recent news event
+Mining started apparently around 1.5 minutes after source was released
+
+early block report is wrong
+jorneyflair
+Sr. Member
+****
+
+
+Activity: 364
+
+Life is like a box of chocolates
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: Mobcoin - X11 PoW/PoS - Launching shortly, get ready!
+November 26, 2014, 09:00:15 AM
+Reply with quote  #17
+
+￼
+{
+"blocks" : 33,
+"currentblocksize" : 1000,
+"currentblocktx" : 0,
+"difficulty" : {
+"proof-of-work" : 21.76447225,
+"proof-of-stake" : 0.00024414,
+"search-interval" : 0
+},
+"blockvalue" : 75000000000,
+"netmhashps" : 195.48770540,
+"netstakeweight" : 0.00000000,
+"errors" : "",
+"pooledtx" : 0,
+"stakeweight" : {
+"minimum" : 0,
+"maximum" : 0,
+"combined" : 0
+},
+"stakeinterest" : 1000000,
+"testnet" : false
+}
+
+
+crazy
+
+
+
+at block 33, actual difficulty is 0.28203594, and mined 2 minutes before that post, at 11/26/2014 08:58:10 
+
+Watermarks: uint64_t, pos, drm-like
