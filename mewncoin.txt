@@ -1,0 +1,19 @@
+mewncoin https://bitcointalk.org/index.php?topic=878288.0
+
+Heritage: SDC
+
+Problems:
+
+* MINOR: 11 low-reward blocks were premined and undisclosed, adding up to 34.54 coins
+* MINOR: minimum difficulty is set very low, leading to some instamining that affected high-reward blocks
+** The first 100 or so blocks were mined in less than 10 minutes, of which 70 were high-reward blocks
+
+Notes:
+
+good, checkpointed premine
+good, very recent news event as genesis seed
+
+what is this from?
++    fUberStake = GetBoolArg("-uberstake", false);
+
+Watermarks: uint64_t, pos, smsg, lza, sdc-like
