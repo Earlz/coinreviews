@@ -1,0 +1,72 @@
+ohmygod https://bitcointalk.org/index.php?topic=881852.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MINOR: minimum difficulty is very low, allowing some instamining early on, including around 10 blocks with high reward
+* MINOR: Actual POW max coin supply is 1,880,000, not 2,150,000 as listed in ANN 
+** This makes premine about 1.4% (about the same as in ANN)
+* NOTE: About 18 extra blocks were premined but had no rewards
+
+Notes:
+
+early miner with clock off by about a minute.. 
+68         12/03/2014 12:47:48  1.02929166      1          0                    400                  400                  0                    6          P
+oW    5772af    
+67         12/03/2014 12:47:47  1.02929166      1          0                    400                  400                  0                    6          P
+oW    5772af    
+66         12/03/2014 12:48:57  0.73956417      1          0                    400                  400                  0                    6          P
+oW    58f0e9    
+65         12/03/2014 12:48:43  0.6135604       1          0                    400                  400                  0                    6          P
+oW    58f0e9    
+64         12/03/2014 12:47:59  0.41585497      1          0                    400                  400                  0                    6          P
+oW    58f0e9    
+
+
+WTF, this post was apparently updated after the fact.. seems weird. The report comes from 12:47 according to the blockchain, but the post was made on 12:40
+
+aiqinghai
+Member
+**
+
+
+Activity: 85
+
+
+View Profile  Personal Message (Offline)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [ANN][OMG] OHMYGOD! Another alt? YES [Half-Ninja] [X11-Pos 55%. NO ICO-IPO]
+December 03, 2014, 12:40:21 PM
+Reply with quote  #24
+
+20:47:52
+￼
+{
+"blocks" : 61,
+"currentblocksize" : 1000,
+"currentblocktx" : 0,
+"difficulty" : {
+"proof-of-work" : 0.13882857,
+"proof-of-stake" : 0.00000000,
+"search-interval" : 0
+},
+"blockvalue" : 40000000000,
+"netmhashps" : 0.73522094,
+"netstakeweight" : 0.00000000,
+"errors" : "",
+"pooledtx" : 0,
+"stakeweight" : {
+"minimum" : 0,
+"maximum" : 0,
+"combined" : 0
+},
+"stakeinterest" : 55000000,
+"testnet" : false
+}
+
+
+Watermarks: uint64_t, pos, drm-like
