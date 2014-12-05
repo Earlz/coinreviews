@@ -1,0 +1,22 @@
+bluntcoin https://bitcointalk.org/index.php?topic=882813.0
+
+Heritage: almost identical to MEWN
+
+Problems:
+
+* MODERATE: minimum difficulty is set extremely low
+** This allowed instamining of all 100 low-reward blocks, and about 50 high-reward blocks
+* MINOR: Actual maximum PoW coin supply is 7,451,490, not 7,500,000 as in the ANNN
+* NOTE: The premine is actually a bit smaller than specified in the ANN, at 0.67% of the supply
+* MODERATE: sync checkpoint key is probably invalid and no checkpoint server appears to be running
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+Notes:
+
+good, genesis block is news event
+
+lawl
+-static const int DATABASE_VERSION = 131421;
++static const int DATABASE_VERSION = 420420;
+
+Watermarks: uint64_t, pos, sdc-like, uberstake
