@@ -1,0 +1,22 @@
+darkswift https://bitcointalk.org/index.php?topic=877818.0;all
+
+Heritage: APC(?)
+
+Problems:
+
+* CRITICAL: PoW Difficulty is currently extremely low. Conducting a double spend would be very easy and cheap to do
+** This will be resolved as more PoS blocks are minted. Currently, it appears to be 100% PoW, with the last PoW block about 22,000 blocks away (no PoS blocks have been minted yet)
+
+* MODERATE: Time drift allowance is excessive at 1 day. Bitcoin is 2 hours and most PoS coins are 15 minutes
+** This could allow for difficulty manipulation by using excessively drifted timestamps
+* MODERATE: Sync checkpoint key appears to be valid, but no sync checkpoint server is operating on the network currently
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+
+Notes:
+
+genesis seed doesn't matter for ICO
+
+-    uint256 hashCheckpointKnown; // ppcoin: known sent sync-checkpoint
++    uint256 hashCheckpointKnown; // apccoin: known sent sync-checkpoint
+
+Watermarks: uint64_t, pos, drm-like
