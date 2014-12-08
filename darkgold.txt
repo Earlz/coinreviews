@@ -14,7 +14,7 @@ Problems:
 * MINOR: ICO/premine funds have not been checkpointed
 * MODERATE: The sync checkpoint key appears to be valid, but no sync checkpoint node appears to be running on the network
 ** It is considered somewhat insecure to run a PoS coin without sync checkpoints
-* MINOR: "Total Coins: 50M" in ANN is wrong. Total coins is infinite, total PoW coins is 
+* MINOR: "Total Coins: 50M" in ANN is wrong. Total coins is infinite, total PoW coins is 1,369,590.0
 
 Notes:
 
