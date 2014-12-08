@@ -1,0 +1,23 @@
+darkgold https://bitcointalk.org/index.php?topic=868354.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: ICO funds/premine was mined in such a way that PoS staking inflated the actual amount mined
+** The ICO funds 800K actually ended up being around 800,600 coins.
+** Can't tell how much BTC 600 coins actually adds up to, since I can't determine the price per coin from the announcement thread
+* MINOR: ICO/premine funds have not been checkpointed
+* MODERATE: The sync checkpoint key appears to be valid, but no sync checkpoint node appears to be running on the network
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+Notes:
+
+genesis seed is news event
+
+A lot of people concerned about PoS weight and amount of coins minted by PoS on the ICO funds. 
+Looking at the ratio of PoS blocks and average payout, it's at most 800 coins.. probably more like 600 coins
+
+Also some concern about moneysupply not including premine. I see no evidence of this unless github was updated before I could review it
+
+Watermarks: uint64_t, pos, drm-like, devcoin
