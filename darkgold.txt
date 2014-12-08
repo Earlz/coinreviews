@@ -4,12 +4,17 @@ Heritage:
 
 Problems:
 
+* EXTREME: 200K coins are premined, not for ICO, and disclosed in a very difficult to read way (they just say how many blocks are premined)
+** Even if disclosed, this is an extremely large premine of around 14% (including the 152 blocks, and excluding the ICO portion)
+* MAJOR: 152 normal reward (non-ICO) blocks were premined and undisclosed, yielding 1,520 coins
+
 * MODERATE: ICO funds/premine was mined in such a way that PoS staking inflated the actual amount mined
 ** The ICO funds 800K actually ended up being around 800,600 coins.
 ** Can't tell how much BTC 600 coins actually adds up to, since I can't determine the price per coin from the announcement thread
 * MINOR: ICO/premine funds have not been checkpointed
 * MODERATE: The sync checkpoint key appears to be valid, but no sync checkpoint node appears to be running on the network
 ** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+* MINOR: "Total Coins: 50M" in ANN is wrong. Total coins is infinite, total PoW coins is 
 
 Notes:
 
