@@ -5,7 +5,8 @@ Heritage: communitycoin(perfect)
 Problems:
 
 * MAJOR: About 192 blocks were premined and undisclosed. This adds up to an extra 19,200 coins
-* MODERATE: geensis seed is not a news event
+* MAJOR: Premine is somewhat excessive at a bit over 1 day worth of mining. 
+* MODERATE: genesis seed is not a news event
 
 Notes:
 
