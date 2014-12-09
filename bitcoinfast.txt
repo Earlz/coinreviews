@@ -1,0 +1,12 @@
+bitcoinfast https://bitcointalk.org/index.php?topic=881774.0
+
+Heritage: communitycoin(perfect)
+
+Problems:
+
+* MAJOR: About 192 blocks were premined and undisclosed. This adds up to an extra 19,200 coins
+* MODERATE: geensis seed is not a news event
+
+Notes:
+
+Watermarks: uint64, pos, ardiano, axis-like
