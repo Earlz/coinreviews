@@ -1,0 +1,54 @@
+alipaycoin https://bitcointalk.org/index.php?topic=868675.0.Alipay-Coin
+
+Heritage: CLOAK(perfect), MINT
+
+Problems:
+
+* MAJOR: About 320 blocks were premined with rewards and undisclosed. These coins should be provably burned
+** see https://gist.github.com/Earlz/de3cc5f6ee85c7a69d53 for appropriate burn addresses.
+
+* MODERATE: Sync checkpoint key appears to have no been changed and no checkpoint server is running on the network
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+* MINOR: Alert keys have not been changed, network alerts can not be used
+* MODERATE: genesis seed is not a recent news event
+* MODERATE: Difficulty adjusted slowly when miners hopped on, allowing the instamining of around 300 blocks in a period of about 10 minutes
+
+Notes:
+
+something with blocktimes and reports on bitcointalk makes me uneasy
+ocminer reports at November 25, 2014, 09:47:48 PM that block count is 544, saying he joined at block 362 (last private PoS block?)
+However, block 363 shows to be mined at 11/25/2014 20:33:39, when the earliest post saying there is a wallet is 20:55... seems very odd that hashrate would remain this low for about 30 minutes 
+
+very weird timestamps in between these early public blocks as well, with random jumps every few blocks by a few minutes
+375        11/25/2014 20:47:17  0.0002884       1          0                    1                    1                   
+ 0                    4          PoW    b1324c     
+374        11/25/2014 20:44:33  0.00032034      1          0                    1                    1                   
+ 0                    4          PoW    b1324c     
+373        11/25/2014 20:41:50  0.00031896      1          0                    1                    1                   
+ 0                    4          PoW    b1324c     
+372        11/25/2014 20:40:54  0.0003001       1          0                    1                    1                   
+ 0                    4          PoW    1c05d5     
+371        11/25/2014 20:40:49  0.00028235      1          0                    1                    1                   
+ 0                    4          PoW    1c05d5     
+370        11/25/2014 20:40:44  0.0002872       1          0                    1                    1                   
+ 0                    4          PoW    1c05d5     
+369        11/25/2014 20:39:28  0.00027454      1          0                    1                    1                   
+ 0                    4          PoW    b1324c     
+368        11/25/2014 20:39:09  0.00026008      1          0                    1                    1                   
+ 0                    4          PoW    31ee18     
+367        11/25/2014 20:38:58  0.00024414      1          0                    1                    1                   
+ 0                    4          PoW    b1324c     
+366        11/25/2014 20:38:55  0.0002465       1          0                    1                    1                   
+ 0                    4          PoW    b1324c     
+365        11/25/2014 20:35:32  0.00025684      1          0                    1                    1                   
+ 0                    4          PoW    1c05d5     
+364        11/25/2014 20:33:53  0.00024414      1          0                    1                    1                   
+ 0                    4          PoW    c1a924     
+363        11/25/2014 20:33:39  0.00026265      1          0                    1                    1                   
+ 0                    4          PoW    0083b3     
+362        11/25/2014 18:58:35  0.00027769      3          3001234.252327       3001234.252590       0.000263            
+ 0.000010             4          PoS    9c1185     
+
+maybe there was a malicious miner withholding blocks or something? block 375 and 374 are particularly puzzling as you can see it was mined by the same "b1324c" miner, but yet suddenly there is a 3 minute difference between blocks with extremely low difficulty... so that rules out just 1 miner with their time set wrong... weird, but doesn't seem to be a real security problem
+
+Watermarks: uint64, pos, axis-like
