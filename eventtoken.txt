@@ -1,0 +1,13 @@
+eventtoken https://bitcointalk.org/index.php?topic=836232
+
+Heritage: SDC
+
+Problems:
+
+* MINOR: Some instamining happened for around 70 high-reward blocks. (mined in 10 minutes or less)
+** This was caused by public mining beginning around block 60 and only having 40 blocks of zero rewards to bring the difficulty up
+
+Notes:
+genesis seed is not a news event, but doesn't matter for ICO
+
+Watermarks: uint64_t, pos, sdc-like, smsg
