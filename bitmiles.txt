@@ -1,0 +1,15 @@
+bitmiles https://bitcointalk.org/index.php?topic=892298.0
+
+Heritage: LTC 0.6.9ish, piggycoin template(https://github.com/piggycoin/piggycoin)
+
+Problems:
+
+* EXTREME: Premine is extremely excessive and will be more than the network will mint for over 2 years
+** The premine being expressed as a percentage of the supply is deceiving, given that the full supply takes decades to mint
+** See https://gist.github.com/Earlz/de3cc5f6ee85c7a69d53 to properly destroy a portion of this excessive premine
+
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+Watermarks: uint64, pow, unknown
