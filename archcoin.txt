@@ -1,0 +1,14 @@
+archcoin https://bitcointalk.org/index.php?topic=754055.0
+
+Heritage: blackcoin (disclosed, somewhere around v1.1.1)
+
+Problems:
+
+* MINOR: despite significant age, has no hardcoded checkpoints
+
+could not sync the daemon, so review is incomplete
+
+Notes:
+
+code at least looks good
+Watermarks: uint64_t, pos, blackcoin-ish
