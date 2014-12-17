@@ -1,0 +1,15 @@
+vtorrent https://bitcointalk.org/index.php?topic=889481.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: At least 5 extra blocks were premined early and undisclosed, probably more like 15 blocks in total
+
+Notes:
+
+oddly enough, it appears to be an early version of SDC without smsg, or smsg was ripped out for some reason
+
+./vTorrentd -daemon -addnode=vtor.lifeforce.info -addnode=vtr.minerpools.com -addnode=blocks.luckyalt.com
+Watermarks: uint64_t, pos, sdc-like
