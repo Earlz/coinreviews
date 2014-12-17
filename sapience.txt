@@ -1,0 +1,14 @@
+sapience https://bitcointalk.org/index.php?topic=864895.0
+
+Heritage: quotient
+
+Problems:
+
+* CRITICAL: Although not obvious, PoW is still enabled (but zero-reward). PoW is of course at minimum difficulty (I mined about 40 blocks in 2 minutes with a CPU to confirm)
+** This needs to be forked to disable PoW mining as there are still around 12,000 blocks remaining before PoW goes off right now
+
+Notes:
+genesis seed doesn't matter for ICO
+good, checkpointed premine
+
+Watermarks: uint64_t, pos, sdc-like
