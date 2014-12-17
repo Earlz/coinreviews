@@ -1,0 +1,22 @@
+spreadcoin https://bitcointalk.org/index.php?topic=715435.0
+
+This coin(or the coin it forked from) contains many radical changes. 
+This review is best effort and is not guaranteed to be 100% accurate
+
+Heritage: 
+
+Problems:
+
+
+Notes:
+
+good, has checkpoints
+
+genesis seed block is interesting.. guess that counts as a recent news event
+const char* pszTimestamp = "Bitcoin block #312971 ~1cbec6ee63d173ea4b2c645cdb162aae6637170ecbb43c15";
+
+has some stuff from motocoin, but doesn't appear to actually be forked from it
+
+closest coin appears to be darkcoin v0.9.11.6, but still with tons of radical changes
+
+Watermarks: uint64, pow, ltc-like, drk-like
