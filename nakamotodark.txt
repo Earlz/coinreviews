@@ -1,0 +1,18 @@
+nakamotodark https://bitcointalk.org/index.php?topic=896354.0
+
+Heritage: 
+
+Problems:
+
+* MAJOR: The first 6 blocks were premined and undisclosed. This adds up to 24,000 coins
+** The address that mined these blocks went on to mine about 18 more blocks there were not before release
+** The first six blocks were mined at 19:22, well before release, the rest were mined beginning at 19:54:04, very close or after release
+** To burn the 24,000 coins that were premined use a proper burn address https://gist.github.com/Earlz/de3cc5f6ee85c7a69d53
+
+* MODERATE: PoW minimum difficulty is extremely low, allowing for instamining
+* MODERATE: genesis seed is not a recent news event
+
+Notes:
+
+
+Watermarks: uint64_t, pos, drm-like
