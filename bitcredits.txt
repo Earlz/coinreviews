@@ -1,0 +1,41 @@
+bitcredits https://bitcointalk.org/index.php?topic=896133.0
+
+Heritage: unknown.. something
+bitcoin master (somewhere around 2fdc3351d72af2ad26280cd0ca07c2ae4080db55), but with some different versions apparently mixed in for some files
+borrows concepts from protoshares
+
+Problems:
+
+* MODERATE: Forked from a non-release version of Bitcoin
+** Bitcoin makes changes quite quickly for a cryptocurrency and there is less QA on the master branch
+** Altcoins should fork from a release version that has been properly tested for bugs
+* MODERATE: genesis seed is not a news event
+* MODERATE: Launch was very shakey with no source initially, however due to low-reward ICO mining period, this isn't too bad
+* UNKNOWN: Since this is a new hashing algorithm, I'm not even sure if the difficulty is low or not at 0.00000084
+* MODERATE: Block maturity is low at 20 for a 1-minute block coin. 
+** This may allow some attacks on the blockchian to be easier by not requiring buying coins, but rather using coins from mining directly
+
+Notes:
+
+use `./configure --with-incompatible-bdb --enable-tests=0` for building without errors
+
+...wtf is "birthdayA" and "birthdayB"? some protoshare crap
+
+the long ago depricated getwork/getworkex API has been added back in apparently? 
+
+what is this!? Assume that this is something related to the genesis transaction
+@@ -370,7 +370,7 @@ ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue,
+             CWalletTx wtx;
+             ssValue >> wtx;
+             CValidationState state;
+-            if (!(CheckTransaction(wtx, state) && (wtx.GetHash() == hash) && state.IsValid()))
++            if (!(( hash== uint256("0xeb16e3eaefd7570868d26910edc17f566125dccaf793ffc3fad19d183ced1226") || CheckTransaction(wtx, state) )&& (wtx.GetHash() == hash) && state.IsValid()))
+                 return false;
+
+removing this results in nothing
+[earlz@test2 src]$ ./bitcredits-cli getrawtransaction eb16e3eaefd7570868d26910edc17f566125dccaf793ffc3fad19d183ced1226 1
+error: {"code":-5,"message":"No information available about transaction"}
+
+I don't believe this is called protocol critical code, so is probably nothing to worry about.. still weird though
+
+Watermarks: uint64_t, pow, unknown
