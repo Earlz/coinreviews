@@ -1,0 +1,55 @@
+sendchat PRE-ANN (blocktrust)
+PRE-RELEASE
+
+Heritage: blackcoin master(5750ebe0f0cea03f91710238e272af77d4d10cf2)
+
+Problems:
+
+* MINOR: The coinbase maturity is quite low (ie, how many confirms before coins mined from a block can be spent)
+** This can make some attacks easier by not needing to buy coins on an exchange, instead spending mined coins from the attack
+* MINOR: alert key has not been changed. Network alerts can not be sent
+** This should be changed to 0 if the intent is to disable the alert system, so that blackcoin developers can't send a malicious alert
+* MODERATE: block timestamp is not checked to ensure it is not too far into the future. 
+** This can allow difficulty attacks with timestamp manipulation
+* MODERATE: Minimum transaction fee is 0
+** This means that all transactions will be sent and relayed with 0 fees, even if the block is approaching full 
+** This could allow for flooding the network with free spam transactions
+
+Notes:
+
+Watermarks: uint64_t, pos, chainparams
+
+PRE-ANN notes:
+forked from a good quality codebase
+good, has synccheckpoint key set
+good, uses zero reward PoS blocks during CCO
+
+why was this check removed? 
+@@ -1907,8 +1974,8 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
+         return DoS(50, error("CheckBlock() : proof of work failed"));
+ 
+     // Check timestamp
+-    if (GetBlockTime() > FutureDriftV2(GetAdjustedTime()))
+-        return error("CheckBlock() : block timestamp too far in the future");
++    //if (GetBlockTime() > FutureDriftV2(GetAdjustedTime()))
++        //return error("CheckBlock() : block timestamp too far in the future");
+ 
+     // First transaction must be coinbase, the rest must not be
+     if (vtx.empty() || !vtx[0].IsCoinBase())
+@@ -2000,8 +2067,8 @@ bool CBlock::AcceptBlock()
+         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
+ 
+     // Check coinbase timestamp
+-    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))
+-        return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
++    //if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))
++        //return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
+
+this needs to be 11, to compensate for the changed string length of "sendcoin:" 
+     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
+     //    which will lower-case it (and thus invalidate the address).
+-    if(uri.startsWith("blackcoin://"))
++    if(uri.startsWith("sendcoin://"))
+     {
+-        uri.replace(0, 12, "blackcoin:");
++        uri.replace(0, 12, "sendcoin:");
