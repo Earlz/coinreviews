@@ -9,7 +9,7 @@ Problems:
 ** There are about 8500 blocks left before the chain switches to pure PoS and this issue resolves itself
 ** Thus far, at around block 1500, there have not been any PoS blocks minted
 
-* MODERATE: There is no hard
+* MODERATE: There is no hard coded checkpoint for the premined funds being sent to exchange
 * MINOR: hardened stake modifier checkpoint support is disabled
 * MINOR: The coin maturation (how many confirmations before you can spend coins from mined blocks) is extremely short
 ** It is set to just 5 confirms, with 30 seconds blocks is just 2.5 minutes
