@@ -1,0 +1,36 @@
+resumeo https://bitcointalk.org/index.php?topic=888714.0
+
+Heritage: DRM, xcloudcoin(?)
+
+Problems:
+
+* CRITICAL: PoW is currently active with zero-rewrds, leaving difficulty extremely low
+** It would be trivial to conduct a 51% attack for double spending, etc
+** There are about 8500 blocks left before the chain switches to pure PoS and this issue resolves itself
+** Thus far, at around block 1500, there have not been any PoS blocks minted
+
+* MODERATE: There is no hard
+* MINOR: hardened stake modifier checkpoint support is disabled
+* MINOR: The coin maturation (how many confirmations before you can spend coins from mined blocks) is extremely short
+** It is set to just 5 confirms, with 30 seconds blocks is just 2.5 minutes
+** Because of zero-inflaction, I guess this doesn't actually matter? 
+* MINOR: The network alarm key has not been changed. Network alarms can not be sent
+* MODERATE: The sync checkpoint key has not been changed and no sync checkpoint server is on the network
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+* MAJOR: By design, this coin has no benefit provided by staking coins (ie, there is interest is 0%)
+** This will mean that few people will bother with staking, leaving the network less secure
+
+Notes:
+
+@@ -383,9 +383,9 @@ unsigned int GetStakeModifierChecksum(const CBlockIndex* pindex)
+ // Check stake modifier hard checkpoints
+ bool CheckStakeModifierCheckpoints(int nHeight, unsigned int nStakeModifierChecksum)
+ {
+-    MapModifierCheckpoints& checkpoints = (fTestNet ? mapStakeModifierCheckpointsTestNet : mapStakeModifierCheckpoints);
++    /*MapModifierCheckpoints& checkpoints = (fTestNet ? mapStakeModifierCheckpointsTestNet : mapStakeModifierCheckpoints);
+ 
+     if (checkpoints.count(nHeight))
+-        return nStakeModifierChecksum == checkpoints[nHeight];
++        return nStakeModifierChecksum == checkpoints[nHeight];*/
+
+Watermarks: uint64_t, pos, drm-like
