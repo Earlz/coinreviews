@@ -1,0 +1,66 @@
+twenty15coin https://bitcointalk.org/index.php?topic=901192.0
+
+Heritage: 
+
+Problems:
+
+* MINOR: Alert key has not been changed. Network alerts can not be sent
+* MODERATE: Minimum PoW difficulty is set quite low. 
+** This allowed for some instamining with the first 88 blocks mined in about 2 minutes 
+
+
+Notes:
+
+Early block report is wrong. reports block count as 32, but at that point actual block count for that difficulty should be 72
+
+
+73         12/21/2014 10:17:34  0.6004948       1          0                    10000           
+     10000                0                    6          PoW    99c9f4      
+72         12/21/2014 10:17:30  0.48261667      1          0                    10000           
+     10000                0                    6          PoW    99c9f4      
+71         12/21/2014 10:17:23  0.37894207      1          0                    10000           
+     10000                0                    6          PoW    99c9f4      
+
+
+wisnon
+Sr. Member
+****
+Online Online
+
+Activity: 266
+
+
+View Profile  Personal Message (Online)
+Trust: 0: -0 / +0(0) 
+Ignore
+	
+Re: [ANN] [NINJA] [X11] Twenty15 Coin [NO IPO/PREMINE/INSTA]
+December 21, 2014, 10:18:05 AM
+Reply with quote  #4
+
+￼
+{
+"blocks" :32,
+"currentblocksize" : 1000,
+"currentblocktx" : 0,
+"difficulty" : {
+"proof-of-work" : 0.48261667,
+"proof-of-stake" : 0.00000006,
+"search-interval" : 1
+},
+"blockvalue" : 1000000000000,
+"netmhashps" : 69.09409356,
+"netstakeweight" : 0.00000000,
+"errors" : "",
+"pooledtx" : 0,
+"stakeweight" : {
+"minimum" : 0,
+"maximum" : 0,
+"combined" : 0
+},
+"stakeinterest" : 8000000,
+"testnet" : false
+}
+
+
+Watermarks: uint64_t, pos, drm-like 
