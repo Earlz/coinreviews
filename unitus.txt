@@ -1,0 +1,24 @@
+unitus https://bitcointalk.org/index.php?topic=901069.0
+
+This coin contains extreme changes and brand new features. My reviews are best effort and may not expose all issues. 
+I must stress that my reviews are never guaranteed to be 100% accurate.
+
+Heritage: bitcoin 0.9.3 (confirmed and declared)
+
+Problems:
+
+* MINOR: Algorithm work "factor" is not properly implemented and prioritized. 
+** This means if X11 has difficulty of 10 and yescrypt has difficulty of 1, even if yesscrypts "cost" of minting a block is greater, there is no priority given to the yescrypt block. 
+** This might be a minor security issue, but with the sequential block check I don't think this has a significant impact
+** There is a notion of an "adjusted" proof of work to partially handle this, but I can't determine how effective it would be with my cursory review
+** MINOR: The minimum difficulty of at least some of the algorithms is very low. This allowed for some instamining with about 50 blocks or so mined in 1 minute
+
+Notes:
+
+This actually looks very well thought out. Most multi-algo coins suffers from only requiring a 51% attack on one algo to do double spends etc. 
+This coin however implements a maximum sequential blocks per algorithm check of 3. This means if you wait for 6 confirms, to conduct a 51% attack would require not just control of 1 algorithm, but control of 2.. 
+
+good, has news event as genesis seed
+good, appeared to launch on time with no premine
+
+Watermarks: uint64_t, pow, merge, new
