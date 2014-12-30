@@ -1,0 +1,18 @@
+squarebit https://bitcointalk.org/index.php?topic=906354.0
+
+Heritage: DRM, HACK
+
+Problems:
+
+* MODERATE: Genesis seed is not a recent news event
+* MINOR: Alert key has not been changed. Network alerts can not be sent.
+* MODERATE: Sync checkpoint key has not been changed. Sync checkpoints can not be used
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+* MODERATE: Actual PoW max coin supply is 1,536,750, not 2 million as in the ANN.
+** This pushes the actual premine percentage to about 2.6%
+
+4 extra blocks were premined that were zero-reward
+
+Notes:
+
+Watermarks: uint64_t, pos, drm-like
