@@ -1,4 +1,4 @@
-sendchat PRE-ANN (blocktrust)
+sendchat PRE-ANN (blocktrust) https://bitcointalk.org/index.php?topic=880647.0
 PRE-RELEASE
 
 Heritage: blackcoin master(5750ebe0f0cea03f91710238e272af77d4d10cf2)
@@ -16,3 +16,11 @@ forked from a good quality codebase
 good, has synccheckpoint key set
 good, uses zero reward PoS blocks during CCO
 
+summary:
+
+Sendcoin was forked from the blackcoin codebase. Blackcoin has integrated many modern features from Bitcoin 0.9, and thus is a very good codebase to fork from. I've confirmed that the Windows, Linux QT wallet, and Linux daemon work as expected and all properly can send/recieve transactions. Also, the parameters of the cryptocurrency all are within reasonable bounds to ensure a fair and secure CCO launch and continued development. There is also the Sendchat feature, which will integrate with the RPC interface of Sendcoin as a separate program. I've not tested it yet, but from the whitepaper and discussions with the developers, it sounds like a sound project. 
+
+
+public:
+
+Sendcoin is a new cryptocurrency with plans of enabling easy microtransactions and cross-platform messaging. The cryptocurrency wallet has been tested and verified by BlockTrust to confirm the documented specifications, and is in proper working order with no observable problems. The blockchain was tested by using a series of transactions to ensure that the coins were received and could be sent on all supported platforms. SendChat uses PoS 2.0 from Blackcoin and is directly based on the Blackcoin source code. As such, it has excellent code quality. The developers were quick to fix some minor issues that were encountered in the testing. By speaking with the developers, it is evident that they have a good understanding of the blockchain protocol and how to properly manage it in their own source code.
