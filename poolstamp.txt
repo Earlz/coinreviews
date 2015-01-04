@@ -1,0 +1,17 @@
+poolstamp https://bitcointalk.org/index.php?topic=890984.0
+
+Heritage: ISIS, DRM, HASH, HACK
+
+Problems:
+
+* MINOR: Number of confirmations required before mined funds can be sent is slightly low
+** This may enable some attacks to be slightly easier by using mined coins, instead of getting the coins another way
+* NOTICE: alert key is purposefully invalidated. Network alerts can not be sent
+
+Notes:
+
+genesis seed isn't a news event, but for ICO doesn't matter
+
+Public mining began around block 40 (block 2-100 is zero reward)
+
+Watermarks: uint64_t, pos, drm-like
