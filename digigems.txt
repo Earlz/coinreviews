@@ -1,0 +1,16 @@
+digigems https://bitcointalk.org/index.php?topic=913237.0
+
+Heritage: litecoin master-0.8 c1e46ab3a90bd90b9092761214e841b165d4dbc8
+
+Problems:
+
+* EXTREME: At least 54 blocks were premined and undisclosed 
+** This is an "extreme" issue because the ANN explicitly says "NO PREMINE"
+** To provably destroy the premine use https://gist.github.com/Earlz/de3cc5f6ee85c7a69d53
+
+* MODERATE: genesis seed is not a recent news event
+
+Notes:
+
+
+Watermarks: uint64, pow, ltc-like
