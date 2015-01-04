@@ -6,6 +6,8 @@ Problems:
 
 * MINOR: Number of confirmations required before mined funds can be sent is slightly low
 ** This may enable some attacks to be slightly easier by using mined coins, instead of getting the coins another way
+* MODERATE: sync checkpoint key has not been changed. Sync checkpoints can not be used
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
 * NOTICE: alert key is purposefully invalidated. Network alerts can not be sent
 
 Notes:
