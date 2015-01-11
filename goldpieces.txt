@@ -1,0 +1,16 @@
+goldpieces https://bitcointalk.org/index.php?topic=919695.msg10104234
+
+Heritage: DRM, HACK
+
+Problems:
+
+* IMPORTANT: This is vulnerable to the recent OpenSSL forking issue.
+** Please see https://bitcointalk.org/index.php?topic=919695 for more info and how to fix this issue
+
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+1 block premined and was disclosed
+
+Watermarks: uint64_t, pos, drm-like
