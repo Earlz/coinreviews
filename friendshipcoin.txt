@@ -1,0 +1,20 @@
+friendshipcoin https://bitcointalk.org/index.php?topic=461358.0
+
+Heritage: LTC (proclaimed and confirmed)
+
+Problems:
+
+* IMPORTANT: This is vulnerable to the recent OpenSSL forking issue.
+** Please see https://bitcointalk.org/index.php?topic=919695 for more info and how to fix this issue
+
+* MODERATE: No checkpoints have been added despite significant coin age
+
+
+genesis seed is not a news event, but with coin age doesn't matter at this point
+Notes:
+
+block 592 crashes my block explorer, probably due to some rounding bug with my code
+
+blockchain not analyzed for premine due to realizing I was working on the wrong coin
+
+Watermarks: uint64, pow
