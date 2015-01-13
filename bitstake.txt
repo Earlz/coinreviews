@@ -7,6 +7,9 @@ Problems:
 * IMPORTANT: This is vulnerable to the recent OpenSSL forking issue.
 ** Please see https://bitcointalk.org/index.php?topic=919695 for more info and how to fix this issue
 * MODERATE: genesis seed is not a news event
+* MODERATE: The sync checkpoint key has not been changed. Sync checkpoints can not be used
+** It is considered somewhat insecure to use a PoS coin without checkpoints
+
 
 Notes:
 
