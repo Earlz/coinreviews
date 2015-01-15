@@ -1,0 +1,16 @@
+porkcoin https://bitcointalk.org/index.php?topic=909934.0
+
+Heritage: scattercoin
+
+Problems:
+
+* IMPORTANT: This is vulnerable to the recent OpenSSL forking issue.
+** Please see https://bitcointalk.org/index.php?topic=919695 for more info and how to fix this issue
+* EXTREME: premine of 100,000 coins is very excessive, given how many 1 reward blocks there are. 
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+good, has checkpoints
+
+Watermarks: uint64, pos, unknown, axis-like
