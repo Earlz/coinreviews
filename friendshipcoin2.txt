@@ -1,0 +1,20 @@
+friendshipcoin2 https://bitcointalk.org/index.php?topic=917364.0
+
+Heritage: SDC
+
+Problems:
+
+* IMPORTANT: This is vulnerable to the recent OpenSSL forking issue.
+** Please see https://bitcointalk.org/index.php?topic=919695 for more info and how to fix this issue
+* MODERATE: Sync checkpoint key is not set. Sync checkpoints can not be used
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+
+genesis seed is not a news event, but with nearly(?) full PoS doesn't matter
+Notes:
+
+good, lots ofcheckpoints
+
+is doing a coinswap from FSC to FSC2
+
+Watermarks: uint64_t, pos, xxhash, sdc-like
