@@ -1,0 +1,13 @@
+eagscurrency https://bitcointalk.org/index.php?topic=914583.0
+
+Heritage: TC
+
+Problems:
+
+* UNKNOWN: Premine, though disclosed (as "PoS Coins") is extremely excessive. They appear to have a plan to distribute these coins however. 
+
+Notes:
+good, genesis seed is news event
+good, launch went as expected at around block 50
+
+Watermarks: uint64_t, pos
