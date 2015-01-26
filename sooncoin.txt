@@ -1,0 +1,17 @@
+sooncoin https://cryptocointalk.com/topic/27073-sooncoin-soon-sha256-pow-4minblocks-21-mil-total/
+
+Heritage: sorta similar to joincoin, but with the multi-algo bits removed, ABC (proclaimed, but with a mix of many other codebases)
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MAJOR: Launch was obscure, with a fairly minor community launch in IRC and possibly Hashtalk (thread now deleted and dev banned, probably due to paycoin drama of the time)
+* MINOR: Difficulty was very slow to adjust at launch, with first 300 blocks being mined in the first 10 minutes
+** This is probably from having the minimum difficulty set so low for the sha256
+
+Notes:
+
+Because the launh is obscure, there is no good way for me to determine if there is any kind of undisclosed premine
+
+
+Watermarks: uint64, pow, chainparams, unknown
