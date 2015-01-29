@@ -1,0 +1,15 @@
+cetuscoin https://bitcointalk.org/index.php?topic=790782.0
+
+Heritage: communitycoin, ECC
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: The sync checkpoint key appears to be set, but no checkpoint server is running on the network
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+* MINOR: Despite significant time having passed since launch, there are still no hardcoded checkpoints
+
+Notes:
+About 50 zero-reward blocks premined
+
+Watermarks: uint64, pos, axis-like
