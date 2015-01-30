@@ -1,0 +1,20 @@
+mysterycoin https://bitcointalk.org/index.php?topic=939935.0
+
+Heritage: DRM, WEST, HACK
+
+Problems:
+
+* MODERATE: PoS interest is actually 161.8%, not 16.18%. This might just be a parameter bug in the code, or a documentation error in the ANN
+* MODERATE: although the sync checkpoint key is set, no checkpoint server appears to be running on the network
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+NOTE: alert key not set
+
+Notes:
+
+good, genesis seed is a news event
+good, fair launch, mining began about 2 minutes after ANN wiht no premine
+
+extended
+
+Watermarks: uint64_t, pos, drm-like
