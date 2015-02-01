@@ -1,0 +1,33 @@
+extractcoin https://bitcointalk.org/index.php?topic=941697.0;all
+
+Heritage: bitcoin 0.10rc3, viacoin
+
+Problems:
+
+* MODERATE: Max supply in ANN is wrong. Max supply is infinite. 
+* MAJOR: Expressing the amount of the premine in percentage of supply is very misleading
+** Actual premine is 50,000 coins. This is equivalent to the reward of 1000 blocks at 50 coin reward, or about 12 hours of mining
+
+Notes:
+
+./extractcoin-cli addnode 37.59.24.15:18554 onetry
+
+good, genesis seed is a news event
+
+Neat, has addrindex support
+
+-    strUsage += "  -dnsseed               " + _("Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)") + "\n";
++    strUsage += "  -dnsseed               " + _("Query for peer addresses extract DNS lookup, if low on addresses (default: 1 unless -connect)") + "\n";
+     strUsage += "  -externalip=<ip>       " + _("Specify your own public address") + "\n";
+-    strUsage += "  -forcednsseed          " + strprintf(_("Always query for peer addresses via DNS lookup (default: %u)"), 0) + "\n";
++    strUsage += "  -forcednsseed          " + strprintf(_("Always query for peer addresses extract DNS lookup (default: %u)"), 0) + "\n";
+
+Also has checklocktimeverify
+
+Significantly increased max signature size (ie, more complex redeem scripts and multisig setups), but max transaction size and block size are pretty small
+
+Allows up to 120 bytes for op_return data
+
+Bult in automated testing is useless though, as the tests are broken and all fail
+
+Watermarks: uint64_t, auxpow, chainparamsbase
