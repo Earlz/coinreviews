@@ -1,0 +1,22 @@
+incakoin https://bitcointalk.org/index.php?topic=333084.0
+
+Heritage: BOUNTY, NVC
+
+Problems:
+
+
+* NOTE: genesis seed is not a news event, though due to coin age, this doesn't really matter now
+
+Notes:
+
+Mining first began in August 2013.. Can't find the first announcement thread, so impossible to find if tere is any kind of premine
+Due to coin age, premine is irrelevant anyway now
+
+wat?
+//r3wt wuz here
+//gb scripting by shakezula
+
+
+has feature allowing comments on transactions in blockchain
+
+Watermarks: uint64, pos, axis-like
