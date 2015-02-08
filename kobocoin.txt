@@ -1,0 +1,21 @@
+kobocoin https://bitcointalk.org/index.php?topic=920290.0
+
+Heritage: FIRE
+
+Problems:
+
+* MINOR: alert key has not been changed. Alert system can not be used. 
+** If the alert system is to be disabled, the public key for it should be set to 0
+* MODERATE: sync checkpoint key has not been changed. 
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+* MODERATE: minimum transaction fee is set to 0. This could allow for flooding the network with tiny transactions
+* MINOR: Actual PoW max supply is 43,200,000, not 350,000,000 as specified in ANN (probably MAX_MONEY confusion)
+* MODERATE: Launch was pretty rough due to no nodes being setup for this coin
+** I'm pretty sure that mining actually started at 7:10, but it wasn't until pools got setup at 7:22 that the network had a node to relay blocks
+
+Notes:
+
+genesis seed is a recent news event as of launch(?)
+
+
+Watermarks: uint64_t, pos, drm-like
