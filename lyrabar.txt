@@ -1,0 +1,22 @@
+lyrabar https://bitcointalk.org/index.php?topic=939208.0
+
+Heritage: darkcoin v0.9.0.1, vertcoin
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: sync checkpoint key was not changed
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+blockchain not yet analyzed due to linking errors
+Notes:
+
+huh?
+-// Global state -
++// Global smake -f makefile.unix USE_UPNP=-tate
+
+This requires you to install https://github.com/bitcoin/secp256k1
+otherwise, you get errors about a missing header file
+
+
+Watermarks: uint64, pos, drk-like
