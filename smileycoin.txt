@@ -1,0 +1,21 @@
+smileycoin https://bitcointalk.org/index.php?topic=845761.0
+
+Heritage: 
+
+Problems:
+
+* CRITICAL: Premine is absurdly large and will be more than is minted on the network with traditional mining for decades
+
+
+Notes:
+
+good, has a few checkpoints
+good, has a news event as a genesis seed, though it doesn't matter much with the way the premine was done
+
+This might cause problems for exchanges...
+    if (dAmount <= 0.0 || dAmount > 84000000.0)
+        throw JSONRPCError(RPC_TYPE_ERROR, "Invalid amount");
+
+Blockchain not analyzed since the premine is so large that it probably doesn't even matter
+
+Watermarks: uint64, pow, coincontrol, 1coin-like
