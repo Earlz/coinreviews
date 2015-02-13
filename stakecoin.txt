@@ -1,0 +1,14 @@
+stakecoin https://bitcointalk.org/index.php?topic=907490.0
+
+Heritage: blackcoin
+
+Problems:
+
+* MINOR: About 91 low-reward blocks were premined
+* NOTE: alert system is purposefully disabled
+
+Notes:
+
+genesis seed is a news event
+
+Watermarks: uint64_t, pos, chainparams, bc-like (blackcoin)
