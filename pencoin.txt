@@ -11,5 +11,7 @@ Notes:
 Mining started about 2 minutes after wallet release. No premine other than first block
 Axis with SDC stealth features added in
 good, checkpointed premine
+good, sync checkpoint server running
+
 
 Watermarks: uint64, pos, axis-like, xxhash 
