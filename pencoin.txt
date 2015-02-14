@@ -1,0 +1,15 @@
+pencoin https://bitcointalk.org/index.php?topic=934029.0
+
+Heritage: ECC
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+
+
+Notes:
+Mining started about 2 minutes after wallet release. No premine other than first block
+Axis with SDC stealth features added in
+good, checkpointed premine
+
+Watermarks: uint64, pos, axis-like, xxhash 
