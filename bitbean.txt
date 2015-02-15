@@ -1,0 +1,24 @@
+bitbean https://bitcointalk.org/index.php?topic=915650.0
+
+Heritage: TC (techcoin?)
+
+Problems:
+
+* MODERATE: Sync checkpoint key is not populated nad purposefully disabled
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+* NOTE: alert system purposefully disabled
+* NOTE: stake modifier checkpoints purposefully disabled
+* MODERATE: genesis seed is not a news event
+* MAJOR: Launch was very rough with no nodes being published until around block 400. 
+** As a result of this, difficulty remained extremely low (CPU-mining levels for sha256)
+** This potentially means that there is a defacto 400 block premine.. However, juding from difficulty curves,
+   I'd say the premine is really only 100-200 blocks from this boched launch. 
+** There is no proof that the dev has this "premine", as it could've been done by a solo-miner and orphaned the dev's early blocks (hence, mining starting hours after release)
+
+Notes:
+
+-addnode=95.215.44.248
+
+Source released on 2/13 23:00. Mining began at 2/14 01:05. Probably due to lack of nodes
+
+Watermarks: uint64_t, pos, drm-like 
