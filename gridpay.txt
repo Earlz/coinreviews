@@ -1,0 +1,18 @@
+gridpay https://bitcointalk.org/index.php?topic=945448.0
+
+Heritage: OPC
+
+Problems:
+
+* MODERATE: Future and Past time drift allowance is very large at 24 hours. 
+** This can allow for timestamp manipulation and difficulty adjustment attacks
+** For reference, most PoS coins make this 15 minutes, and bitcoin has it set to 3 hours
+* CRITICAL: Currently at block 664, most blocks being minted are zero-reward PoW blocks, as such a 51% attack would be trivial.
+** This will resolve itself as PoS blocks become more frequent and eventually PoW is disabled at block 5000.
+
+
+Notes:
+
+Because of ICO structure, genesis seed doesn't matter
+
+Watermarks: uint64_t, pos, drm-like
