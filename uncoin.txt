@@ -1,0 +1,22 @@
+uncoin http://uncoin.info/ https://github.com/uncoin/uncoin/tree/master/src 
+no ANN thread could be found
+
+Heritage: MINT, CLOAK
+
+Problems:
+
+* NOTE: alert key has not been changed
+* MODERATE: sync checkpoint key had a single-byte changed in it's key, rendering it a de-facto impossible key and disabled
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+* MODERATE: genesis seed is not a news event
+* MODERATE: minimum relay fee is 0. This could lead to DoS attacks on the network by sending small spam transactions
+* CRITICAL: PoW is still enabled, despite being zero reward and at minimum difficulty. This means PoW blocks can easily be minted very quickly and can 51% the network
+* CRITICAL: judging from the PoW difficulty throughout the short 1000-block PoW reward period, this appears to be a 100% premine coin.
+** The PoW difficulty has remained at the very low 0.002-0.004, which is basically a single miner worth with the X11 algorithm
+** However, I see no actual proof of this, or any proof that more than one person owns any of this coin
+
+Notes:
+
+First block was mined 12/27/2014 13:07:34 UTC. No way to confirm if premined or not though without ANN.
+
+Watermarks: uint64, pos, axis-like
