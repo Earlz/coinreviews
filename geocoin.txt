@@ -1,0 +1,14 @@
+geocoin https://bitcointalk.org/index.php?topic=923995.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: ANN text for "Number of POW blocks: 5,000,000" is inaccurate and misleading. Actual number is infinite, as it is PoW only
+
+Notes:
+
+Mining started at 01/19/2015 09:35:53, about 2 minutes after launch
+
+Watermarks: uint64, pow, drk-like (ish), synccheckpoints
