@@ -1,0 +1,16 @@
+emoney https://bitcointalk.org/index.php?topic=966590.0
+
+Heritage: DIEM, CDC
+
+Problems:
+
+* UNKOWN VerifyBlockSignature is commented out and disabled, and the network will not sync when it is added back in
+** This is an addition that was added for Peercoin. I can't find any actual explanation as to what security it adds however. 
+** It ensures that pools/miners mining a block actually own the address that mined funds are placed into. 
+** apparently an upstream problem from a coin I've never heard of.. https://github.com/diemcoin/carpediemcoin/blob/master/src/main.cpp
+
+Notes:
+good, sync checkpoint server appears to be running
+good, genesis seed is news event
+
+Watermarks: uint64, pos, axis-like
