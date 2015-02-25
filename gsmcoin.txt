@@ -1,0 +1,16 @@
+gsmcoin https://bitcointalk.org/index.php?topic=964014.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MINOR: Around 50 blocks were premined, bring the premine amount to 1%, not 0.8% as disclosed
+* MODERATE: No sync checkpoint server appears to be running on the network
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+Notes:
+
+Around 50 blocks premined
+
+Watermarks: uint64_t, pos, drm-like
