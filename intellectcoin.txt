@@ -1,0 +1,16 @@
+intellectcoin https://bitcointalk.org/index.php?topic=974053.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: sync checkpoint key is set to an invalid value, sync checkpoints can not be used
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+Mining began around 2 minutes after launch. shadow_runner reported 2 blocks 2 minutes before mining began oddly enough.. 
+This could be indicate a perfectly hidden premine (with modified timestamps), however this is more likely to be just a case of shadow_runner mining and then getting orphaned by larger hashrate and slow network for distributing blocks
+
+Watermarks: uint64_t, pos, drm-like
