@@ -1,0 +1,15 @@
+omnicoin https://bitcointalk.org/index.php?topic=962832.0;all 
+
+Heritage: luckycoin
+
+Problems:
+
+* MAJOR: First 144 blocks are fixed at a minimum difficulty
+** This allowed the first 144 blocks to be mined in around 5 minutes
+* NOTE: Genesis seed is not a news event
+** due to coin age, this probably doesn't matter anymore
+* MODERATE: Launch was somewhat obscure. This makes it impossible to determine when mining started exactly and if there was a premine
+
+Notes:
+
+Watermarks: uint64, pow, coincontrol, reqwallet, unknown/cross PYRA/LTC-like
