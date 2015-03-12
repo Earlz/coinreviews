@@ -1,0 +1,17 @@
+ascensioncoin https://bitcointalk.org/index.php?topic=984878.0
+
+Heritage: 
+
+Problems:
+
+NOTE: Max PoW supply is actually about 36,340,800 coins, making the premine amount actually about 0.6% of the PoW supply
+** However, because of PoS running concurrently with PoW, this probably is closer to the ANN advertised amount of 12 million or so.
+
+Notes:
+
+good, genesis seed is news event
+good, has checkpoint for premine
+good, no undisclosed premine
+good, has sync checkpoint server running
+
+Watermarks: uint64_t, pos, drm-like
