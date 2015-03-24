@@ -1,0 +1,16 @@
+zirkcoin https://bitcointalk.org/index.php?topic=994869.0
+
+Heritage: shadowcoin (master, 3/23/2015)
+
+Problems:
+
+* VERY MINOR: Launch windows wallet was apparently broken at launch for most (all?) people, however source wallets were available about 2 minutes before mining actually began. 
+
+Notes:
+
+good, genesis seed is bitcoin blockhash
+good, has sync checkpoint server
+good, mining started at set time with no premine.
+
+
+Watermarks: uint64_t, pos, lz4, sdc-like
