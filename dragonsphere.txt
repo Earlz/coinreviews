@@ -1,0 +1,16 @@
+dragonsphere https://bitcointalk.org/index.php?topic=986534.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: sync checkpoint server does not appear to be running on the network
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+Notes:
+
+Mining appeared to start at block 38 as planned
+Difficulty adjustment went up very quickly at launch
+ICO means genesis seed is irrelevant
+
+Watermarks: uint64_t, pos, drm-like
