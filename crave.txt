@@ -1,0 +1,20 @@
+crave https://bitcointalk.org/index.php?topic=997356.0
+
+Heritage: blackcoin
+
+Problems:
+
+* MODERATE: genesis seed is not a news event
+* MODERATE: 40Mb block size with a 1-minute block time could make nodes and miners more likely to fork by a malicious miner broadcasting purposefully very large blocks. These require a significant amount of time to download (more than 1 minute on even a 3mb/s connection) and thus increases the chances of the network forking
+* MINOR: Source was not available immediately at launch
+* MODERATE: Difficulty adjusted very slowly at launch, with the first 180 blocks being mined in around 15 minutes, and block times not becoming completely normalized until around block 300
+
+Notes:
+
+Could not latest wallet to actually compile and work (libsecpk missing errors). Checked the blockchain with commit 040df8b6e45c1238033b6ded32ca226e83234aa3
+
+good, no premine
+good, has sync checkpoint server on network
+
+
+Watermarks: uint64_t, pos, chainparams, smessage
