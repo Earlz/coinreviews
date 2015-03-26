@@ -1,0 +1,21 @@
+leocoin https://github.com/Leocoin-project/LEOcoin/ http://www.leocoin.org/
+
+Heritage: 
+
+Problems:
+
+* UNKNOWN: No actual launch announcement can be found anywhere. There is no way for me to judge whether there is an undisclosed premine or not
+* Judging by difficulty curve and transaction volume, at least the first 10,000 blocks were mined by very few people (probably 1 pool) and difficulty remained at a very low level (equivalent to maybe a dozen miners? scrypt-n knowledge is rusty)
+
+Notes:
+
+Apparently this was very wildly adapted to compile in Visual C++. 
+Did not even know this was valid C++ syntax.. `(void)printf("...");`
+
+Has a ton of custom code for various things.
+
+good, has sync checkpoint server
+
+Although is PoW+PoS, has some custom tuning so that PoS blocks are actually only about 10% of the blocks minted
+
+Watermarks: uint64, pos, axis-like
