@@ -1,0 +1,17 @@
+bitzcurrency https://bitcointalk.org/index.php?topic=954125.0
+
+Heritage: DRM, HACK
+
+Problems:
+
+* EXTREME: Very slow difficulty adjustment caused more than 5000 blocks to be mined in the first hour. Difficulty adjustment seems fine now, however. 
+* MAJOR: Despite saying "no premine, no ICO", there was a premine of 4 blocks, or 140 coins. Though the amount is insignificant, this is a major issue only because the developer purposefully said there was no premine. 
+* MODERATE: Sync checkpoint key has not been changed and will not be possible to use
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+
+
+Watermarks: uint64_t, pos, drm-like
