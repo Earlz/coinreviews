@@ -1,0 +1,12 @@
+sling https://bitcointalk.org/index.php?topic=1032166.0
+
+Heritage: blackcoin, similar to CRAVE
+
+Problems:
+
+* MAJOR: The PoS reward is set to a fixed value. This means that the PoS mining could potentially be exploited so that splitting up large sum of coins into many small coins would yield more coins reward.
+* MODERATE: genesis seed is not a news event
+
+Notes:
+
+Watermarks: uint64_t, pos, chainparams, activemasternode
