@@ -1,0 +1,15 @@
+bitlux https://bitcointalk.org/index.php?topic=1033133.0
+
+Heritage: DRM
+
+Problems:
+
+* MODERATE: sync checkpoint key has not been changed
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+Notes:
+
+good, genesis seed is news event
+
+
+Watermarks: uint64_t, pos, drm-like
