@@ -1,0 +1,16 @@
+droidz https://bitcointalk.org/index.php?topic=1024845.0
+
+Heritage: 
+
+Problems:
+
+* MODERATE: Though launch was fair, the first 300 blocks was mined in around 20 minutes due to improper launch difficulty adjustment
+* MODERATE: Sync checkpoint server is not running on the network
+** It is considered somewhat insecure to run a PoS coin without sync checkpoints
+
+Notes:
+
+genesis seed is not a news event, but doesn't matter for ICOs
+public mining began at around block 42
+
+Watermarks: uint64_t, pos, drm-like, charity
