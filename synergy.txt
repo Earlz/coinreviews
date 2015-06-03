@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+synergy https://bitcointalk.org/index.php?topic=1070124.0
+
+Code Quality Grade: B
+This coin has no serious problems, may have some minor network problems, and/or various other minor security issues. 
+
+Heritage: bitswift (developer declared)
+
+Problems:
+
+* MODERATE: PoS sync checkpoint server is not running and/or sync checkpoint does not have a valid/changed key
+** PoS coins use sync checkpoints to enhance their network security. 
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+** This can be fixed by running a checkpoint server with the sync checkpoint private key field populated
+
+Notes:
+
+Has good code quality overall
+Interesting concept for data and services on the blockchain
+Turboswift looks pretty good and secure
+Fair launch method by enforcing a launch time in the blockchain seemed to work well
+Has a recent news event for genesis seed
+
+Watermarks: pos, uint64_t
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJVbml4AAoJEAKXMK2l7Ra+F5YQAKWcp1w5ecQOGvmUQ3gll9zH
+nsDMK+uTKHf8RPW1KGZI+UjJeUqJFdj16xElKon60bF55VpQlcBaOl5F1pXDUCHo
+tMp5XG3Ffbah+N85OivYWtKbDltVXFbbIxGDX0qRv1l9GBefiIjLHUqLBr/mp7HX
+jwa50ShZWR0AxmXZQrvyTkyzvXWiG8U3MpGnlzgxz60PM7rINy2qy/Cp0wfHL1Mm
+D6qQAwgpBYlpHrE/0Vunnfkk1uq/pD2c+L6uH7U0BZMe02fgz02wE3YZ3Okno/zN
++areVwr46vLQ3lJP8l0XHjR6f2a2FLK6mSFzSnjg9X0f2w0xFa76PT5ffkeNePfo
+gTtKr0zakRA6SKpiMleV7Ycd3m8gynBYkUkE78Y5ZoIIX5XR398l6GFZY2n4M2Ot
+2MRHU6H3E81u7zivf3xQrK5doEx4sLTJS8SMyckNuUVO2LDQPnXf6FqazvaRVSNx
+8u6jqY7CqIX8t2CKNxgtC/Ad03P6U0FT/xNiHxoRoTdF/zkFMNE9uJ2zntzpbpH+
+0QvusxEUPRUVRHL2C5sCoIdddG3YN+k3b4Vdn/oK0yI3bjZY83S4hUYIdkn7Ccvz
+KaD/ickFffs5O7eAKm4Ga01BFD4ivMzaYZGKystdXBTYxw6VFdKvso+l+53L6GRh
+rLYTScApX2hUducoWQrG
+=cVmA
+-----END PGP SIGNATURE-----
