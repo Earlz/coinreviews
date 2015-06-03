@@ -1,9 +1,42 @@
 Coin <bitcointalk>
 
+Code Quality Grade: A
+This coin has pretty much perfect code quality, no apparent network problems and the only issues, if any, are minor nitpicks.
+Code Quality Grade: B
+This coin has no serious problems, may have some minor network problems, and/or various other minor security issues. 
+Code Quality Grade: C
+This coin might have some serious problems that should be fixed, but is probably safe to use and not serious enough to prevent a viable attack vector. 
+Code Quality Grade: D 
+This coin might work today, but it might break tomorrow or have a serious problem that needs fixed. It might not be safe for use in it's current state
+There may also be some intentional lies in the announcement thread about the specs or premine percentage. 
+Code Quality Grade: F
+This coin is a failure. It may or may not be capable of fixing the network, and there might be proof that the security problems are intentional. 
+There may also be some intentional lies in the announcement thread about the specs or premine percentage. 
+
 Heritage: 
 
 Problems:
 
+(common problems for template)
+* MODERATE/MINOR: Gensis seed is not a recent news event
+** This could allow for a perfectly-hidden premine to be mined on the blockchain before launch 
+** NOTE: There is no indication that there actually is a perfectly-hidden premine, only indicating such a thing is possible
+* MINOR: Alert key has not been changed
+** This could allow for the developer of the coin whcih this was forked from to broadcast a malicious network alert
+** If the intention is to disable the alert system, the alert key should be set to "0"
+* MODERATE: PoS sync checkpoint server is not running and/or sync checkpoint does not have a valid/changed key
+** PoS coins use sync checkpoints to enhance their network security. 
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+* XXX: Premine amount posted in the announcement is inaccurate or misleading
+* MINOR: Total coin supply posted in the announcement thread is inaccurate or misleading
+* CRITICAL: PoW is enabled with zero rewards, despite mining having moved on to PoS
+** This leaves PoW with a very low difficulty and double spending or attacking the blockchain in this state is trivial
+* VERY MINOR: Premine not checkpointed
+** The premine block should be checkpointed to prevent early miners from stealing it (accidentally, or maliciously)
+
 Notes:
 
 Watermarks: 
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
