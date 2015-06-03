@@ -40,3 +40,5 @@ Watermarks:
 
 Interested in getting a coin reviewed?
 Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
