@@ -10,10 +10,10 @@ Heritage: bitswift (developer declared)
 
 Problems:
 
-* MODERATE: PoS sync checkpoint server is not running and/or sync checkpoint does not have a valid/changed key
+* MODERATE: PoS sync checkpoint server is not running, though it has a valid public key set
 ** PoS coins use sync checkpoints to enhance their network security. 
 ** It is considered somewhat insecure to use a PoS coin without sync checkpoints
-** This can be fixed by running a checkpoint server with the sync checkpoint private key field populated
+** This can be fixed by running a sync checkpoint server
 
 Notes:
 
@@ -33,17 +33,17 @@ This coin review is PGP signed. You can verify this signature at https://keybase
 Version: Keybase OpenPGP v2.0.8
 Comment: https://keybase.io/crypto
 
-wsFcBAABCgAGBQJVbml4AAoJEAKXMK2l7Ra+F5YQAKWcp1w5ecQOGvmUQ3gll9zH
-nsDMK+uTKHf8RPW1KGZI+UjJeUqJFdj16xElKon60bF55VpQlcBaOl5F1pXDUCHo
-tMp5XG3Ffbah+N85OivYWtKbDltVXFbbIxGDX0qRv1l9GBefiIjLHUqLBr/mp7HX
-jwa50ShZWR0AxmXZQrvyTkyzvXWiG8U3MpGnlzgxz60PM7rINy2qy/Cp0wfHL1Mm
-D6qQAwgpBYlpHrE/0Vunnfkk1uq/pD2c+L6uH7U0BZMe02fgz02wE3YZ3Okno/zN
-+areVwr46vLQ3lJP8l0XHjR6f2a2FLK6mSFzSnjg9X0f2w0xFa76PT5ffkeNePfo
-gTtKr0zakRA6SKpiMleV7Ycd3m8gynBYkUkE78Y5ZoIIX5XR398l6GFZY2n4M2Ot
-2MRHU6H3E81u7zivf3xQrK5doEx4sLTJS8SMyckNuUVO2LDQPnXf6FqazvaRVSNx
-8u6jqY7CqIX8t2CKNxgtC/Ad03P6U0FT/xNiHxoRoTdF/zkFMNE9uJ2zntzpbpH+
-0QvusxEUPRUVRHL2C5sCoIdddG3YN+k3b4Vdn/oK0yI3bjZY83S4hUYIdkn7Ccvz
-KaD/ickFffs5O7eAKm4Ga01BFD4ivMzaYZGKystdXBTYxw6VFdKvso+l+53L6GRh
-rLYTScApX2hUducoWQrG
-=cVmA
+wsFcBAABCgAGBQJVbouWAAoJEAKXMK2l7Ra+gwkP/izfUu2BjUjIgHZkbZnc+c0/
+mPW42fjW7i516xMbF9Fu+TvuMlOB22/RV2tn2aNzHT0eNc5oNQYA1E53WKFv7MD7
+JFC2o5jgYTPwXSjnWg3+yq/imxRWyC5P1sqQJr7HNW00wgfmJeDPfvKwqYeImyG0
+1LjTi9dNd56FFxwlOnN+IjWO4BDqraYYfswqrHu9HWCvulXjqz6A5EO907fQyirv
+cNf0Q5F2kASLeozvQV6jn0/NwV4tGmyLj+GixJwvBQC7f6FLPAyeDNrp+4kols8u
+S3mDccNlmP8bbfHQCcaJINcNloKHkkdE6Nvg8mnWX4u2zUAytKGBFf9yaB2XafE9
+ZkZgbF0EScw1jZAnyvCqpsVRaPKbTz1MiE1OufGt5r6SD7PZVjMtnABI1J5u6nV/
+6X2y+4r5lonyxAf34UMhJUOI5kGw8HXkJwIE8j7O8Q87DInsxa4cKfkYsNB0oS8G
+K8rKJmppZ2NOfBvlo0Y1tvJ/esPS9DfNyikqmDd2i7deDCpN94yhg72q89QZKESJ
+S18rxLEmETdvqE8llhJsPkCXFXRjnZw0IM4en83dXTw1KZAE9oHHXVa4ZFSEVCPC
+Vy2h+BuCeHAC7DkDqTLd+X8K5zZn9ASzllFIxyjmVn7t+yDf77Szqm+qETcAy4CL
+Py3CSOFxwJGUdN4K2Pjq
+=ZcN+
 -----END PGP SIGNATURE-----
