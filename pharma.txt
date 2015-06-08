@@ -1,0 +1,52 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+pharma https://bitcointalk.org/index.php?topic=1082835.0
+
+Code Quality Grade: A
+This coin has pretty much perfect code quality, no apparent network problems and the only issues, if any, are minor nitpicks.
+
+Heritage: crave
+
+Problems:
+
+* NOTE: Gensis seed is not a recent news event
+** This doesn't actually matter though, because of the 1440 zero reward blocks makes a hidden premine practically impossible
+
+Notes:
+
+Good difficulty curve and launch seemed to have no problems
+
+Someone mentioned on bitcointalk that the masternode implementation is broken. 
+I'm not an expert on how the masternode system works and such, but I see no immediate problems with the code,
+though I didn't try to setup a way to test it. 
+
+I had to remove some non-essential code from listunspent() in rpcrawtransaction because it was throwing boost_serialization errors.
+I'm going to chalk that up as just a problem with the latest boost (on Arch Linux) or some other compatibility problem between that.
+
+Good, has running sync checkpoint server
+
+Watermarks: uint64_t, pos, getlow64
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJVdPPhAAoJEAKXMK2l7Ra+dLcQAJIeQqfGrxX7TZ5DPcDVNslV
+FSzvf3V3Y3dHY0MsZuy4xgCW1dEjoI8Zai5SLX/9OAUH1yF5Y91lXeTlc72t5uqQ
+72u9Y+T7Bi5AEbqBWkJVW/m41Cex8+rZJNBgfisfCV+WNMAnQekPWEalBJvZOrAo
+RrZ+NLYh/eHaBjPWUv9T6HLuebi7/cogjH4ammNeE9R9Rk1xrhmgqElbj0CMKrDr
+Lkv0priW0BGQLHi4ZvOC+BWYTQl4IYCGMaozcdSYytq6zZkB2+XXthaqJ/X7OrSP
+yydst8ZJe8UIF3298QP4O9HKpI6799bhZMJwYsnkxVz2MIGsJYTDLxO5OdiGbNIb
+e4O0LADI0ObhSEtHcFP3mPs0lhut9dTIEc5FdpvRD5j3VEi3SRKAkebEB9wfPEGW
+OyseoP8gGFp2Mj9yJlejvR/0yjQYfq8amiy8unHqiNXTm2VQTgWfop9nsiLUVSrC
+aNEy0JhW41vS+fFqjKA/S4mF6DVLwCwvFZ8VWkJ+HQRK7jLgQPJV2Z/ehanzQ/AD
+NuzAujJRzcSRsdbEhmN+JRgFLG3SUIzWYoEYCEXXB0HklpDfPZlnAyOG+2/j3bCT
+luJD4501d3GGLi8ghpJ0aSrYLjIMkjpP3dPsc/hCjBFeZK4SrjWJAKD3PKMkd5kE
+kF5kfNuNF8pSJdhTdf2z
+=eYJP
+-----END PGP SIGNATURE-----
