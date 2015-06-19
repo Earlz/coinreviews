@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+gridmastercoin https://bitcointalk.org/index.php?topic=1089741.0
+
+Code Quality Grade: B
+This coin has no serious problems, may have some minor network problems, and/or various other minor security issues. 
+
+Heritage: crave
+
+Problems:
+
+* VERY MINOR: Premine not checkpointed
+** The premine block should have a hardcoded checkpoint to prevent early miners from stealing it (accidentally, or maliciously)
+* MODERATE: PoS sync checkpoint server is not running (but has a valid public key)
+** PoS coins use sync checkpoints to enhance their network security by making occasional checkpoints in the wallet
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+
+Notes:
+
+Before block 10080, zero-reward PoW was enabled which is a major security issue. 
+The coin has now switched to pure PoS so this is no longer a problem. 
+
+Watermarks: uint64_t, pos, masternode, i2p
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJVg3DQAAoJEAKXMK2l7Ra+T10QAK2/ChQLVwFpTlv9h+v2br+m
+7hnJYAobIOdE2du+TY2yd8bL2Kko9NZuXKcoM8xUXJllSBligR0FOV/O7A2fM4OI
+vAKvUNpbOYS+YJMdTZ1KM4zgOITsTQuTz4rkXt6VitADMVRA2ql0Jeu9tXnQk5L5
+YNfg/+5WZLHUZ2Y0984eKDkhEqCeBVV/VVHkPzToVtP/CyxeOMfzZimo1GuDsE66
+ujj1PW9jayi7/a/vnTpqyPCBNsOGrXD/wiiFjt5z6iR34P1TtOFmp6xl8gaJu54I
+r1uIvquFrAjOgoechiMosxLU5vGxvEAEOITEnQ/nUVQWtjX8QB9r1f1E9DNF9WGy
+/qFn9GZbgN4AucPJbbR+o5crXXrXOsR08T0XLGYqUC17MDjALdMVqHF/SrpiBKi0
+vFV3WuBJsFSXOPHoDvSyfkC4qSdo/AIW+Jb8WaD1iFuy4y4p7TN2Cc32DWmNiJ5u
+WyO0f7m+ug8WiesbKdtYHI+yHW9Sda4t1rKwJEjvp2O+Xtu59AtpcUKWngQHx/B0
+ADcCHeyvZ721mHw1Cmca8SL7/Mqah6mI78YDPMOTtAUPQ3nVLUxfizYOSGOh/WOX
+LY2bfLmksXF93a2tQpXsaeQg8uzcQgk9m8LQ2EdU1iL6+a3DuwBKaHSn2F+xZZLE
+tPTD6+KSCpl/OIyY0hjf
+=KYgJ
+-----END PGP SIGNATURE-----
