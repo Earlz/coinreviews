@@ -1,0 +1,47 @@
+bloodcoin https://bitcointalk.org/index.php?topic=1091421.0
+
+Code Quality Grade: A
+This coin has pretty much perfect code quality, no apparent network problems and the only issues, if any, are minor nitpicks.
+
+Heritage: quark v0.8.3.1ish, shark (dev proclaimed)
+
+Problems:
+
+* NOTE: Sync checkpoint system is implemented, but the public key (strMainPubKey) has not been changed from quark's key
+** This would be a security problems with a PoS coin, but with PoW coins, the PoW security is strong enough to make this optional.
+* MINOR: Gensis seed is not a recent news event
+** This could allow for a perfectly-hidden premine to be mined on the blockchain before launch 
+** NOTE: There is no indication that there actually is a perfectly-hidden premine, only indicating such a thing is possible
+* MINOR: There is actually an additional premine of 90,112 from 12 additional blocks in addition to the diclosed 2,500,000. This is probably just an oversight and pretty insignificant compared to the disclosed premine.
+
+Notes:
+
+Coins minted per day is 35,389,440.. So the premine is less than a quarter of a day of mining. 
+It will be about 0.2% of the total coin supply after 1 month of mining
+
+
+This isn't a protocol security problem, but is a bad default configuration: (automatically written out by the wallet if no conf file found)
+
+	listen=1
+	server=1
+	gen=0
+	daemon=1
+	rpcuser=u
+	rpcpassword=passwd
+	rpcport=5009
+	rpcallowip=*
+	paytxfee=0.01
+	addnode=nd000.bloodcoin.cc
+	addnode=nd001.bloodcoin.cc
+	addnode=nd002.bloodcoin.cc
+
+This should be changed at least to `rpcallowip=127.0.0.1`... And in general it's not a good idea to have a preset username/password for RPC access. 
+
+good, has some checkpoints
+
+Watermarks: uint64, pow, synccheckpoints, quark-like
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
