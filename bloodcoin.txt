@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 bloodcoin https://bitcointalk.org/index.php?topic=1091421.0
 
 Code Quality Grade: A
@@ -45,3 +48,21 @@ Interested in getting a coin reviewed?
 Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
 
 This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.14
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJVh1uWAAoJEAKXMK2l7Ra+48cP/3m371A0j0U14Mr1BcLepgwa
+AaN25fxIuHpI7pty3gBs71BLgEch/4tBq5a4vEE6JlUyd0q2b1y1B1PIVXPW9tSh
+zlb5/CXhg49ONeM2cIgl7UYHmg1sz38hlYjmXNsoTewUhdIzogA2pwd48DkNWpSs
+jWBDOfwsMunPYKSbewN99z7XeweSRm7/+aioDeanu1bheRu7QUcxmrYhdK7aL3oZ
+XMTsED0POC2ds+RslnnTsTudxGglAUctXsbc1meM/osevcRUStQVg+uTVccHcUwy
+0PS4u/LrTH7lYqW5KvxEGrY+QAyWHz+PpTAhJ0QrNuAMO90vLaY7BgfsAJnJwew9
+U1VAeY1Bn4raDJeri9Umzzj+uvvw9yLFjtKUxKWpH27OpKKNyS4Gsv9Ol1ZwER4e
+vS75IqkdGkts4hg/lVUjVUGwPaQg3t4Trzl9tuVgpwrim3fHAzz777PY3r9mhKut
+1tNOuCTMriPtQ4v8dt/F2fKwFgeCKuFnw0XJ4XWwQprGtdRKxwsp2YwA9z6OJnsP
+3NDjHdM1KyFrQeRVGiQtlGpWWQfiqFIsGCB6xAY2+pV8jSpATl2OB7okzzMKBY5e
+CSii0RYCEk0aSF29aLq76j6eLx7mzH4QwOYMFg6eGZ+85vdccGhcB1kPokXzM2Nq
+WtQlOoGDsa3kyEzG0v7e
+=yIeQ
+-----END PGP SIGNATURE-----
