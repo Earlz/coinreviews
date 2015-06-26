@@ -1,0 +1,48 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+hexx https://bitcointalk.org/index.php?topic=1098544.0
+
+Code Quality Grade: A
+This coin has pretty much perfect code quality, no apparent network problems and the only issues, if any, are minor nitpicks.
+
+Heritage: crave
+
+Problems:
+
+* MINOR: Gensis seed is not a recent news event
+** This could allow for a perfectly-hidden premine to be mined on the blockchain before launch 
+** NOTE: There is no indication that there actually is a perfectly-hidden premine, only indicating such a thing is possible
+
+Notes:
+
+Launch looked good
+Good, has a sync checkpoint server running on the network
+
+Things appear to actually be implemented fairly cleanly, rather than quick hack jobs here and there
+This may just be a remnant from whatever actual coin they forked from, but it's nice that all the parameters are actually in chainparams.cpp
+
+Watermarks: uint64_t, pos, masternodes, pharma-like
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.14
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJVjJz9AAoJEAKXMK2l7Ra+PqIQAKkkUkSorE9Lh0EPRhJXGw1G
+viBmr8twr7aTVLGZLbpJ017FULFfDbHqLkfd6pnEHTGZ0vV8UETB9I1E/NDWX8OQ
+MzZOpIFaubbCzDeIz68phZLYog/UwFcFc8kbtzHT1x8YJixDfOFWGXu3wr03bbhX
+SlTRgm1u010i5HrX+exvhU0v3GYaBjtBIHkAQf2FriBxXNdGPlh0CByrxegw7L+3
+XMTgTVkaOLVcEuL1VkXWID+9fJazIX3XJG5Eqvljkmb6oBMHTvwX/9KhUgvk2BWN
+c3ZmxjKc4fq8QaLQDYsxYYwDcgIwxZUs1UYvgAwduYzfBGQ9hFYhTA/CMTIMd7t+
+p5ewfqmgJsy56aJCCRZtqZV3lKIslyYdqe07/PoAxQz6QP4LYIBXU016G+OBRE2t
+bj3JYyigLzBdwUma/dUwfe8q8wbR/z6lsxNmTr0n5kNc69rm5vJ0wBXgz3LHnbrV
+/GKxDe93rdLkXKOeNFarUX47og2hkxQ2WGBNY8p05Xrud7UJMu5brPppoRqJ+Jvc
+DhDd8FnV8PKAM6ZeocWugAL5WqDJVJX83DEd4OEHF7l5RuvQB6U7F3pmdfXf7H2/
+p3yZE+MpHRCCPGcxQc07jx5AH2FYJVSG3+2KpeHwpwdfXMDc8146hBULJBAOiCEO
+Em4Lhc7Rnkp6tY8n0zVK
+=ZueG
+-----END PGP SIGNATURE-----
