@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 masterdoge https://bitcointalk.org/index.php?topic=1105744
 
 Code Quality Grade: B
@@ -24,3 +27,21 @@ Interested in getting a coin reviewed?
 Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
 
 This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.20
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJVmeRTAAoJEAKXMK2l7Ra+ZH4QAI0kjT9Dba4z8lefU4vSNWf7
+WBBlnTa/i8lBC8FbtvOgqW7PNVFpRBgJ9c1N++4AmbWfak0P+vAE0GAd5M4SETdw
++UnssimoIIYujQ6OYFRqJ78zio4iqp2vrBKniWLhbKb/trnxfbecF9Lr8IBdsOyn
+VcJaEOoUiz1s71JC2GWgUsFoOLc3cxANJuQad3ZGtovK+fUfLpaiHfd2GV1H8vXH
+/rpQMeO6xfmojRwPkdbR1tnY0NjWW5iRrK12W8yGPwO9GsUKjJO69ZSmD/LVsSdc
+61L9ZXRfHzEGUHIMf0zapbAsYILUt/XnyGt0MO9k4jMM6Szr1J3TQatdE9GgymfI
+B4eNbEM2158eCkMhfbYNkZgViEAKACqH+Mua5YKEijc84UCoHmRtl9PT7cSWQ4ws
+GAlQ4tiheJAnRK+p5z5p+4XidjOd5UAjePTsdF7kLy41Ecc95YM6Jx5SCkfgQlZs
+lZTa14Z+NuB/ZVVzNPBEJ6vFgEwC584VZuc4eXlTOq+eM4iGA22DgtuHL6D5gHz8
+/fTSt8CoCX8VOKxI4az9lso82OyLBEvObTZZnGNvUqm50rBmJW+TBZa7XnVXXP4B
+ngC0PrPye/oduo2a//Ziy1At4TjY9IAcNx/RUZmXbBjZMLF+q/z7e7t9jbPq9dAZ
+GBJKG1woEimbFe9vFgWE
+=+o8q
+-----END PGP SIGNATURE-----
