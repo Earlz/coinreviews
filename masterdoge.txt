@@ -1,0 +1,26 @@
+masterdoge https://bitcointalk.org/index.php?topic=1105744
+
+Code Quality Grade: B
+This coin has no serious problems, may have some minor network problems, and/or various other minor security issues. 
+
+Heritage: pharma (with exploit fixed)
+
+Problems:
+
+* MINOR: Gensis seed is not a recent news event
+** This could allow for a perfectly-hidden premine to be mined on the blockchain before launch 
+** NOTE: There is no indication that there actually is a perfectly-hidden premine, only indicating such a thing is possible
+* MODERATE: PoS sync checkpoint server is not running and/or sync checkpoint does not have a valid/changed key
+** PoS coins use sync checkpoints to enhance their network security. 
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+* VERY MINOR: Premine not checkpointed
+** The premine block should be checkpointed to prevent early miners from stealing it (accidentally, or maliciously)
+
+Notes:
+
+Watermarks: uint64_t, pos, pharma-like, masternodes
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
