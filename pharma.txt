@@ -1,3 +1,14 @@
+
+
+
+
+INVALIDATED. THIS COIN HAD A HIDDEN EXPLOIT
+This review is left for historical purposes. The revised code review score is now F
+See https://gist.githubusercontent.com/Earlz/41c5c18113210d3c36f9/raw/4d14022e3c75a6a10c653bd98831fd3bbded79a1/gistfile1.txt
+
+
+
+
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
