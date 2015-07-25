@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+capricoin https://bitcointalk.org/index.php?topic=1129322.0
+
+Code Quality Grade: B
+This coin has no serious problems, may have some minor network problems, and/or various other minor security issues. 
+
+Heritage: 
+
+Problems:
+
+* MINOR: Alert key has not been changed
+** This could allow for the developer of the coin whcih this was forked from to broadcast a malicious network alert
+** If the intention is to disable the alert system, the alert key should be set to "0"
+* MODERATE: PoS sync checkpoint server is not running and/or sync checkpoint does not have a valid/changed key
+** PoS coins use sync checkpoints to enhance their network security. 
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+* VERY MINOR: Premine not checkpointed
+** The premine block should be checkpointed to prevent early miners from stealing it (accidentally, or maliciously)
+
+Notes:
+
+Watermarks: uint64_t, pos, drm-like
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.20
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJVs7qyAAoJEAKXMK2l7Ra+2mkP/jZsuwfjx+qTtXwkCskILTPp
+XxIRhbOecV1JmN0By1TY6FB/sOSO6EkJN9ClU3wehhzGLeh/qq0zJZLtlyQdimRi
+HMZHQFIFdHOqLT+9BJYHaqUBfqumdbgMaieonDyCxcPF+2y8LkUvF4j0xtV26wVB
+ZF9inaSNihAawspZHXvlB+VKGXJKTfe2LRo6uLeaEyYpf2UbdzYU5m/i/QpkZ9Te
+7VNslEDg0Cil7yK9IbC8YQyKoRheFUtT1x2ZonpSFAKd0d4YZKmNMZrUKpBy/ybj
+tbMpJFYf04S7ISI8y6yZa92Urtfc4gxRM5F0pAO6cIFKBm88tk9GJ92vibEZFXYp
+jpfqXNt5EvDD6UZrMwr2TCi83PL7zFJ0YTHEPHsUbYtdWwz7A2FqWQnSl7d7DvNY
+A+e/SZUFN1wzIFEiiylulDVOMqgi79R2V/woQ11y6vCN0/xFZCJCgwN5RzJls52i
+00mBBgEznm3AZ7JenxLm36vir+V1gLAE73aYcqNu019u4UgmCtapnLfVRi3mh06h
+T7gq9RW840J+N78RSjp/O7FNX+ePUhYvMprDAfLbR2G1Ze0w030peBd09qQggqpo
+K8g5a5xvdRGViNXvJ5oE2QBeKteCSbGSUMNJLhZmCEwPWWIXkEwG0PU1RFFprFJR
+EHbRcY88uQq17gzDAUAt
+=iO1B
+-----END PGP SIGNATURE-----
