@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+axiom https://bitcointalk.org/index.php?topic=1135151.0
+
+Code Quality Grade: A
+This coin has pretty much perfect code quality, no apparent network problems and the only issues, if any, are minor nitpicks.
+
+Heritage: 
+
+Problems:
+
+* MINOR: Alert key has not been changed
+** This could allow for the developer of the coin whcih this was forked from to broadcast a malicious network alert
+** If the intention is to disable the alert system, the alert key should be set to "0"
+
+* NOTE: This coin uses a new hashing algorithm. 
+** There is not necessarily anything wrong with this, but it has not been peer reviewed and battle tested for a long period of time as far as I can see.
+** I am not a cryptographer so I'm not capable of giving much opinion on this, the core code had no obvious problems I could see though. 
+** It's also been evaluated by some other people I know and determined to be secure by them
+
+Notes:
+
+Launch seemed to have quite a few orphaned forks, but otherwise seemed to work pretty well
+
+Watermarks: 
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.20
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJVtv4fAAoJEAKXMK2l7Ra+LmsP/itKLhKoCSmZ5riQ1QcsJhjr
+JOaP8MY0cZwkl2KPdDc5mg7JezuayLSG+QfnTVuDZa96ABuPlw0k9mxl33fyA0T8
+e9mwEmaJp8R08Q2KmEoVqXMt1YC53EZCTk/xcbQJtAiBKwZ6A1Ka08Om/txwimix
+8yxI3n9IgJ1U0zmyCNPH9c/ZLE8jr6h6fuhBoECS0O7egXuQkK05Gc9DFIRVw8vI
+rIJgD8c9bq8aL1Kjq3sskCDOUzy4CFKgwIleVf1+WcYLwl8AKil0mYIxV2qHNyz1
+/ixUaxUTrg+4jHy8C3l9r5TV+I3krLqPTs+6OC0rjvNJMgIsc3qNwXb3qbgD6iz6
+uggCS8fh8oKFE0A7m2CY2j4xS6Yrr8UxRL1hVl2k8fdbe1hL2b+/WYLewmKjrXFE
+PULjdVokh/3bWvw/oo9V01jnSSreBiaWJUyGtqlrS4kiyx0BFR2Qjrt9Rft21mjG
+WADublGbYRP5PfmrmltnQuv2sCFX+FkW6NlHYAb4T2ypHAdDEu6zBt23RBzl0jC7
+vp5C311v+pDwLcxmZZ7f+jtkL4hxJHMpQMHTfAQoGppbsReLgViSiOsKh+9/tabw
+eZOQ+gMSU9ZQKznha2vuC9s8afX4EPGo/QDRMhKFmvieTbEV6OpjGo7RBsjRzgGV
+ecq6d+He/kuGl+aNpckJ
+=vAHx
+-----END PGP SIGNATURE-----
