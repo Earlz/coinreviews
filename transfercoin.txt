@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+transfercoin https://bitcointalk.org/index.php?topic=1150229.0
+
+Code Quality Grade: A
+This coin has pretty much perfect code quality, no apparent network problems and the only issues, if any, are minor nitpicks.
+
+Heritage: shell(?), crave
+
+Problems:
+
+* MINOR: Alert key has not been changed
+** This could allow for the developer of the coin whcih this was forked from to broadcast a malicious network alert
+** If the intention is to disable the alert system, the alert key should be set to "0"
+
+Notes:
+
+First block mined 2 minutes after launch
+Has a running sync checkpoint server, good
+
+Watermarks: uint64_t, pos, masternode
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.43
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJV4bPuAAoJEAKXMK2l7Ra+LmwP/398GCmWq/Ix02O3cQ8xWegn
+JE9rmu2z7okwnAm9GU/E5YHGJCJXYUjW5A4gPlpAi26WQuYNtFULONEp16+sH4B9
+IdwSLazOh3qwVblHWTbkn7h0x5deH8egfwPzedLS45outrB1xQPbTb7DrLIE/WMj
+kL/WMafxroRHYNwj4MU4tdMJK0gngHCdHmcTTmSyx3mN6lAszzDUfEc/lMUPQh0J
+PaIT6VKlIXdJOyvv5CcXTdXK09NAopfdKjQZ0/9JfiPgDh14ViNF2wjHwEfvTff5
+8PxlIrmZhq/gix88kbbJu3NCk4kqjdOx9TyvpQ04wRiyKS3Io1LQSLe1/kTJo8BF
+ut75aIl1SlpuXazpKayYI0bOzwuDSJNH6HllFQQAPkVt6qXqjsZeduXcobbsQA7M
+ATEiCGorlSUuazYcaERVxyGarfHTui7c4gRs/zpycepG5cjwuvhle8eKJJZS43bv
+EUJqy1it7XwUByDQFZ7YyP1mVfxUmGxSPP7PUyxu3wDSWN2ROxDEDFqiMEDnMCHp
+nz5AmB0Grzu4XA8Cg8BI/sWca1byWg1q9QsgbaAxbaCBYg/NJo5UcT2WKI02ixT4
+C/mgXQZPgjWaKXHoz7LAR049syqCOzGH9rnX/nr9R22IfZIs9PJ2wGB1a/zWY0q5
+vHK6NltaWnu/nooDcF5s
+=PhXe
+-----END PGP SIGNATURE-----
