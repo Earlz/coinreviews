@@ -1,0 +1,58 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+STEPS https://bitcointalk.org/index.php?topic=1173385.0
+
+Code Quality Grade: A
+This coin has pretty much perfect code quality, no apparent network problems and the only issues, if any, are minor nitpicks.
+
+Heritage: TRON (developer proclaimed and confirmed), BITB and POST (unconfirmed)
+TRON heritage is from their old bitbucket: https://bitbucket.org/positrondev/positron/commits/b58aeb6ece7ed2bdeaec460bd36d83a5d3f40cff
+
+Problems:
+
+Notes:
+
+NOTE: I have confirmed that the developer has PROVABLY BURNED 5756872.827 coins by sending them to the address SMJ12qn9jNCCXJnTYRz5Yu9ZenERqvYwfg:
+{
+"value" : 5756871.82700000,
+"n" : 1,
+"scriptPubKey" : {
+"asm" : "OP_DUP OP_HASH160 0000000000000000000000000000000000000000 OP_EQUALVERIFY OP_CHECKSIG",
+"reqSigs" : 1,
+"type" : "pubkeyhash",
+"addresses" : [
+"SMJ12qn9jNCCXJnTYRz5Yu9ZenERqvYwfg"
+]
+}
+}
+],
+"blockhash" : "0000000000367df774d84049f2ad257a539da85c0d8d38879fdd2e503cee6e3c",
+"confirmations" : 816,
+
+good, has checkpointed premine
+
+Watermarks: uint64_t, pos, drm-ish
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.46
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJWAJxDAAoJEAKXMK2l7Ra+M6cP/0Tdaw2auDibzRxAr+7FH/Fl
+y0lGiundlq9ZylXRauAGDGuWEIZT05BEUGu8exJg/8fTkQ0S1rTYX8O+6xzDC+gn
+g6pDn6FErU9ZTs3B2jySwJDX6sHEBhvAFasQN0QRDaSVOpaf2QCLCdPjX4nbp+Dz
+nWhD49yEJXYJPv0lj4k62+GVD+UTA5SfVjVK4wn8i22spdqYjj1/+vs872P/Zs5D
+x+oE2UGDW/47Yc8EgZj/lxZykAgy311ZjoGpfBy08LATkUR/vrN86Gcd368mlQcM
+i4DR64GcS4ZiSC0mU95aUCX4v8F3pt+HdAjUjXgv2j5Rn+DW1Z2m6vPLApkdu1Tx
+BZ50r4eS2FoX5raEJcyDS1GOLaePWtkKofjqr4dkB1jklueFoDSOo0GSCtr0FnjC
+vFAUfUsHex5XiyIHDzWtkzPz/33MR+Cro5ZX8yPEVbpSusnmzYdYCc/X2XSi7Q9r
++L3B7Ywg4aTr8ky1MjrKtiIZFQBY/HEsRGc/dPeVxTuy0zAd5TTrV+XYT91fALX5
+nCYn5eLs5pwYBqKRVk4/onTH6GMMBvKMhlndXeJC1tajW2fKF9z6EL4QdYeGoL9X
+gX2AZpkgqeqhSZwthVGoDvHPGUdDEwyNiRgxbIjpCSKpI6v44XJ45uPkpin1swGM
+J4OZAPBWTN1g/Pn63RMM
+=s4tl
+-----END PGP SIGNATURE-----
