@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+islacoin https://bitcointalk.org/index.php?topic=1079608.0
+
+Code Quality Grade: B
+This coin has no serious problems, may have some minor network problems, and/or various other minor security issues. 
+
+Heritage: DRM (Dreamcoin)
+
+Problems:
+
+* MINOR: Alert key has not been changed
+** This could allow for the developer of the coin whcih this was forked from to broadcast a malicious network alert
+** If the intention is to disable the alert system, the alert key should be set to "0"
+* MODERATE: PoS sync checkpoint server is not running and/or sync checkpoint does not have a valid/changed key
+** PoS coins use sync checkpoints to enhance their network security. 
+** It is considered somewhat insecure to use a PoS coin without sync checkpoints
+* MINOR: This coin is very old, but has no hardcoded checkpoints
+
+Notes:
+
+Watermarks: uint64_t, pos, drm-like
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.47
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJWHEWEAAoJEAKXMK2l7Ra+b5gQAIr/hZ0WPvqG0v6axzPb1sDi
+P3iJRI98b9C01Zb9Q4Su+v/+s8ZAEJWdJU6IxYtdil65T0w1vtgYfXlyyRfniQvZ
+ddYNuJJTiSY2rv5M6sdqy+LNaHQs8C2beo5wjG23MYKfOs1lQEeWCo/6n7BeD4D7
+uXv4LslNY85p3w0QRoXwVzYrwWn/doIKd/XKaArzdFUXKHCuOc0D5IDqsL+zxR+b
+laIF6XEwbRRm3xDLOaD9hhAK8O4hFuIywMtI4dYiCe3ZdNrTfyddlssdLatrV8Mj
+B+FE7PQ0dY6qa9UjdRPYyAxKRQyR1BYU9TvpNdqe58BwbFhx8do3oVCelu6VLoFd
+r6vp7aWcbMpRecS/vaoSKYzbnws8fx64J49yLAwbBZbPw2a2g6zETKG7PKqoQU89
+q5CcWrN/qCKQg0vgn2iwPL31W5D9EzGznNzTePLiHRAEMdTugRkqf5YZgWtbYKN/
+E9vUpNhBbIgfMZLuuuEgWlo2KXoa1iHId2gd7GvWe2clOrWebWQTVa9IG0ynuqyC
+A7QVBtEPiiZuSJj9i7n+IXbs1YOj+nXkFnkzaFmM54rmW6JpC9+FSqmunzdU46Ih
+xMZpHAbIAEcPZHFQtF2OMySu4QZiNO3WcGdIbjYykrpEOuJCGtx8aLPxJzxIZAqc
+gs4OEut9TacsRKUrqaO0
+=MH9c
+-----END PGP SIGNATURE-----
