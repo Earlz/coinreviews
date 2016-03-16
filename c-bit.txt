@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+C-BIT https://bitcointalk.org/index.php?topic=1374770.0
+
+Code Quality Grade: C
+This coin might have some serious problems that should be fixed, but is probably safe to use and not serious enough to be a viable attack vector. 
+
+Heritage: Directly from Bitcoin 0.12.0 (self reported and confirmed)
+
+Problems:
+
+* MINOR: Alert key has not been changed
+** This could allow for the developer of the coin whcih this was forked from to broadcast a malicious network alert
+** If the intention is to disable the alert system, the alert key should be set to "0"
+* MAJOR: The coin was announced first on an email list and an hour later was announced on Bitcointalk
+** Although the email list was freely available for sign up, this is not what I would consider a "public" release
+** This uses the naive Bitcoin difficulty adjustment, and thus did not compensate well for the initial early difficulty spike
+** The end result is that about 6500 blocks were mined before the "public" announcement on Bitcointalk and elsewhere
+
+Notes:
+
+Weird search-replace error?
+- -            return "node misbehaving";
++            return "node misbehabing";
+
+Watermarks: pow, bitcoin, sha256
+
+Interested in getting a coin reviewed?
+Find more details about Earlz's reviews at http://earlz.net/static/reviews.html
+
+This coin review is PGP signed. You can verify this signature at https://keybase.io/earlz
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+wsFcBAABCgAGBQJW6K/BAAoJEAKXMK2l7Ra+u1cP/ih6tPYmcjHtIdkdMCzg5oW5
+sqrAzWAhzd5K5FoifRZs99wo05SBH06t+hbxD3gOq/8Z4UkzvQgtAsC1x/j4oa6s
+VR4iYE/VW7RirzhXzjuIF40IhAgbFsULl+d6rKbjLIcjylyHwdwH14uWEFg+ZZjx
+lvEE/srfortOBuiZWqZ09qyiduu7PAq0y7BOh+GmvkmVinlemT6+6Wqe74Z+MA36
+rM1LCPFsaRAGygu/IStIAeIvGdEuf2uoiqfcPqix5O97Mphs44J5ePBi6hMnxcoe
+xGchwlc7FDp1fXYR70k9IBxOcZyXB92I9HG3gkd6jLIr8nvBnIHBaYjZRgDfZLMf
+bpsjZIlyoJNG9H8GTxtuhx+iEKv3iAbRfcsbsIG1BLg8k0gKMG1dXTIVVqkNlh9l
+P6Jcja7qNL89Q32DOJl1e2UyTC/R5kgProfNZyZZvScopk/Zb8I+Q+DqpJ5I5AyW
+qkX+kITKopKr8zJSHTLLUdoARWGPpZ3aMR5ILXM4X6pY5tVRDKW9kWlzhbTCT6ZP
++sKKzNRQWUppMY0HW8TomdjZldNdfPo6AX9+Pyo9a6gYIhQQGdxDeriFCk1qLQnj
+1D1274LLgUyhIQoLfBJXMNXwa55TFPnocXlZEF1cOveTUVOkxuyHavj+xTvijczy
+TMxl+rhqBqz51rTHVvMR
+=JThA
+-----END PGP SIGNATURE-----
